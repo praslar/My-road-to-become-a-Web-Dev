@@ -1,0 +1,58 @@
+﻿
+<div class="modal fade" id="Modal_Create_Edit_DanhSachThi">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-blue">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title txt_title">Thêm Danh Sách Thi</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <label>Lớp</label>
+                            <select class="form-control select2 DanhSachLop2"></select>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <label>Lịch thi</label>
+                            <select class="form-control select2 DanhSachLichThi"></select>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <label>&nbsp;</label>
+                            <button onclick="DanhSachThi.TimKiemTaiKhoanLichThi()" class="btn btn-info btn-block">Tìm Kiếm</button>
+                        </div>
+                    </div>
+                    </div>
+                    <table id="DanhSachTKLOP" class="table table-bordered">
+                        <thead>
+                            <tr class="">
+                                <th><label> <input type="checkbox" class="minimal"> Tất cả </label></th>
+                                <th>STT</th>
+                                <th>Tên đăng nhập</th>
+                                <th>Mật khẩu</th>
+                                <th>Ho và Tên</th>
+                                <th>Email</th>
+
+                            </tr>
+                        </thead>
+                        <tbody id="data_tkSinhVien_Lop"></tbody>
+                    </table>
+                </div>
+            <div class="clearfix"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn pull-left btn-flat btn-danger" data-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary btn-flat btn_Add" onclick="Lop.Create_Lop()">Thêm</button>
+                <button type="button" class="btn btn-primary btn-flat btn_Update" onclick="Lop.Edit_Lop()">Lưu</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->

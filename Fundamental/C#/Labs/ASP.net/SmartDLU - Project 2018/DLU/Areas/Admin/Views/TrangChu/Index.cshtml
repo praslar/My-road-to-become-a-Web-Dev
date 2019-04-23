@@ -1,0 +1,124 @@
+﻿@using DataAccess;
+@{
+    ViewBag.Title = "Trang Chủ";
+
+    BaseMethods<DataAccess.TaiKhoan> objTaiKhoan = new BaseMethods<DataAccess.TaiKhoan>();
+    BaseMethods<DataAccess.Lop> objLop = new BaseMethods<DataAccess.Lop>();
+    BaseMethods<DataAccess.ChucVu> objChucVu = new BaseMethods<DataAccess.ChucVu>();
+    BaseMethods<DataAccess.CAUHOI> objCauHoi = new BaseMethods<CAUHOI>();
+    BaseMethods<DataAccess.MONHOC> objMonHoc = new BaseMethods<MONHOC>();
+
+    var CountMonHoc = objMonHoc.SelectAll().Count;
+        var CountCauHoi = objCauHoi.SelectAll().Count;
+    var CountChuVu = objChucVu.SelectAll().Count;
+    var CountTaiKhoanThi = objTaiKhoan.SelectBy("SV", "MaCV").Count;
+    var CountobjLop = objLop.SelectAll().Count;
+    var CountTaiKhoan = objTaiKhoan.SelectAll().Count;
+}
+<section class="content">
+    <!-- Small boxes (Stat box) -->
+    <div class="row">
+        @if (TempData["AlertMessage"] != null)
+            {
+            <div class="col-lg-12">
+                <div id="AlertBox" class="alert text-center @TempData["AlertType"]">
+                    @Html.Raw(TempData["AlertMessage"])
+                </div>
+            </div>
+        }
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-aqua">
+                <div class="inner">
+                    <h3>@CountTaiKhoanThi</h3>
+
+                    <p>Tài Khoản Sinh Viên</p>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-user"></i>
+                </div>
+                <a href="/admin/tai-khoan-sinh-vien/" class="small-box-footer">Xem chi tiết<i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-green">
+                <div class="inner">
+                    <h3>@CountobjLop</h3>
+
+                    <p>Lớp</p>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-graduation-cap"></i>
+                </div>
+                <a href="/admin/lop/" class="small-box-footer">Xem chi tiết <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-yellow">
+                <div class="inner">
+                    <h3>@CountChuVu</h3>
+
+                    <p>Chức vụ</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-person-add"></i>
+                </div>
+                <a href="/admin/chuc-vu/" class="small-box-footer">Xem chi tiết <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-red">
+                <div class="inner">
+                    <h3>@CountTaiKhoan</h3>
+
+                    <p>Tài Khoản</p>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-user-circle-o"></i>
+                </div>
+                <a href="/admin/tai-khoan/" class="small-box-footer">Xem chi tiết <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-orange-active">
+                <div class="inner">
+                    <h3>@CountCauHoi </h3>
+                    <p>Câu hỏi</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-quote"></i>
+                </div>
+                <a href="/admin/cauhoi/index" class="small-box-footer">Xem chi tiết <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-teal-gradient">
+                <div class="inner">
+                    <h3>@CountMonHoc </h3>
+                    <p>Môn học</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-calculator"></i>
+                </div>
+                <a href="/admin/monhoc/index" class="small-box-footer">Xem chi tiết <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+        <!-- ./col -->
+        
+        <!-- ./col -->
+    </div>
+   
+
+</section>
+@section Myscripts{
+    <script>
+        $(".dashboard").addClass("active");
+    </script>
+}

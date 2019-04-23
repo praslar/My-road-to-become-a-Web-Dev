@@ -1,0 +1,34 @@
+﻿#post-comments{
+	margin-top: 25px;
+	font-size: 14px;
+}
+#post-comments div.avatar{
+	float:left;
+	width:8%;
+}
+#post-comments .show-toggle{background: #f3f1f1;border-radius: 3px;padding:5px;margin-top: 5px}
+#post-comments .show-toggle a{color:#059478;}
+#post-comments .show-toggle a:hover{text-decoration: none;cursor: pointer;}
+
+#post-comments .comment-time{color: #c0bebe}
+#post-comments .avatar img{
+	width: 35px;height: 35px;border-radius: 30px;
+}
+#post-comments .reply-comments .post-comment,#post-comments .comment-editor .post-comment{
+	padding:6px 0;
+}
+#post-comments .post-comment{
+	border-bottom: 1px solid #dbdbdb;
+	padding:20px 0;
+}
+#post-comments .post-comment-content{
+	float:left;
+	width: 92%;
+}
+#post-comments .post-comment .tool .button{
+	margin-left: 10px;
+	float:left;
+}
+#post-comments .post-comment .tool a{color: #059478;}
+#post-comments .post-comment .tool a:hover{text-decoration: underline;}
+#post-comments .save-reply-comment{font-size: 14px;background:#059478;margin-top: 5px;}

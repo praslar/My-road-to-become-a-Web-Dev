@@ -1,0 +1,100 @@
+﻿
+@{
+    ViewBag.Title = "Danh sách thi";
+}
+<section class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box box-primary box-solid">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Danh sách thi</h3>
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                    </div>
+                    <!-- /.box-tools -->
+                </div>
+                <!-- /.box-header -->
+
+
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>Lớp</label>
+                                <select class="form-control select2 DanhSachLop2"></select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>Lịch thi</label>
+                                <select class="form-control select2 DanhSachLichThi"></select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>&nbsp;</label>
+                                <button onclick="DanhSachThi.TimKiemTaiKhoanLichThi()" class="btn btn-info btn-block">Tìm Kiếm</button>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>&nbsp;</label>
+                                <button onclick="DanhSachThi.Modal_Them_Sua_TaiKhoanLichThi(0,'add')" class="btn btn-primary btn-block">Thêm mới</button>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>&nbsp;</label>
+                                <button class="btn btn-success btn-block">Nhập từ Excel</button>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>&nbsp;</label>
+                                <button class="btn btn-success btn-block">Xuất Excel Mẫu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <table id="example2" class="table table-bordered ">
+                        <thead>
+                            <tr class="primary">
+                                <th  style="width:10%"><label> <input type="checkbox" class="minimal"> Tất cả </label></th>
+                                <th>STT</th>
+                                <th>Họ và Tên</th>
+                                <th>Tên đăng nhập / Mật Khẩu</th>
+                                <th class="text-center">
+                                    Tác vụ
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="data_tkSinhVienThi"></tbody>
+                    </table>
+                    <div class="box-footer"><a href="/admin/dashboard/" class="btn btn-danger btn-xs btn-flat">Trở Về</a></div>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+    </div>
+</section>
+@RenderPage("Create_Edit.cshtml")
+@*@RenderPage("Delete.cshtml")*@
+@section Myscripts{
+    <link href="~/Content/Back-end/plugins/bootstrap-multiselect/bootstrap-multiselect.css" rel="stylesheet" />
+    <script src="~/Content/Back-end/plugins/bootstrap-multiselect/bootstrap-multiselect.js"></script>
+    <script src="~/Scripts/Back-end/TaiKhoan/Controller_DanhSachThi.js"></script>
+    <script>
+        var DanhSachThi = new Controller_DanhSachThi();
+        DanhSachThi.Get_DanhSachLop_2();
+        DanhSachThi.Get_LichThi();
+        DanhSachThi.Load_DanhSachTaiKhoanLichThi();
+        $(".DanhSachThi").addClass("active");
+        $(".QuanLyThi").addClass("menu-open");
+       
+       
+    </script>
+    }
+
+

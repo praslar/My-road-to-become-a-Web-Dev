@@ -1,0 +1,27 @@
+﻿#menu-all { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: #ffffff; z-index: 999; }
+#menu-all h4{text-align: center;margin-top: 400px}
+.menuhot-icons{background: url('../img/menuhot-icons.png') no-repeat;height: 34px;display: inline-block;position: relative;width: 113px}
+.menuhot-icon-chemistry{background-position: -113px;width: 95px;height: 33px}
+.menuhot-icon-quiz{background-position: -208px 0px;width: 121px;height: 32px;}
+.menuhot-icon-truyen{background-position: -329px 0px;width: 136px;height: 24px}
+.menuhot-icon-formula{background-position: -466px 0px;width: 120px;height: 37px}
+.menuhot-icon-venglish{background-position: -586px 0px;width: 98px;height: 29px;}
+#menu-hot-2 {width: 100%;}
+#menu-hot-2 .item{width: 33.33%;height: 150px;text-align: center;padding-top: 60px;float:left;
+transition: background-color 0.5s;
+-moz-transition: background-color 0.5s;
+-o-transition: background-color 0.5s;
+-webkit-transition: background-color 0.5s;}
+.item.item-home{background: #2980b9}
+#menu-hot-2 .item:hover{background-color:rgba(0,0,0,.80)}
+.item.item-chemistry{background: #d53030}
+.item.item-quiz{background: #374656}
+.item.item-truyen{background: #057760}
+.item.item-formula{background: #720344}
+.item.item-venglish{background: #e7543d}
+@media(max-width: 520px){
+	#menu-hot-2 .item{width: 50%}
+}
+@media(max-width: 370px){
+	#menu-hot-2 .item{width: 100%}
+}

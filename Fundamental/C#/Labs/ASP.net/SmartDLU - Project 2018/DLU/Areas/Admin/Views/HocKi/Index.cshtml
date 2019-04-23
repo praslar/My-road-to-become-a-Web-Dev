@@ -1,0 +1,65 @@
+﻿@using DataAccess;
+@{
+	ViewBag.Title = "Index";
+	Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<section class="content">
+	<div class="row">
+		<div class="col-md-12">
+
+			<div class="box box-solid">
+				<div class="box-header with-border">
+					<h3 class="box-title">Danh sách học kì</h3>
+					<div class="box-tools pull-right">
+						<button type="button" class="btn btn-box-tool" data-widget="collapse">
+							<i class="fa fa-minus"></i>
+						</button>
+					</div>
+				</div>
+				<!-- /.box-header -->
+				<div class="box-body">
+					<table id="example_HocKi" class="table table-bordered">
+						<thead>
+							<tr class="">
+								<th>STT</th>
+								<th>Tên học kì</th>
+								<th>Mô tả</th>
+								<th class="text-center">
+									<button class="btn btn-primary btn-xs btn-flat" onclick="HocKi.Modal_Create_Edit_HocKi(0, 'Add')">Thêm</button>
+								</th>
+							</tr>
+						</thead>
+						<tbody id="data_HocKi"></tbody>
+					</table>
+					<div class="box-footer"><a href="/admin/dashboard/" class="btn btn-danger btn-xs btn-flat">Trở Về</a></div>
+
+				</div>
+				<!-- /.box-body -->
+			</div>
+			<!-- /.box -->
+		</div>
+	</div>
+</section>
+@RenderPage("Create_Edit.cshtml")
+@RenderPage("Delete.cshtml")
+@section Myscripts{
+	<script src="~/Scripts/Back-end/Thi_ChamThi/ConTroller_HocKi.js"></script>
+	<script>
+		var HocKi = new ConTroller_HocKi();
+
+        $('#example2').DataTable({
+            'paging': false,
+            'lengthChange': false,
+            'searching': true,
+            'ordering': true,
+            'info': false,
+
+            "scrollY": 300,
+
+        })
+        $(".HocKi").addClass("active");
+
+	</script>
+
+}

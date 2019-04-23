@@ -1,0 +1,151 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    var idMonHoc = ViewBag.idMonHoc;
+}
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Danh sách bộ đề thi
+
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="/admin/dashboard"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
+        <li><a href="/admin/monhoc/index">Môn học</a></li>
+        <li class="active">Bộ đề thi</li>
+    </ol>
+</section>
+<!-- Main content -->
+<section class="content">
+    <!-- Main row -->
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="box">
+                <!-- /.box-header -->
+                <div class="box-body">
+
+                    <a href="/admin/tao-bo-de-thi-@idMonHoc"><button class="btn btn-success">Thêm bộ đề</button> </a>
+                    <hr>
+                    <table id="myDataTable" class="table table-bordered table-striped display responsive nowrap" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th data-priority="1">Tên bộ đề</th>
+                                <th>Số lượng câu hỏi</th>
+                                <th>Ngày tạo bộ đề</th>
+                                <th>Điểm tối đa</th>
+                                <th>Mức điểm đạt</th>
+                                <th>Thời gian làm bài( phút)</th>
+                                <th data-priority="1">Chức năng</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+    </div>
+    <!-- /.row -->
+</section>
+<!-- /.content -->
+<!--Tạo popup-->
+<!--popup Xóa-->
+<div id="MyModelXoa" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>Xóa bộ đề thi</h4>
+                <a href="#" class="close" data-dismiss="modal">&times;</a>
+            </div>
+            <div class="modal-body">
+                <span class="hide" id="IdBoDe"></span>
+                <h4>Bạn có chắc chắn muốn xóa bộ đề này hay không?</h4>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn btn-primary close" data-dismiss="modal">Không</a>
+                <a href="#" class="btn btn-danger" onclick="ConFirmXoaBoDe();">Có</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/popup Xóa-->
+<!--/Tạo popup-->
+<script src="~/Scripts/Back-end/BoDe_DeThi/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/Back-end/BoDe_DeThi/datetime.js"></script>
+<script src="~/Scripts/Back-end/BoDe_DeThi/moment.js"></script>
+<script src="~/Content/Back-end/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- DataTables -->
+<script src="~/Content/Back-end/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="~/Content/Back-end/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#myDataTable").DataTable({
+            ajax: {
+                url: "/BoDe/GetBoDe/" + @idMonHoc,
+                type: "Get",
+                datatype: "json"
+            },
+            columns: [
+                { data: "TENBODE", autowidth: true },
+                { data: "SOLUONGCAUHOI", autowidth: true },
+                {
+                    data: "NGAYTAOBODE", autowidth: true, render: function (data) {
+                        return moment(data).format("DD MMM YYYY")
+                    }
+
+                },
+                { data: "DIEMTOIDA", autowidth: true },
+                { data: "MUCDIEMDAT", autowidth: true },
+                { data: "THOIGIANLAMBAI_PHUT_", autowidth: true },
+                {
+                    data: "IDBODE", autowidth: true, render: function (data) {
+                        return `
+                                 <a href="/admin/DeThi/Index/${data}?idMonHoc=@idMonHoc ">
+                                     <div class="col-xs-4 ">
+                                        <div class="btn btn-sm btn-info">
+                                             <li class="glyphicon glyphicon-list-alt"></li>
+                                         </div>
+                                      </div>
+                                </a>
+                                <a href="/admin/BoDe/SuaBoDe?idBoDe=${data}&&idMonHoc=@idMonHoc">
+                                     <div class="col-xs-4 ">
+                                        <div class="btn btn-sm btn-warning">
+                                             <li class="glyphicon glyphicon-edit"></li>
+                                         </div>
+                                    </div>
+                                </a>
+                                <a href="#" onclick="XoaBoDe(${data})">
+                                     <div class="col-xs-4 ">
+                                        <div class="btn btn-sm btn-danger">
+                                            <li class="glyphicon glyphicon-trash"></li>
+                                         </div>
+                                    </div>
+                                </a>
+                                `;
+
+                    },
+
+
+                }
+
+            ]
+        });
+    });
+
+    function XoaBoDe(idBoDe) {
+        $("#MyModelXoa").modal("show");
+        $("#IdBoDe").val(idBoDe);
+    }
+    function ConFirmXoaBoDe() {
+        var idBoDe = $("#IdBoDe").val();
+        $.ajax({
+            url: "/admin/BoDe/XoaBoDe?idBoDe=" + idBoDe,
+            type: "POST",
+            success: function (result) {
+                $("#myDataTable").DataTable().ajax.reload();
+                $("#MyModelXoa").modal("hide");
+            }
+        });
+    }
+</script>

@@ -1,0 +1,49 @@
+﻿
+<div class="modal fade" id="Modal_ViewCauHoi_CuaCauTraLoi">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Câu trả lời</h4>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-12">
+                    <table class="table table-striped">
+                        <tr>
+                            <td>Mã câu hỏi</td>
+                            <td>
+                                <p><span class="CauHoi_ID_view"></span></p>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="box-header">
+                        <h3><i class="glyphicon glyphicon-cloud"></i>&emsp;&emsp;Câu trả lời</h3>
+                        <hr>
+                    </div>
+                    <div class="box-body">
+                        <table class=" table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nội dung</th>
+                                    <th>Tình trạng</th>
+                                </tr>
+                            </thead>
+                            <tbody id="dsCauTraLoi"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn pull-left btn-flat btn-danger" data-dismiss="modal">Đóng</button>
+                <a href="/admin/cautraloi/index">  <button type="button" class="btn pull-right btn-flat btn-success">Chỉnh sửa và tìm kiếm</button></a>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->

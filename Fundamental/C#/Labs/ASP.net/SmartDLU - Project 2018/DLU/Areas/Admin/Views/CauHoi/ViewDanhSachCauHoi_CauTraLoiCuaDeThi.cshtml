@@ -1,0 +1,92 @@
+﻿
+@{
+    ViewBag.Title = "ViewDanhSachCauHoi_CauTraLoiCuaDeThi";
+    var dsCauHoi = ViewBag.dsCauHoi as List<DataAccess.CAUHOI>;
+    var dsCauTraLoi = ViewBag.dsCauTraLoi as IEnumerable<DataAccess.CAUTRALOI>;
+    var idDeThi = ViewBag.idDeThi;
+    var idMonHoc = ViewBag.idMonHoc;
+    var idBoDe = ViewBag.idBoDe;
+}
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Danh sách câu hỏi và câu trả lời của đề thi
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="/admin/dashboard"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
+        <li><a href="/admin/monhoc/index">Môn học </a></li>
+        <li><a href="/admin/bo-de-thi-@idMonHoc">Bộ đề thi</a></li>
+        <li><a href="/admin/DeThi/Index/@idBoDe?idMonHoc=@idMonHoc">Đề thi</a></li>
+        <li class="active">Câu hỏi và câu trả lời</li>
+    </ol>
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <!-- /.row info -->
+    <!-- row questions -->
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="box box-primary">
+                <div class="box-header text-center">
+                    <h3 class="box-title ">
+                        Danh sách câu hỏi
+                    </h3>
+                </div>
+                <div class="box-body">
+                    <div class="col-sm-8 col-sm-push-2">
+                        <div class="panel-group">
+
+                            @foreach (var cauHoi in dsCauHoi)
+                            {
+                                <div class="panel panel-default">
+                                    <div class="panel-heading " data-toggle="collapse" href="#collapse_@cauHoi.IDCAUHOI">
+                                        <h4 class="panel-title">
+                                            <span>@Html.Raw(@cauHoi.NOIDUNGCAUHOI)</span>
+                                        </h4>
+
+                                    </div>
+
+                                    <div id="collapse_@cauHoi.IDCAUHOI" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            @foreach (var ctl in dsCauTraLoi)
+                                            {
+                                                if (cauHoi.IDCAUHOI == ctl.IDCAUHOI)
+                                                {
+                                                    <!-- Row-->
+                                                    <div class="row">
+                                                        <div class="col-sm-12 ">
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <span class="answer">@Html.Raw(@ctl.NOIDUNGCAUTL)</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /Row-->
+                                                }
+                                            }
+                                        </div>
+
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.row questions -->
+
+</section>
+<!-- /.content -->
+<!-- /.content -->
+<script src="~/Scripts/Back-end/BoDe_DeThi/jquery-1.10.2.min.js"></script>
+<script src="cdn.datatables.net/plug-ins/1.10.19/dataRender/datetime.js"></script>
+<script src="~/Scripts/Back-end/BoDe_DeThi/moment.js"></script>
+<script src="~/Content/Back-end/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="~/Content/Back-end/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="~/Content/Back-end/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+

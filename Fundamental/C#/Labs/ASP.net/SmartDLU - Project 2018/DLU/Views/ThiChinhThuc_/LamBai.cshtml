@@ -1,0 +1,483 @@
+﻿@using DataAccess
+@{
+    ViewBag.Title = "LamBai";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var dsCauHoi = ViewBag.dsCauHoi as List<DataAccess.CAUHOI>;
+    var dsCauTraLoi = ViewBag.dsCauTraLoi as IEnumerable<DataAccess.CAUTRALOI>;
+}
+
+<div class="grid-content">
+    <script type="text/javascript" src="assets/js/quiz2/scripts.js"></script>
+    <div class="col-12 col-md-12 including fadeIn animated col-list-quiz">
+        <div id="multiple">
+
+            <div class="heading heading-white">
+                <h1><i class="glyphicon glyphicon-align-right"></i> Mã đề thi: @ViewBag.MADE</h1>
+                <hr>
+            </div>
+
+            <section class="forms full_test" id="main">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="panel">
+                                <div class="panel-body">
+                                    <form id="testing_form" action="" method="POST">
+                                        <input type="hidden" name="test_id" value="14682" />
+                                        <input type="hidden" name="log_id" value="9852" />
+                                        <input type="hidden" name="token" value="f74d049c17fab4b5c89a39fccd85b949">
+                                        <div class="col-md-8 col-sm-8 col-xs-12">
+                                            <div class="col_box_test">
+                                                <div class="clear col_box_baihoc_view" id="fulltest_content">
+                                                    @{
+                                                        string block = "display: block";
+                                                        string none = "display: none";
+                                                        var i = 1;
+                                                        foreach (var cauHoi in dsCauHoi)
+                                                        {
+                                                            var j = 1;
+                                                            <div data-part="@i" class="question fullest_page_@i" data-page="@i"style=" @if (i == 1)
+                                                            {
+                                                               @block;
+                                                            }
+                                                            else
+                                                            {
+                                                                @none;
+                                                            }"
+
+                                                            id="test_question_128051">
+                                                                <div class="myquestionarea">
+                                                                    <div id="testing_answer_128051_@i">
+                                                                        <div class="input-group">
+                                                                            <div class="question_number">
+																				<h3>
+																					<b>Câu @i: </b><span>@cauHoi.NOIDUNGCAUHOI</span>
+																				</h3>
+																			
+																			</div>
+
+                                                                            @foreach (var ctl in dsCauTraLoi)
+                                                                            {
+                                                                                if (cauHoi.IDCAUHOI == ctl.IDCAUHOI)
+                                                                                {
+                                                                                    <label class="fulltest_answer_label">
+                                                                                        <input type="radio" data-iquestion="@i" data-idquest="@i" data-question="128051"
+                                                                                               name="answer[128051][@i]" value="@ctl.IDCAUTL">
+                                                                                        <strong>@CHUYENDOI.DoiCoSo(@j)</strong> <span>
+                                                                                            @ctl.NOIDUNGCAUTL.Trim()
+                                                                                        </span>
+                                                                                    </label>		j = j + 1;
+                                                                                }
+
+                                                                            }
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>			i = i + 1;
+                                                        }
+                                                    }
+                                                </div>
+                                                <div class="pageing" id="fulltest_page" data-page="1" data-limit="1">
+                                                    <a href="javascript:void(0)" style="display: none;" data-type="-1"
+                                                       class="button_page back">Quay lại</a>
+                                                    <a href="javascript:void(0)" class="button_page next" data-type="1">Tiếp theo</a>
+                                                </div>
+                                            </div><!-- End -->
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="panel">
+                                <div class="panel-body">
+                                    <div id="test_col_right" style="position: relative;">
+                                        <div class="box_ketqua" id="test_ketqua">
+                                            <div class="head">
+                                                <a class="check" href="javascript:void(0)" id="test_result" onclick="return mshoatoeic.send_answer_fulltest()">
+                                                    <i></i><span>
+                                                        @using (Html.BeginForm("KetQuaLamBai", "ThiChinhThuc_", FormMethod.Post))
+                                                        {
+                                                            <button class="btn btn-default pull-right" style="background: #f8a31c">
+                                                                Nộp bài
+                                                            </button>
+                                                        }
+                                                    </span>
+                                                </a>
+                                                <div class="timer" id="timer">@ViewBag.min : @ViewBag.sec</div>
+                                                <a href="javascript:;" onclick="return location.reload()" class="refresh">
+                                                    <i></i><span>
+                                                            <button class="btn btn-default pull-right" style="background: #f8a31c">
+                                                                Làm lại
+                                                            </button>
+                                                    </span>
+                                                </a>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div class="list">
+                                                <div class="scrollbar-inner" id="fulltest_question_shortcut">
+                                                    @{				var k = 1;
+                                                        foreach (var cauHoi in dsCauHoi)
+                                                        {
+                                                            <div class="cau cau_@k" data-iquestion="@k" data-page="@k">
+                                                                <a href="javascript:void(0)">@k</a>
+                                                            </div>			k = k + 1;
+                                                        }
+                                                    }
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <script>
+                                        $(document).ready(function () {
+                                            // scroll box ket qua
+                                            //$('.scrollbar-inner').scrollbar();
+                                            // count downtime
+                                            function liftOff() {
+                                                mshoatoeic.send_answer_fulltest();
+                                            }
+                                            ////////// NEXT & PREV //////////
+                                            $("#fulltest_page").find(".button_page").bind("click", function () {
+                                                var current_page = parseInt($("#fulltest_page").attr("data-page"));
+                                                var type = parseInt($(this).attr("data-type"));
+                                                current_page = current_page + type;
+                                                fulltest_change_page(current_page);
+
+                                            });
+                                            $("#fulltest_question_shortcut").find(".cau").bind("click", function () {
+                                                var page = parseInt($(this).attr("data-page"));
+                                                fulltest_change_page(page);
+                                            });
+                                            $("#fulltest_part_head").find(".fulltest_part").bind("click", function () {
+                                                var part = $(this).attr("data-part");
+                                                var page = $("#fulltest_content").find('.question[data-part="' + part + '"]').first().attr("data-page");
+                                                fulltest_change_page(page);
+                                            })
+                                            /////////// SCROLL BAR RESULT /////////
+                                            var window_width = $(window).width();
+                                            if (window_width >= 992) {
+                                                var boxketqua_top = $("#test_ketqua").offset().top;
+                                                var boxketqua_head_height = $("#test_ketqua").find(".head").height() + 30;
+                                                var window_height = $(window).height();
+                                                $(window).scroll(function () {
+                                                    var bottom_top = $("#layout_footer").offset().top;
+                                                    var wintop = $(this).scrollTop();
+                                                    var margin = wintop - boxketqua_top;
+                                                    $("#test_col_right").height(bottom_top - boxketqua_top - 30);
+                                                    if ((wintop + window_height) > bottom_top) {
+                                                        $("#test_ketqua").find(".list").height(window_height);
+                                                        $("#test_ketqua").css({ "position": "absolute", "top": "auto", "bottom": 0, "left": 15, "right": 15 });
+                                                    }
+                                                    else if (margin > 0) {
+                                                        $("#test_ketqua").find(".list").height(window_height - boxketqua_head_height);
+                                                        $("#test_ketqua").css({ "position": "absolute", "margin-top": 0, "top": margin + 3, "bottom": 0, "left": 15, "right": 15 });
+                                                    }
+                                                    else {
+                                                        $("#test_ketqua").find(".list").height(window_height + margin - boxketqua_head_height);
+                                                        $("#test_ketqua").css({ "position": "relative", "top": 0, "bottom": 0, "left": 0, "right": 0 });
+                                                    }
+                                                });
+                                            }
+
+                                        });
+                                    </script>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div id="support_online"></div>
+                <div class="modal fade" id="modal_message" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel">Thông báo</h4>
+                            </div>
+                            <div class="modal-body">
+
+                            </div>
+                            <div class="modal-footer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="fb-root"></div>
+            </section>
+
+
+            @*<section class="forms" style="padding-left:10%;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="panel" style="border:none;">
+                                    <div class="panel-body">
+                                        <form class="form-horizontal" style="margin-top: 5%;">
+                                            @{
+                                                var x = 1;
+
+                                                foreach (var cauHoi in dsCauHoi)
+                                                {
+                                                    var y = 1;
+                                                    <div class="form-group ndcauhoi" style="display: block;" id="data1">
+                                                        <h3>
+                                                            <span>Câu @x: @cauHoi.NOIDUNGCAUHOI</span>
+                                                        </h3>
+                                                        @foreach (var ctl in dsCauTraLoi)
+                                                        {
+                                                            if (cauHoi.IDCAUHOI == ctl.IDCAUHOI)
+                                                            {
+                                                                <label class="d-flex align-items-center">
+                                                                    <input type="checkbox" id="list-1" value="@ctl.NOIDUNGCAUTL.Trim()" name="@cauHoi.IDCAUHOI" data-idquest="@ctl.IDCAUHOI" class="form-control-custom">
+                                                                    <span for="list-1">
+                                                                        @y. @ctl.NOIDUNGCAUTL
+                                                                    </span>
+                                                                </label><br />
+                                                                y = y + 1;
+                                                            }
+                                                        }
+
+                                                    </div>
+                                                    x = x + 1;
+                                                }
+                                            }
+                                            <div class="line"></div>
+                                            <ul class="pagination justify-content-end">
+                                                <li class="page-item cautruoc">
+                                                    <a class="page-link" href="javascript:void(0);">
+                                                        Câu
+                                                        trước
+                                                    </a>
+                                                </li>
+                                                <li class="page-item causau active">
+                                                    <a class="page-link" href="javascript:void(0);">
+                                                        Câu
+                                                        tiếp
+                                                        theo
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="panel">
+                                    <div class="card-header d-flex align-items-center" style="background-color: rgb(255, 255, 255);">
+                                    </div>
+                                    <div class="panel-body">
+                                        <form action="ketqua.html" class="form-horizontal" style="margin-top: 5%;">
+                                            <div class="form-group">
+                                                <label class="btn-cauhoi clickcauhoi active" id="show6" data-id="data6">
+                                                    <button type="button" class="btn btn-primary">01</button>
+                                                </label>
+                                                <label class="btn-cauhoi clickcauhoi active" id="show6" data-id="data6">
+                                                    <button type="button" class="btn btn-primary">02</button>
+                                                </label>
+                                                <label class="btn-cauhoi clickcauhoi active" id="show6" data-id="data6">
+                                                    <button type="button" class="btn btn-primary">03</button>
+                                                </label>
+                                                <label class="btn-cauhoi clickcauhoi active" id="show6" data-id="data6">
+                                                    <button type="button" class="btn btn-primary">04</button>
+                                                </label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="btn-cauhoi clickcauhoi active" id="show6" data-id="data6">
+                                                    <button type="button" class="btn btn-primary">05</button>
+                                                </label>
+                                                <label class="btn-cauhoi clickcauhoi active" id="show6" data-id="data6">
+                                                    <button type="button" class="btn btn-primary">06</button>
+                                                </label>
+                                                <label class="btn-cauhoi clickcauhoi active" id="show6" data-id="data6">
+                                                    <button type="button" class="btn btn-primary">07</button>
+                                                </label>
+                                                <label class="btn-cauhoi clickcauhoi active" id="show6" data-id="data6">
+                                                    <button type="button" class="btn btn-primary">08</button>
+                                                </label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="btn-cauhoi clickcauhoi active" id="show6" data-id="data6">
+                                                    <button type="button" class="btn btn-primary">09</button>
+                                                </label>
+                                                <label class="btn-cauhoi clickcauhoi active" id="show6" data-id="data6">
+                                                    <button type="button" class="btn btn-primary">10</button>
+                                                </label>
+                                                <label class="btn-cauhoi clickcauhoi active" id="show6" data-id="data6">
+                                                    <button type="button" class="btn btn-primary">11</button>
+                                                </label>
+                                                <label class="btn-cauhoi clickcauhoi active" id="show6" data-id="data6">
+                                                    <button type="button" class="btn btn-primary">12</button>
+                                                </label>
+                                            </div>
+                                            <div class="form-group row offset-sm-1">
+                                                <a href="" class="btn flat" style="margin-left: 40%;width: 30%;margin-top: 20px;margin-bottom: 10px;" onclick="return confirm('Xác nhận nộp bài?')">Nộp Bài</a>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>*@
+
+        </div>
+    </div>
+</div>
+<script>
+    var min = @ViewBag.min;
+    var sec = @ViewBag.sec;
+    countdown();
+    function countdown() {
+        cdID = setInterval(function () {
+            if (sec == 0) {
+                min--;
+                sec = 60;
+            }
+            sec--;
+            if (min < 10) {
+                $('#timer').css('color', 'red');
+                min_text = '0' + min;
+            } else {
+                min_text = min;
+            }
+            if (sec < 10)
+                sec_text = '0' + sec;
+            else
+                sec_text = sec;
+            $('#timer').text(min_text + ':' + sec_text);
+            if (min < 0) {
+                alert('Hết giờ, hệ thống sẽ tự động nộp bài!');
+                window.location.replace("@Url.Action("KetQuaLamBai")");
+            }
+        }, 1000);
+    }
+    $(function () {
+        $('input[type=radio]').change(function () {
+            var stt = $(this).data("stt");
+            var idquest = $(this).data("idquest");
+            var value = $(this).val();
+            var data = {
+                id: idquest,
+                answer: value,
+                min: min,
+                sec: sec
+            }
+
+            var url = "@Url.Action("UpdateStudentTest")";
+            var success = function () {
+            };
+            $.post(url, data, success);
+        })
+    })
+    $(window).scroll(function () {
+        if (window.pageYOffset > 30) {
+            $('.testing-left').css("top", "65px").css("height", "calc(100% - 65px)");
+            $('#timer').css("margin-top", "0px");
+        }
+        if (window.pageYOffset < 30) {
+            $('.testing-left').css("top", "95px").css("height", "calc(100% - 95px)");
+            $('#timer').css("margin-top", "30px");
+        }
+        if (window.pageYOffset >= 13110) {
+            $('.testing-left').css("top", "65px").css("height", "calc(100% - 95px)");
+        }
+    });
+    //jQuery for Page Scroll - Single page
+    $('a[href*="#"]:not([href="#"])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top - 65
+                }, 500);
+                return false;
+            }
+        }
+    });
+    window.onbeforeunload = function () {
+        var url = "@Url.Action("UpdateTiming")"
+        var data = {
+            min: min,
+            sec: sec
+        }
+        var success = function () {};
+        $.post(url, data, success);
+    }
+</script>
+<!---->
+<script>
+    $(document).ready(function () {
+        // scroll box ket qua
+        //$('.scrollbar-inner').scrollbar();
+        // count downtime
+        function liftOff() {
+            mshoatoeic.send_answer_fulltest();
+        }
+
+        var fiveSeconds = new Date().getTime() + 3600000;
+        $('#show_count_down').countdown(fiveSeconds, { elapse: true })
+            .on('update.countdown', function (event) {
+                var $this = $('#show_count_down');
+                if (event.elapsed) {
+                    // $this.html('Hết thời gian làm bài');
+                    return liftOff();
+                } else {
+                    $this.html(event.strftime('%H : %M : %S'));
+                }
+            });
+        ////////// NEXT & PREV //////////
+        $("#fulltest_page").find(".button_page").bind("click", function () {
+            var current_page = parseInt($("#fulltest_page").attr("data-page"));
+            var type = parseInt($(this).attr("data-type"));
+            current_page = current_page + type;
+            fulltest_change_page(current_page);
+
+        });
+        $("#fulltest_question_shortcut").find(".cau").bind("click", function () {
+            var page = parseInt($(this).attr("data-page"));
+            fulltest_change_page(page);
+        });
+        $("#fulltest_part_head").find(".fulltest_part").bind("click", function () {
+            var part = $(this).attr("data-part");
+            var page = $("#fulltest_content").find('.question[data-part="' + part + '"]').first().attr("data-page");
+            fulltest_change_page(page);
+        })
+        /////////// SCROLL BAR RESULT /////////
+        var window_width = $(window).width();
+        if (window_width >= 992) {
+            var boxketqua_top = $("#test_ketqua").offset().top;
+            var boxketqua_head_height = $("#test_ketqua").find(".head").height() + 30;
+            var window_height = $(window).height();
+            $(window).scroll(function () {
+                var bottom_top = $("#layout_footer").offset().top;
+                var wintop = $(this).scrollTop();
+                var margin = wintop - boxketqua_top;
+                $("#test_col_right").height(bottom_top - boxketqua_top - 30);
+                if ((wintop + window_height) > bottom_top) {
+                    $("#test_ketqua").find(".list").height(window_height);
+                    $("#test_ketqua").css({ "position": "absolute", "top": "auto", "bottom": 0, "left": 15, "right": 15 });
+                }
+                else if (margin > 0) {
+                    $("#test_ketqua").find(".list").height(window_height - boxketqua_head_height);
+                    $("#test_ketqua").css({ "position": "absolute", "margin-top": 0, "top": margin + 3, "bottom": 0, "left": 15, "right": 15 });
+                }
+                else {
+                    $("#test_ketqua").find(".list").height(window_height + margin - boxketqua_head_height);
+                    $("#test_ketqua").css({ "position": "relative", "top": 0, "bottom": 0, "left": 0, "right": 0 });
+                }
+            });
+        }
+
+    });
+</script>
+<!---->

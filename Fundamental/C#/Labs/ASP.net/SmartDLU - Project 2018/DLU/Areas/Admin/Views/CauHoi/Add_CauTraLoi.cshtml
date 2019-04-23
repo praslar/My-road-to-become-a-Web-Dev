@@ -1,0 +1,91 @@
+﻿<div class="modal fade" id="Modal_AddCauTraLoi">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">
+                    Thêm Câu Trả Lời
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="col-sm-12">
+                    <form role="form">
+                        <div class="box-body">
+                            <label class="">Công thức toán học</label>
+                            <div class="box-info">
+                                <div class="pad">
+                                    <i>* Nhấp vào thanh điều khiển bên cạnh để hiển thị bảng công thức</i>
+                                    <br />
+                                    <i>* Nhấp chuột phải vào khung công thức -> Copy image -> Crtl + V vào khung nội dung môn học</i>
+                                    <textarea id='formula1' class='mathdoxformula' rows='10' cols='80'>
+
+                                            &lt;OMOBJ xmlns='http://www.openmath.org/OpenMath'>
+                                            &lt;OMA>
+                                            &lt;OMS cd='arith1' name='divide'/>
+                                            &lt;OMA>
+                                            &lt;OMS cd='arith1' name='minus'/>
+                                            &lt;OMA>
+                                            &lt;OMS cd='arith1' name='power'/>
+                                            &lt;OMV name='q'/>
+                                            &lt;OMI>2&lt;/OMI>
+                                            &lt;/OMA>
+                                            &lt;OMI>1&lt;/OMI>
+                                            &lt;/OMA>
+                                            &lt;OMA>
+                                            &lt;OMS cd='arith1' name='minus'/>
+                                            &lt;OMV name='q'/>
+                                            &lt;OMI>1&lt;/OMI>
+                                            &lt;/OMA>
+                                            &lt;/OMA>
+                                            &lt;/OMOBJ>
+                                        </textarea>
+
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label>Mã câu hỏi</label>
+                                <input style="width: 100%" id="CauTraLoi_MaCauHoi" disabled class="form-control"/>                             
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label>Đúng/Sai</label>
+                                <select style="width: 100%" id="CauTraLoi_DungSai_Add" class="form-control">
+                                    <option id="true">True</option>
+                                    <option id="false">False</option>
+                                </select>                              
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label>Index</label>
+                                <select style="width: 100%" id="CauTraLoi_Index_Add" class="form-control">
+                                    <option id="1">1</option>
+                                    <option id="2">2</option>
+                                    <option id="3">3</option>
+                                    <option id="4">4</option>
+                                </select>                              
+                            </div>
+                 
+                            <div class="form-group col-sm-12">
+                                <label>Nội dung câu trả lời</label>
+                                <textarea id="CauTraLoi_NoiDung_Add" name="editor9" rows="10" cols="80">
+                                            Nội dung câu trả lời...
+                                         </textarea>
+                            </div>
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-flat btn-danger pull-left" onclick="CauHoi.Reload()">Hoàn tất</button>
+                <button type="button" onclick="CauHoi.AddCauTraLoi()" class="btn btn-warning btn-flat">Thêm</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<!-- /.modal -->

@@ -1,0 +1,105 @@
+﻿
+@{
+
+    ViewBag.Title = "Tài Khoản sinh viên";
+}
+<section class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box box-solid">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Danh sách tài khoản sinh viên</h3>
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                    </div>
+                    <!-- /.box-tools -->
+                </div>
+                <!-- /.box-header -->
+               
+                
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>&nbsp;</label>
+                                <select class="form-control DanhSachLop SELECT2 btn-flat" id="DanhSachLop"></select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>&nbsp;</label>
+                                <button onclick="TaiKhoanSinhVien.TimKiemTheoLop()" class="btn btn-info btn-block btn-flat"><i class="fa fa-search" aria-hidden="true"></i> Tìm Kiếm</button>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>&nbsp;</label>
+                                <button onclick="TaiKhoanSinhVien.Modal_Create_Edit('add', 0)" class="btn btn-primary btn-block btn-flat">Thêm mới</button>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>&nbsp;</label>
+                                <button class="btn btn-success btn-block btn-flat"> <i class="fa fa-file-excel-o" aria-hidden="true"></i> Nhập từ Excel</button>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>&nbsp;</label>
+                                <button class="btn btn-success btn-block btn-flat"><i class="fa fa-file-excel-o" aria-hidden="true"></i> Xuất Excel Mẫu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <table id="TaiKhoanSinhVien" class="table table-bordered ">
+                        <thead>
+                            <tr class="">
+                                <th>STT</th>    
+                                <th>Tên đăng nhập</th>
+                                <th>Mật khẩu</th>
+                                <th>Ho và Tên</th>
+                                <th>Email</th>
+                                <th class="text-center">      
+                                    Tác vụ
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="data_TaiKhoanSinhVien">
+                            
+                        </tbody>
+                    </table>
+                    <div class="box-footer"><a href="/admin/dashboard/" class="btn btn-danger btn-xs btn-flat">Trở Về</a></div>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+    </div>
+</section>
+@RenderPage("Delete.cshtml")
+@RenderPage("Create_Edit.cshtml")
+@RenderPage("_importExcel.cshtml")
+@RenderPage("View.cshtml")
+@section Myscripts{
+
+    <script src="~/Scripts/Back-end/TaiKhoan/Controller_TaiKhoanSinhVien.js"></script>
+    <script>
+       
+        var TaiKhoanSinhVien = new Controller_TaiKhoanSinhVien();
+
+        TaiKhoanSinhVien.Get_DanhSachLop();
+        TaiKhoanSinhVien.Get_DanhSachLop_2();
+        TaiKhoanSinhVien.Ckeck_Mail();
+        TaiKhoanSinhVien.Ckeck_TenDangNhap();
+        $(".TaiKhoanSinhVien").addClass("active");
+        $('.datepicker').datepicker({
+            autoclose: true
+        })
+        $(".SELECT2").select2();
+       
+</script>
+
+}
+
+

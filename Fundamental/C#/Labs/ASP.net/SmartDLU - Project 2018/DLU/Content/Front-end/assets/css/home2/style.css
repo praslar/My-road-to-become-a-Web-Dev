@@ -1,0 +1,127 @@
+﻿body{
+	font-family: 'Open sans', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color:#1d1d1d;
+	height: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Open sans', sans-serif;
+}
+a{color:#2980b9;}
+.including:before, .including:after {content: " ";display: table;}
+.including:after {clear: both;}
+.including:before, .including:after {content: " ";display: table;}
+.including:after {clear: both;}
+.container{max-width: 1200px}
+
+/* CĂc pháº§n header*/
+header{background: url('../../img/section/home2/background.jpg') no-repeat;height: 750px;background-size: cover}
+header #logo{float:left;text-indent: -99999px;background: url('../../img/logo.png') no-repeat;width: 193px;height: 57px;}
+header #menu{float:right;outline:none;z-index:501;position:absolute;right:0;text-indent: -99999px;background: url('../../img/menu.png') no-repeat; width:130px;height: 35px;}
+header .nav{padding-top:20px;}
+header .nav .nav-left{float:left;}
+header .nav .nav-right{float: right;position: relative;}
+.is-sticky .nav-right .click{display: none;}
+.is-sticky .nav-right{background:#2e2e2e;position:relative;padding: 5px 5px;z-index:500 !important;border-radius: 5px;top:50px !important;right:40px;}
+.is-sticky .nav-right #menu{background-position: -93px;width: 37px;position: relative;}
+header .nav .click{position: absolute;top:-5;left: -180px}
+header .text{text-align: center;font-size: 40px;margin-top: 130px;font-weight: 100;color: #fff}
+.text .bold{font-weight: 600}
+.header-devices{position: relative;}
+
+/*mockup*/
+.mockup{position: absolute;}
+.mockup.coffee{left:100px;top:45px;}
+.mockup.pencil{right: 10px;top:100px;}
+.macbook{margin-top: 20px}
+
+/*Slide menu right*/
+.col-slide{overflow-y: scroll;position: fixed;height: 100%;top:0px;}
+.col-slide-transition{-webkit-transition: all 0.3s;-moz-transition: all 0.3s;-ms-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
+.col-slide-left{left: -300px;}
+.col-slide-left-show{left: 0px;}
+.col-slide-right{right: -310px;}
+.col-slide-right-show{right:0px;}
+
+/*section background */
+.text-about h1{font-weight: 100;margin-bottom: 10px}
+.row{padding: 100px 0px 100px 0px}
+.row1{padding-top: 50px;}
+.circle{width: 200px;height: 200px;border-radius: 100px;margin-left: auto;margin-right: auto;text-align: center;margin-top: -100px;border:3px solid #fff;}
+.bg.chemistry{background:url('../../img/section_full/chemistry.jpg');height: 367px;background-size: cover}
+.bg.quiz{background:url('../../img/section_full/quiz.jpg');height: 367px;background-size: cover}
+.bg.formula{background:url('../../img/section_full/formula.jpg');height: 367px;background-size: cover}
+.bg.venglish{background:url('../../img/section_full/venglish.jpg');height: 367px;background-size: cover}
+
+.band.bg{margin-top: 120px}
+
+/*button*/
+a.button{padding:5px 20px;color: #fff;text-decoration: none;float:right;margin-top: 10px}
+a.button.chemistry{background: #eb5545;box-shadow: 0px 3px 0px 0px rgba(202, 27, 27, 0.86)}	
+a.button.chemistry:hover{background: #dd4231}
+a.button.quiz{background: #059478;box-shadow: 0px 3px 0px 0px rgba(2,68,55,0.86);}	
+a.button.quiz:hover{background: #03866c}
+a.button.formula{background: #2980b9;box-shadow: 0px 3px 0px 0px rgba(7,67,107,0.86)}	
+a.button.formula:hover{background: #1c6ca1}
+a.button.venglish{background: #e7543d;box-shadow: 0px 3px 0px 0px rgba(162,28,8,0.86)}	
+a.button.venglish:hover{background: #ce3a23}
+.group-button a{float:left;margin-left: 10px}
+.group-button.bottom{width: 330px;}
+.img-reponsive{width: 100% !important}
+
+.fog-active {position:fixed;display:block;background:rgba(0,0,0,0.3);
+		z-index:500;top:0;left:0;width:100%;height:100%;}
+#menu-right{width: 310px;background: red;z-index: 501;background: #2e2e2e;padding: 20px}
+#menu-right .menu,ul.menu{color: #fff;list-style: none;margin-top: 30px;padding-left: 5px;margin-bottom: 30px}
+#menu-right .menu li,ul.menu li{margin-top: 20px;}
+#menu-right .menu a,ul.menu a{color: #fff}
+#menu-right .menu .glyphicon,ul.menu .glyphicon{font-size: 14px}
+.icon-logo{background: url('../../img/home2/icon-sprites.png') no-repeat;display: inline-block;position: relative;}
+.icon-chemistry{width: 45px;height: 80px;top:50px;}
+.icon-quiz{width: 72px;height: 72px;background-position: -45px 0px;top:60px;}
+.icon-formula{background-position: -117px 0px;width: 50px;height: 70px;top:60px;}
+.icon-venglish{background-position: -167px 0px;width: 69px;height: 69px;top:50px;}
+
+.scroll_top{background: #2e2e2e;position: fixed;padding:7px 15px;right:40px;bottom:10px;outline: none;border-radius: 5px}
+.scroll_top a{color: #fff;outline: none}
+footer{background: #2e2e2e;font-size: 16px;padding:20px 0px;}
+footer h1{color: #fff;font-weight: 700;font-size: 18px;}
+.band.footer{padding:10px;background: #333333;color: #fff}
+@media (min-width: 1200px){
+	.container {
+		width: 1170px !important;
+		padding-left: 0px;padding-right: 0px;
+	}
+}
+@media (max-width: 1199px){
+	.img-reponsive{width: 100% !important}
+}
+@media (max-width: 999px){
+	.is-sticky .nav-right{right: 10px !important}
+	.scroll_top{right: 10px !important;}
+}
+@media (max-width: 899px){
+	.header-devices.d1{display: none !important}
+	header .text{margin-top:100px !important;}
+	.bg.quiz,.bg.chemistry,.bg.formula,.bg.venglish{height: 200px !important;}
+}
+@media (max-width: 720px){
+	.img-reponsive{width: 100%}
+}
+@media (max-width: 570px){
+	.header-devices.d1{display: none !important}
+	header .text{margin-top:80px !important;font-size: 30px !important;}
+	.bg.quiz,.bg.chemistry,.bg.formula,.bg.venglish{height: 200px !important;}
+}
+@media (max-width: 542px){
+	.header-devices.d1{display: none !important}
+	.header-devices .macbook{width: 100%;}
+	header .text{margin-top:80px !important;font-size: 30px !important;}
+	.bg.quiz,.bg.chemistry,.bg.formula,.bg.venglish{height: 200px !important;}
+}
+@media (max-width: 400px){
+	.click{display: none !important}
+	#menu{position: relative !important;}
+	.group-button.bottom{width: auto !important;}
+}

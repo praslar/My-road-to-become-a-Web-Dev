@@ -1,0 +1,274 @@
+﻿@{
+    ViewBag.Title = "Hồ Sơ Của Bạn";
+}
+<section class="content">
+@{
+    DataAccess.TaiKhoanMethods TK = new DataAccess.TaiKhoanMethods();
+    DataAccess.ChucVuMethods ChucVu = new DataAccess.ChucVuMethods();
+    foreach (DataAccess.ThongTinTaiKhoan row in ViewBag.ThongTinTK)
+    {
+    <div class="row">
+        @if (TempData["AlertMessage"] != null)
+        {
+            <div class="col-lg-12" hide>
+                <div id="AlertBox" class="alert text-center @TempData["AlertType"]">
+                    @Html.Raw(TempData["AlertMessage"])
+                </div>
+            </div>
+        }
+        <div class="col-md-4">
+
+                
+            <!-- Profile Image -->
+                    <div class="box box-primary">
+                        <div class="box box-widget widget-user">
+                            <!-- Add the bg color to the header using any of the bg-* classes -->
+                            <div class="widget-user-header bg-black" style="background: url('~/Content/Back-end/dist/img/avatar04.png') center center;">
+
+
+
+                                <h3 class="widget-user-username">@row.Ho @row.Ten</h3>
+                               
+
+
+                            </div>
+                            <div class="widget-user-image">
+                                <img class="img-circle" src="~/Content/Back-end/dist/img/avatar04.png" alt="User Avatar">
+                            </div>
+                            <div class="box-footer">
+
+                                <!-- /.row -->
+                            </div>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+            <!-- /.box -->
+            <!-- About Me Box -->
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Thông Tin Của Bạn</h3>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <ul class="list-group list-group-unbordered">
+                                <li class="list-group-item">
+                                    <b>Họ Tên :  @row.Ho @row.Ten </b>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <b>Ngày sinh : @row.NgaySinh </b>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>Email : @TK.Get_Mail_TaiKhoan(row.IDTaiKhoan) </b>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>Chức Vụ : <span style="color:blueviolet">@ChucVu.Get_By_MaCV(Session["IDMaCV"].ToString()) </span></b>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>CMND : @row.SoCMND </b>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>Địa chỉ : @row.DiaChi </b>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+            <!-- /.box -->
+
+     
+        </div>
+        <!-- /.col -->
+        <div class="col-md-8">
+            <div class="nav-tabs-custom ">
+                <ul class="nav nav-tabs text-center">
+                    <li class="active"><a href="#activity" data-toggle="tab"><p class="btn btn-success btn-flat">Chỉnh sửa thông tin</p> </a></li>
+                    <li><a href="#timeline" data-toggle="tab"><p class="btn btn-danger btn-flat">Thay đổi mật khẩu </p></a></li>
+                    <li><a href="#settings" data-toggle="tab"><p class="btn btn-primary btn-flat">Thay đổi hình đại diện</p></a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="activity">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="inputName" class="col-sm-4 control-label">Họ </label>
+                                <div class="col-sm-8">
+                                    <input type="email" class="form-control hidden" id="ID" value="@row.ID">
+                                   
+                                    <input type="email" class="form-control" id="Ho" value="@row.Ho" placeholder="Họ">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputName" class="col-sm-4 control-label">Tên </label>
+                                <div class="col-sm-8">
+                                    <input type="email" class="form-control" id="Ten" value="@row.Ten" placeholder="Tên">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputName" class="col-sm-4 control-label">Ngày sinh</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="NgaySinh" value="@row.NgaySinh" placeholder="Ngày sinh">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="inputName" class="col-sm-4 control-label">Giới tính</label>
+                                    <div class="col-sm-8">
+                                       @{ 
+                                           if (row.GioiTinh == true)
+                                           {
+                                                <label>
+                                                    <input type="radio" name="r1" value="true" class="minimal" checked> Nam
+                                                </label>
+                                                <label>
+                                                    <input type="radio" name="r1" value="false" class="minimal"> Nữ
+                                                </label>
+                                               
+                                           }
+                                           else
+                                           {
+                                                <label>
+                                                    <input type="radio" name="r1" value="true" class="minimal" > Nam
+                                                </label>
+                                                <label>
+                                                    <input type="radio" name="r1" value="false" class="minimal" checked> Nữ
+                                                </label>
+
+
+
+
+                                               }
+                                           }
+
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputSkills" class="col-sm-4 control-label">Số CMND</label>
+
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="SoCMND" value="@row.SoCMND" placeholder="CMND">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputSkills" class="col-sm-4 control-label">Địa chỉ</label>
+
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="DiaChi" value="@row.DiaChi" placeholder="Địa chỉ">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputSkills" class="col-sm-4 control-label">Email</label>
+
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="Email" disabled value="@TK.Get_Mail_TaiKhoan(row.IDTaiKhoan)" placeholder="Email">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-offset-4 col-sm-8">
+                                    <button type="button" onclick="HoSo.Edit_HoSo()" class="btn  btn-primary">Lưu</button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                    <!-- /.tab-pane -->
+                    <div class="tab-pane" id="timeline">
+                        <!-- The timeline -->
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="inputName" class="col-sm-4 control-label">Nhập mật khẩu củ</label>
+
+                                <div class="col-sm-6">
+                                    <input type="password" class="form-control" id="MatKhauCu" placeholder="**************">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail" class="col-sm-4 control-label">Nhập mật khẩu mới</label>
+
+                                <div class="col-sm-6">
+                                    <input type="password" class="form-control" id="MatKhauMoi1" placeholder="**************">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputName" class="col-sm-4 control-label">Nhập Lại mật khẩu mới</label>
+
+                                <div class="col-sm-6">
+                                    <input type="password" class="form-control" id="MatKhauMoi2" placeholder="**************">
+                                    <input type="email" class="form-control hidden"   id="Mail_Pass" value="@TK.Get_Mail_TaiKhoan(row.IDTaiKhoan)">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-4 col-sm-8">
+                                    <button type="button" onclick="HoSo.DoiMatKhau()" class="btn  btn-primary btn-flat">Lưu</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /.tab-pane -->
+
+                    <div class="tab-pane" id="settings">
+                        <div class="content">
+                            <div class="box box-primary">
+                                <div class="box-body box-profile">
+                                    <img class="profile-user-img img-responsive img-circle" src="~/Content/Back-end/dist/img/avatar04.png" alt="User profile picture">
+
+                                    <h3 class="profile-username text-center">Đinh Văn Lành</h3>
+
+                                    <p class="text-muted text-center">Giảng Viên</p>
+
+
+
+                                </div>
+
+                                <!-- /.box-body -->
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <div class="text-center">
+                                            <button type="button" class="btn  btn-success btn-flat">Chọn hình</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <div class="text-center">
+                                            <button type="button" class="btn btn-flat  btn-primary">
+                                                Lưu
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.tab-pane -->
+                </div>
+                <!-- /.tab-content -->
+            </div>
+            <!-- /.nav-tabs-custom -->
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+    }
+}
+</section>
+@section Myscripts{
+  
+    <script src="~/Scripts/Back-end/TaiKhoan/ConTroller_HoSo.js"></script>
+    <script>
+        var HoSo = new ConTroller_HoSo();
+        HoSo.Active();
+        $(".HoSoCuaBan").addClass("active");
+    </script>
+
+       
+
+}
+

@@ -1,0 +1,265 @@
+﻿
+@model DataAccess.DETHI
+@{
+    ViewBag.Title = "Index";
+    var idBoDe = ViewBag.idBoDe;
+    var idMonHoc = ViewBag.idMonHoc;
+}
+
+<section class="content-header">
+    <h1>
+        Danh sách đề thi
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="/admin/dashboard"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
+        <li><a href="/admin/monhoc/index">Môn học</a></li>
+        <li><a href="/admin/bo-de-thi-@idMonHoc">Bộ đề thi</a></li>
+        <li class="active">Đề thi</li>
+    </ol>
+    <a href="#" class="btn btn-info" onclick="HienThiPopupThemDeThi();">Thêm đề thi</a>
+</section>
+<!-- Main content -->
+<section class="content">
+    <!-- Main row -->
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="box">
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <hr>
+                    <table id="myDataTable" class="table table-bordered table-striped display responsive nowrap" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th data-priority="1">Tên đề thi</th>
+                                <th data-priority="1">Chức năng</th>
+
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+    </div>
+    <!-- /.row -->
+</section>
+<!-- /.content -->
+@*Tạo popup modal*@
+<!--modal Thêm-->
+<div class="modal fade" id="MyModalThem">
+    <div class="modal-dialog">
+        <!--Content-->
+        <div class="modal-content">
+            <!--header-->
+            <div class="modal-header">
+                <a href="#" class="close" data-dismiss="modal">&times;</a>
+                <h4 class="modal-title">Thêm đề thi</h4>
+            </div>
+            <!--/header-->
+            <!--body-->
+            <div class="modal-body">
+                <form id="formPopupThemMoi">
+                    <fieldset id="SubmitForm">
+                        @Html.ValidationSummary(true)
+                        @Html.HiddenFor(m => m.IDMADE, new { @id = "IDMADE" })
+                        @Html.HiddenFor(m => m.IDBODE, new { @id = "IDBODE" })
+                        <div class="form-group">
+                            @Html.TextBoxFor(m => m.TENDETHI, new { @id = "TENDETHI", @class = "form-control", @placeholder = "tên đề thi" })
+                            @Html.ValidationMessageFor(m => m.TENDETHI, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            <a href="#" class="btn btn-danger col-xs-4 col-xs-offset-4" id="ThemDeThiMoi">Xác nhận</a>
+                        </div>
+                    </fieldset>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+            </div>
+            <!--/body-->
+        </div>
+        <!--/Content-->
+    </div>
+</div>
+<!--modal Sửa-->
+<div class="modal fade" id="MyModalSua">
+    <div class="modal-dialog">
+        <!--Content-->
+        <div class="modal-content">
+            <!--header-->
+            <div class="modal-header">
+                <a href="#" class="close" data-dismiss="modal">&times;</a>
+                <h4 class="modal-title">Sửa đề thi</h4>
+            </div>
+            <!--/header-->
+            <!--body-->
+            <div class="modal-body">
+                <form id="formPopupSua">
+                    <fieldset id="SubmitFormSua">
+                        @Html.HiddenFor(m => m.IDMADE, new { @id = "SuaIDMADE" })
+                        @Html.HiddenFor(m => m.IDBODE, new { @id = "SuaIDBODE" })
+                        <div class="form-group">
+                            @Html.TextBoxFor(m => m.TENDETHI, new { @id = "SuaTENDETHI", @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.TENDETHI)
+                        </div>
+                        <div class="form-group">
+                            <a href="#" class="btn btn-danger col-xs-4 col-xs-offset-4" id="SuaDeThi">Sửa</a>
+                        </div>
+                    </fieldset>
+
+                </form>
+            </div>
+            <!--/body-->
+        </div>
+        <!--/Content-->
+    </div>
+</div>
+<!--Modal xóa-->
+<div class="modal fade" id="MyModalXoa">
+    <div class="modal-dialog">
+        <!--Content-->
+        <div class="modal-content">
+            <!--header-->
+            <div class="modal-header">
+                <a href="#" class="close" data-dismiss="modal">&times;</a>
+                <h4 class="modal-title">Xóa đề thi</h4>
+            </div>
+            <!--/header-->
+            <!--body-->
+            <div class="modal-body">
+                <span class="hide" id="idDeThi"></span>
+                <h4>Bạn có chắc chắn muốn xóa không?</h4>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn btn-primary close" data-dismiss="modal">Không</a>
+                <a href="#" class="btn btn-danger" onclick="ConFirmXoa()">Có</a>
+            </div>
+            <!--/body-->
+        </div>
+        <!--/Content-->
+    </div>
+</div>
+<script src="~/Scripts/Back-end/BoDe_DeThi/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/Back-end/BoDe_DeThi/moment.js"></script>
+<script src="~/Content/Back-end/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="~/Content/Back-end/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#myDataTable").DataTable({
+            ajax: {
+                url: "/DeThi/GetDeThi/"+ @idBoDe,
+                type: "Get",
+                datatype:"json"
+            },
+            columns: [
+                { data: "TENDETHI", autowidth: true },
+                {
+                    data: "IDMADE", "width": "30%", render: function (data) {
+                        return   `
+
+                                     <div class="col-xs-4 ">
+                                        <a href="/admin/CauHoi/ViewDanhSachCauHoi_CauTraLoiCuaDeThi/${data}?idMonhoc=@idMonHoc&&idBoDe=@idBoDe">
+                                        <div class="btn btn-sm btn-info">
+                                             <li class="glyphicon glyphicon-list-alt"></li>
+                                         </div>
+                                         </a>
+                                      </div>
+
+
+                                     <div class="col-xs-4 ">
+                                         <a href="#" onclick="HienThiPopupSuaDeThi(${data})">
+                                        <div class="btn btn-sm btn-warning">
+                                             <li class="glyphicon glyphicon-edit"></li>
+                                         </div>
+                                         </a>
+                                    </div>
+
+
+                                     <div class="col-xs-4 ">
+                                    <a href="#" onclick="HienThiPopupXoaDeThi(${data})">
+                                        <div class="btn btn-sm btn-danger">
+                                            <li class="glyphicon glyphicon-trash"></li>
+                                         </div>
+                                     </a>
+                                    </div>
+
+
+
+                                `;
+                    }
+                }
+
+            ]
+        });
+
+        });
+
+    //Show popup thêm
+    function HienThiPopupThemDeThi() {
+        $("#MyModalThem").modal("show");
+    };
+    $("#ThemDeThiMoi").on("click", function () {
+        if (!$("#formPopupThemMoi").valid()) {
+            return false;
+        }
+        var d = $("#IDBODE").val(@idBoDe);
+        var formData = $("#SubmitForm").serialize();
+        $.ajax({
+            type: "Post",
+            url: "/DeThi/ThemDeThiMoi",
+            data: formData,
+            datatype: "json",
+            success: function (result) {
+                $("#myDataTable").DataTable().ajax.reload();
+                $("#MyModalThem").modal("hide");
+                $("#TENDETHI").val("");
+            }
+        });
+    });
+    //Show popup sửa
+    function HienThiPopupSuaDeThi(idDeThi) {
+        var url = "/DeThi/SuaDeThi?IdDeThi=" + idDeThi;
+        $("#MyModalSua").modal("show");
+        $.ajax({
+            url:url,
+            type: "GET",
+            datatype:"JSON",
+            success: function (value) {
+                var obj = JSON.parse(value);
+                $("#SuaIDMADE").val(obj.IDMADE);
+                $("#SuaIDBODE").val(obj.IDBODE);
+                $("#SuaTENDETHI").val(obj.TENDETHI);
+
+            }
+        });
+    }
+    $("#SuaDeThi").click(function () {
+        var data = $("#SubmitFormSua").serialize();
+        $.ajax({
+            url: "/DeThi/SuaDeThi",
+            type: "POST",
+            data: data,
+            success: function (result) {
+                $("#myDataTable").DataTable().ajax.reload();
+                $("#MyModalSua").modal("hide");
+            }
+        });
+    });
+    function HienThiPopupXoaDeThi(idDeThi) {
+        $("#idDeThi").val(idDeThi);
+        $("#MyModalXoa").modal("show");
+    }
+    function ConFirmXoa() {
+        var idDeThi = $("#idDeThi").val();
+        $.ajax({
+            url: "/DeThi/XoaDeThi?IdDeThi=" + idDeThi,
+            type: "POST",
+            success: function (result) {
+                $("#myDataTable").DataTable().ajax.reload();
+                $("#MyModalXoa").modal("hide");
+            }
+        });
+
+    }
+</script>

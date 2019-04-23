@@ -1,0 +1,99 @@
+﻿@model DataAccess.TaiKhoan
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DLU - Login</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="~/Content/Back-end/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="~/Content/Back-end/bower_components/font-awesome/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="~/Content/Back-end/bower_components/Ionicons/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/Content/Back-end/dist/css/AdminLTE.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="~/Content/Back-end/plugins/iCheck/square/blue.css">
+    <link rel="icon" href="~/Content/Back-end/dist/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="login-page">
+    <div class="login-box">
+
+        <!-- /.login-logo -->
+        <div class="login-box-body">
+            <p class="login-box-msg"><img src="~/Content/Back-end/dist/img/logo_DLU.png" /></p>
+
+            @if (TempData["AlertMessage"] != null)
+            {
+                <div class="col-lg-12" hide>
+                    <div id="AlertBox" class="alert text-center @TempData["AlertType"]">
+                        @Html.Raw(TempData["AlertMessage"])
+                    </div>
+                </div>
+            }
+            <p class="login-box-msg">Đăng nhập vào Admin</p>
+            @using (Html.BeginForm("Login", "DangNhap", FormMethod.Post))
+            {
+                @Html.ValidationSummary(false, "", new { @class = "text-danger" });
+                <div class="form-group has-feedback">
+
+                    @Html.TextBoxFor(model => model.TenDangNhap, new { @value="admin", @class = "form-control", @autofocus = "autofocus", @placeholder = "Username" })
+                    <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    @Html.PasswordFor(model => model.MatKhau, new { @value = "admin", @class = "form-control", @placeholder = "Password" })
+                    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                </div>
+                <div class="row">
+                    <div class="col-xs-8">
+                        <div class="checkbox icheck">
+                            @*<label>
+                                    <input type="checkbox"> Remember Me
+                                </label>*@
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-4">
+                        <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+                    </div>
+                    <!-- /.col -->
+                </div>
+            }
+            <!-- /.social-auth-links -->
+            <a href="/admin/reset-password">Quên mật khẩu</a><br>
+
+        </div>
+        <!-- /.login-box-body -->
+    </div>
+    <!-- /.login-box -->
+    <!-- jQuery 3 -->
+    <script src="~/Content/Back-end/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="~/Content/Back-end/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- iCheck -->
+    <script src="~/Content/Back-end/plugins/iCheck/icheck.min.js"></script>
+    <script>
+  $(function () {
+    $('input').iCheck({
+      checkboxClass: 'icheckbox_square-blue',
+      radioClass: 'iradio_square-blue',
+      increaseArea: '20%' // optional
+    });
+  });
+    </script>
+    <script>
+        $(function () {
+            $('#AlertBox').removeClass('hide');
+            $('#AlertBox').delay(5000).slideUp(1000);
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,126 @@
+﻿@using DataAccess;
+@{
+	ViewBag.Title = "CauHoiOnTap";
+	Layout = "~/Views/Shared/_LayoutCauHoiOnTap.cshtml";
+	var monhoc = ViewBag.MonHoc;
+	var chuonghoc = ViewBag.ChuongHoc as List<CHUONGHOC>;
+}
+
+<div class="grid-content">
+	<script type="text/javascript" src="assets/js/quiz2/scripts.js"></script>
+	<div id="div-category" class="col-1 col-1-slide col-md-3 fadeIn animated">
+		<div class="heading">
+			<h1>Chuyên mục</h1>
+			<hr>
+		</div>
+		<ul class="list-category including">
+			<li class="active" data-color="#2980b9">
+				<a href="#">
+					<i class="iconcolor" style="background: #2980b9"></i>Tất
+					cả <span class="color-red">( 133 )</span>
+				</a>
+			</li>
+			@{
+				foreach (var item in monhoc)
+				{
+					<li data-color="#f8a31c">
+						<a href="#myModal" title="Lập trình A" ><i class="iconcolor" style="background: red"></i>@item.TENMONHOC </a>
+						@using (Html.BeginForm("CheckMaMonHoc", "CauHoiOnTap_", FormMethod.Post))
+						{
+							<div id="myModal" class="modal" role="dialog">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-body">
+											<input type="text" name="Idmonhoc" value="@item.IDMONHOC" hidden>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+
+								</div>
+							</div>
+								
+						}
+					</li>
+				}
+			}
+		</ul>
+		<script>
+			$('.model').modal();
+		</script>
+	</div>
+	<div id="col-2" class="col-12 col-md-9 including fadeIn animated col-list-quiz">
+		<!--Đề thi online ở trang chủ-->
+		<div id="multiple">
+
+			<div class="heading heading-white">
+				<h1><i class="glyphicon glyphicon-align-right"></i> Đề thi </h1>
+				<hr>
+			</div>
+
+			<div id="quizs" class="new many online">
+				@{
+					foreach (var item in chuonghoc)
+					{
+					<div class="quiz including" style="border-top: 3px solid #f8a31c">
+						<div class="including">
+							<h1 class="pull-left"><a href="#">@item.TENCHUONGHOC</a></h1>
+							<div class="pull-right bookmark">
+								<a href="#" data-id="215"><i class="glyphicon glyphicon-bookmark" class="a-bookmark"></i></a>
+							</div>
+						</div>
+						@using (Html.BeginForm("OnTap", "CauHoiOnTap_", FormMethod.Post))
+						{
+							<input type="text" name="Idchuonghoc" value="@item.IDCHUONGHOC" hidden>
+							<button class="btn btn-default pull-right" style="background: #f8a31c">
+								Truy cập
+							</button>
+						}
+					</div>
+						}
+					}
+				<div class="full-width including">
+					<div class="text-center" id="pagination">
+						<div class="pagination">
+							<ul class="pagination">
+								<li class="disabled"><span>&laquo;</span></li>
+								<li class="active"><span>1</span></li>
+								<li><a href="trac-nghiem18c0.html?p&amp;page=2">2</a></li>
+								<li><a href="trac-nghiem42ef.html?p&amp;page=3">3</a></li>
+								<li><a href="trac-nghiem5825.html?p&amp;page=4">4</a></li>
+								<li><a href="trac-nghiem461b.html?p&amp;page=5">5</a></li>
+								<li><a href="trac-nghiemf4db.html?p&amp;page=6">6</a></li>
+								<li><a href="trac-nghiem4890.html?p&amp;page=7">7</a></li>
+								<li><a href="trac-nghiem0010.html?p&amp;page=8">8</a></li>
+								<li><a href="trac-nghiem796d.html?p&amp;page=9">9</a></li>
+								<li><a href="trac-nghiembc0d.html?p&amp;page=10">10</a></li>
+								<li><a href="trac-nghiem18c0.html?p&amp;page=2">&raquo;</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/js/newstyle/default-main.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			//$(".col-1-slide").menuslide({element_action:'#slide-menu-1'});
+			tabs = $("#multiple").tabs({ redirect: true });
+
+			category = $("#category-all");
+			category.closest('ul').find('li').removeClass('active');//Loại bỏ active
+			li_select = $("#category-all").closest('li');//Lựa chọn select
+			color = li_select.attr('data-color');//Lấy màu
+			li_select.addClass('active');
+			$(".list-category li.active").css('border-right', '3px solid ' + color);//Thêm màu cho active
+
+			$("#search-form input[name=text_search]").live('click', function () {
+				$("#search-form").find('.select').fadeIn();
+			});
+			$("#nav-category").addClass('active');
+		});
+	</script>
+</div>
+

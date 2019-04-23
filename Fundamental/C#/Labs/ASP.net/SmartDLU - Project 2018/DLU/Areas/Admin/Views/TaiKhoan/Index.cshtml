@@ -1,0 +1,104 @@
+﻿@using DataAccess;
+@{
+    ViewBag.Title = "Tài Khoản";
+   
+}
+<section class="content">
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="box box-solid">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Danh sách tài khoản</h3>
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>&nbsp;</label>
+                                <select class="form-control DanhSachChuCVu  SELECT2" id="DanhSachChuCVu"></select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>&nbsp;</label>
+                                <button onclick="TaiKhoan.TimKiemTheoMaCV()"  class="btn btn-primary btn-block btn-flat"><i class="fa fa-search" aria-hidden="true"></i> Tìm Kiếm</button>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>&nbsp;</label>
+                                <button onclick="TaiKhoan.Modal_Create_Edit_TaiKhoan('add',0)" class="btn btn-warning btn-block btn-flat"><i class="fa fa-plus-circle" aria-hidden="true"></i> Thêm mới</button>
+                            </div>
+                        </div>
+                    </div>
+                    <table id="example_TaiKhoan" class="table table-bordered">
+                        <thead>
+                            <tr class="">
+                                <th>STT</th>
+                                <th>Tên đăng nhập</th>
+                                <th>Họ và tên</th>
+                                <th>Email</th>
+                                <th class="text-center">
+                                   Tác vụ
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="data_TaiKhoan">
+                            
+                        </tbody>
+                    </table>
+                    <div class="box-footer"><a href="/admin/dashboard/" class="btn btn-danger btn-xs btn-flat">Trở Về</a></div>
+
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+    </div>
+</section>
+@RenderPage("View.cshtml")
+@RenderPage("Create_Edit_.cshtml")
+@RenderPage("Delete.cshtml")
+@section Myscripts{
+    <script src="~/Scripts/Back-end/TaiKhoan/ConTroller_TaiKhoan.js"></script>
+    <script src="~/Scripts/Back-end/TaiKhoan/ConTroller_ChucVu.js"></script>
+    <script>
+        var TaiKhoan = new ConTroller_TaiKhoan();
+        TaiKhoan.Ckeck_Mail();
+        TaiKhoan.Ckeck_TenDangNhap();
+        var ChucVu = new ConTroller_ChucVu();
+        ChucVu.Get_All_DanhSach_ChucVu(); 
+        ChucVu.Get_All_DanhSach_ChucVu_2();
+        
+        //iCheck for checkbox and radio inputs
+        $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+            checkboxClass: 'icheckbox_minimal-blue',
+            radioClass: 'iradio_minimal-blue'
+        });
+        $(".SELECT2").select2();
+        $('.datepicker').datepicker({
+            autoclose: true
+        });
+
+        $('#example2').DataTable({
+            'paging': false,
+            'lengthChange': false,
+            'searching': true,
+            'ordering': true,
+            'info': true,
+
+            "scrollY": 300,
+
+        })
+        $(".TaiKhoan").addClass("active");
+
+    </script>
+
+}

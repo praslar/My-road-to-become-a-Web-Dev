@@ -1,0 +1,107 @@
+﻿@using DataAccess
+@{
+    ThongTinTaiKhoanMedthods tttk = new ThongTinTaiKhoanMedthods();
+}
+
+@{
+    ViewBag.Title = "Thông tin cá nhân";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/Back-end/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
+
+<div class="grid-content">
+    <div id="div-category" class="col-1 col-1-slide col-md-3 fadeIn animated">
+        @RenderPage("../Shared/_Menu_SinhVien.cshtml")
+    </div>
+    <div id="div-main-user" class="col-9 col-md-9 including fadeIn animated col-list-quiz">
+        <!--Đề thi online ở trang chủ-->
+        <div class="heading heading-white">
+
+            <h1><i class="glyphicon glyphicon-list-alt"></i> Chỉnh sửa thông tin sinh viên</h1>
+            <hr>
+        </div>
+        @{
+            foreach (ThongTinTaiKhoan row in tttk.SelectBy(Int32.Parse(Session["ID_TaiKhoan_SV"].ToString()), "IDTaiKhoan"))
+            {
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="email">Họ : </label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control hidden" id="ID" value="@row.ID">
+
+                            <input type="email" class="form-control" id="Ho" value="@row.Ho" placeholder="Họ">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2"  for="email">Tên : </label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="Ten" value="@row.Ten" placeholder="Tên">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="email">Ngày sinh : </label>
+                        <div class="col-sm-10">
+                            <div class='input-group date'>
+                                <input type="text" class="form-control" id="NgaySinh" value="@row.NgaySinh" placeholder="Ngày sinh">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="email">Giới tính :</label>
+                        <div class="col-sm-10">
+                            @if (@row.GioiTinh == true)
+                            {
+                                <input type="radio" name="r1" value="true" checked /><span>Nam</span>
+                                <input type="radio" name="r1" value="false" /><span>Nữ</span>
+                            }
+                            else
+                            {
+                                <input type="radio" name="r1" value="true" /><span>Nam</span>
+                                <input type="radio" name="r1" value="false" checked /><span>Nữ</span>
+                            }
+
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="email">Số CMND : </label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="SoCMND" value="@row.SoCMND" placeholder="CMND">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="email">Địa chỉ : </label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="DiaChi" value="@row.DiaChi" placeholder="Địa chỉ">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="email">Email : </label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="Email" disabled value="@Session["Email_TaiKhoan_SV"]" placeholder="Email">
+                        </div>
+                    </div>
+                </form>
+                <br />
+            }
+
+
+        }
+        <button class="btn btn-default pull-right" onclick="HoSo.Edit_HoSo()"><i class="glyphicon glyphicon-save"></i> Lưu lại</button>
+    </div>
+</div>
+@section scripts{
+    <script src="~/Content/Back-end/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <script>
+            $(function () {
+                $('#ngaysinh').datepicker();
+            });
+    </script>
+    <script src="~/Scripts/Back-end/TaiKhoan/ConTroller_HoSo.js"></script>
+    <script>
+            var HoSo = new ConTroller_HoSo();
+            HoSo.Active();
+    </script>
+
+}
+

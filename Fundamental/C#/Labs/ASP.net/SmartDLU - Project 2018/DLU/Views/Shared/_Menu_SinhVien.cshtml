@@ -1,0 +1,37 @@
+﻿@using DataAccess
+@{
+    ThongTinTaiKhoanMedthods tttk = new ThongTinTaiKhoanMedthods();
+}
+
+
+<div class="heading">
+    <h1>vanlanh</h1>
+    <hr>
+</div><div class="user">
+          <div class="text-center">
+              <img style="width: 200px;" src="https://scontent.fhan2-2.fna.fbcdn.net/v/t1.0-9/36327684_928044004023708_5479371044030513152_n.jpg?_nc_cat=0&amp;oh=eec88521898578402e564fd905decb8e&amp;oe=5C38B113" alt="avatar" class="img-circle"><br>
+              @{  if (Session["ID_TaiKhoan_SV"] != null)
+                  {
+                      foreach (ThongTinTaiKhoan row in tttk.SelectBy(Int32.Parse(Session["ID_TaiKhoan_SV"].ToString()), "IDTaiKhoan"))
+                      {
+
+                        <p>Họ Và Tên : <span class="color-red">@tttk.Get_HoTen_TK(Int32.Parse(Session["ID_TaiKhoan_SV"].ToString()))</span></p>
+                      }
+                  }
+
+
+            }
+
+
+              <a href="/DangNhap_/DangXuat">Thoát</a>
+          </div>
+</div><div class="heading">
+    <h1>Tùy chọn</h1>
+    <hr>
+</div>
+<ul class="list-category including">
+    <li id="edit-information" class="active" data-color="#2980b9"><a href="/thong-tin-ca-nhan"><i class="iconcolor" style="background: #2980b9"></i>Thiết lập tài khoản</a></li>
+    <li id="edit-password" data-color="#f8a31c"><a href="/thay-doi-mat-khau"><i class="iconcolor" style="background: #f8a31c"></i>Thay đổi mật khẩu</a></li>
+    <li data-color="#eb5545"><a href="/lich-su"><i class="iconcolor" style="background: #eb5545"></i>Lịch sử làm bài</a></li>
+    <li data-color="#eb5545"><a href="/diem-thi"><i class="iconcolor" style="background: #1d395e"></i>Xem điểm thi</a></li>
+</ul>

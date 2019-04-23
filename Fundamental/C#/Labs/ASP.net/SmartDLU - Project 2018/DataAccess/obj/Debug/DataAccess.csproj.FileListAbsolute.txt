@@ -1,0 +1,71 @@
+C:\Users\dinhv\OneDrive\DLU\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\dinhv\OneDrive\DLU\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\dinhv\OneDrive\DLU\DataAccess\bin\Debug\Core.dll
+C:\Users\dinhv\OneDrive\DLU\DataAccess\bin\Debug\Core.pdb
+C:\Users\dinhv\OneDrive\DLU\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\dinhv\OneDrive\DLU\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\dinhv\OneDrive\DLU\DataAccess\obj\Debug\DataAccess.pdb
+D:\Online\DataAccess\bin\Debug\DataAccess.dll
+D:\Online\DataAccess\bin\Debug\DataAccess.pdb
+D:\Online\DataAccess\bin\Debug\Core.dll
+D:\Online\DataAccess\bin\Debug\Core.pdb
+D:\Online\DataAccess\obj\Debug\DataAccess.dll
+D:\Online\DataAccess\obj\Debug\DataAccess.pdb
+D:\Online\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+D:\DLU\DataAccess\bin\Debug\DataAccess.dll
+D:\DLU\DataAccess\bin\Debug\DataAccess.pdb
+D:\DLU\DataAccess\bin\Debug\Core.dll
+D:\DLU\DataAccess\bin\Debug\Core.pdb
+D:\DLU\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+D:\DLU\DataAccess\obj\Debug\DataAccess.dll
+D:\DLU\DataAccess\obj\Debug\DataAccess.pdb
+E:\DLU\DataAccess\bin\Debug\DataAccess.dll
+E:\DLU\DataAccess\bin\Debug\DataAccess.pdb
+E:\DLU\DataAccess\bin\Debug\Core.dll
+E:\DLU\DataAccess\bin\Debug\Core.pdb
+E:\DLU\DataAccess\obj\Debug\DataAccess.csprojAssemblyReference.cache
+E:\DLU\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+E:\DLU\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+E:\DLU\DataAccess\obj\Debug\DataAccess.dll
+E:\DLU\DataAccess\obj\Debug\DataAccess.pdb
+E:\Analysis and Design OPP\code\Online\DataAccess\obj\Debug\DataAccess.csprojAssemblyReference.cache
+E:\Analysis and Design OPP\code\Online\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+E:\Analysis and Design OPP\code\Online\DataAccess\obj\Debug\DataAccess.dll
+E:\Analysis and Design OPP\code\Online\DataAccess\obj\Debug\DataAccess.pdb
+E:\Analysis and Design OPP\code\Online\DataAccess\bin\Debug\DataAccess.dll
+E:\Analysis and Design OPP\code\Online\DataAccess\bin\Debug\DataAccess.pdb
+E:\Analysis and Design OPP\code\Online\DataAccess\bin\Debug\Core.dll
+E:\Analysis and Design OPP\code\Online\DataAccess\bin\Debug\Core.pdb
+E:\Analysis and Design OPP\code\Online\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+C:\Users\dinhv\OneDrive\Desktop\online\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\dinhv\OneDrive\Desktop\online\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\dinhv\OneDrive\Desktop\online\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\dinhv\OneDrive\Desktop\online\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\dinhv\OneDrive\Desktop\online\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\dinhv\OneDrive\Desktop\online\DataAccess\bin\Debug\Core.dll
+C:\Users\dinhv\OneDrive\Desktop\online\DataAccess\bin\Debug\Core.pdb
+C:\Users\dinhv\OneDrive\Desktop\online_v1\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\dinhv\OneDrive\Desktop\online_v1\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\dinhv\OneDrive\Desktop\online_v1\DataAccess\bin\Debug\Core.dll
+C:\Users\dinhv\OneDrive\Desktop\online_v1\DataAccess\bin\Debug\Core.pdb
+C:\Users\dinhv\OneDrive\Desktop\online_v1\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\dinhv\OneDrive\Desktop\online_v1\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\dinhv\OneDrive\Desktop\online_v1\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\Praslar\Desktop\New folder (3)\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\Praslar\Desktop\New folder (3)\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\Praslar\Desktop\New folder (3)\DataAccess\bin\Debug\Core.dll
+C:\Users\Praslar\Desktop\New folder (3)\DataAccess\bin\Debug\Core.pdb
+C:\Users\Praslar\Desktop\New folder (3)\DataAccess\obj\Debug\DataAccess.csprojAssemblyReference.cache
+C:\Users\Praslar\Desktop\New folder (3)\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Praslar\Desktop\New folder (3)\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+C:\Users\Praslar\Desktop\New folder (3)\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\Praslar\Desktop\New folder (3)\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\Praslar\Desktop\SmartDLU - Project 2018\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\Praslar\Desktop\SmartDLU - Project 2018\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\Praslar\Desktop\SmartDLU - Project 2018\DataAccess\bin\Debug\Core.dll
+C:\Users\Praslar\Desktop\SmartDLU - Project 2018\DataAccess\bin\Debug\Core.pdb
+C:\Users\Praslar\Desktop\SmartDLU - Project 2018\DataAccess\obj\Debug\DataAccess.csprojAssemblyReference.cache
+C:\Users\Praslar\Desktop\SmartDLU - Project 2018\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Praslar\Desktop\SmartDLU - Project 2018\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+C:\Users\Praslar\Desktop\SmartDLU - Project 2018\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\Praslar\Desktop\SmartDLU - Project 2018\DataAccess\obj\Debug\DataAccess.pdb

@@ -1,0 +1,92 @@
+﻿<div class="modal fade" id="Modal_Create" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">
+                    Thêm Câu Hỏi
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="col-sm-12">
+                    <form role="form">
+                        <div class="box-body">
+                            <label class="">Công thức toán học</label>
+                            <div class="box-info">
+                                <div class="pad">
+                                    <i>* Nhấp vào thanh điều khiển bên cạnh để hiển thị bảng công thức</i>
+                                    <br/>
+                                    <i>* Nhấp chuột phải vào khung công thức -> Copy image -> Crtl + V vào khung nội dung môn học</i>
+                                    <textarea id='formula1' class='mathdoxformula' rows='10' cols='80'>
+
+                                            &lt;OMOBJ xmlns='http://www.openmath.org/OpenMath'>
+                                            &lt;OMA>
+                                            &lt;OMS cd='arith1' name='divide'/>
+                                            &lt;OMA>
+                                            &lt;OMS cd='arith1' name='minus'/>
+                                            &lt;OMA>
+                                            &lt;OMS cd='arith1' name='power'/>
+                                            &lt;OMV name='q'/>
+                                            &lt;OMI>2&lt;/OMI>
+                                            &lt;/OMA>
+                                            &lt;OMI>1&lt;/OMI>
+                                            &lt;/OMA>
+                                            &lt;OMA>
+                                            &lt;OMS cd='arith1' name='minus'/>
+                                            &lt;OMV name='q'/>
+                                            &lt;OMI>1&lt;/OMI>
+                                            &lt;/OMA>
+                                            &lt;/OMA>
+                                            &lt;/OMOBJ>
+                                        </textarea>
+
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label>Môn học</label>
+                                <select style="width: 100%" id="CauHoi_GetMonHoc_Create" class="form-control Select2"></select>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label>Chương</label>
+                                <select style="width: 100%" id="CauHoi_GetChuong_Create" class="form-control Select2"></select>
+                            </div>
+                            <div class="form-group  col-sm-6">
+                                <label>Hình thức câu hỏi</label>
+                                <select style="width: 100%" id="CauHoi_GetLoaiCauHoi_Create" class="form-control Select2"></select>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="exampleInputDoKho">Giải thích</label>
+                                <input type="text" class="form-control" id="CauHoi_GiaiThich_Create" placeholder="Giải thích câu hỏi...">
+                            </div>
+                            <div class="form-group  col-sm-12">
+                                <label>Độ khó</label>
+                                <input style="width: 100%" id="CauHoi_GetDoKho_Create" class="form-control" placeholder="Nhập độ khó thuộc môn học này*(Danh sách độ khó xem trong thư viện)"></input>
+                            </div>
+                            <div class="form-group">
+                                <label>Nội dung câu hỏi</label>
+                                <textarea id="CauHoi_NoiDung_Create" name="editor1" rows="10" cols="80">
+                                            
+                                         </textarea>
+                            </div>
+                           
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn pull-left btn-flat btn-danger" data-dismiss="modal">Đóng</button>
+                <button type="button" onclick="CauHoi.Create_CauHoi()" class="btn btn-primary btn-flat">Thêm</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+
+<!-- /.modal -->

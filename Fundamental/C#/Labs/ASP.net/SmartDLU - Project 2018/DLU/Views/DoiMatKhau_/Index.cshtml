@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "Thay đổi mật khẩu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="grid-content">
+    <div id="div-category" class="col-1 col-1-slide col-md-2 fadeIn animated" style="overflow: hidden; padding: 0px; width: 253px;">
+        <div class="jspContainer" style="width: 253px; height: 681px;">
+            <div class="jspPane" style="padding: 0px; top: 0px; left: 0px; width: 253px;">
+                
+                @RenderPage("../Shared/_Menu_SinhVien.cshtml")
+            </div>
+        </div>
+    </div>
+    <div id="div-main-user" class="col-12 col-md-9 including fadeIn animated col-list-quiz">
+        <!--Đề thi online ở trang chủ-->
+        <div class="jspContainer" style="width: 602px; height: 681px;">
+            <div class="" style="padding: 0px; top: 0px; left: 0px; width: 602px;">
+                <div class="heading heading-white">
+                    <h1><i class="glyphicon glyphicon-user"></i> Thay đổi mật khẩu</h1>
+                    <hr>
+                </div>
+               
+                    <div class="including">
+                        <label>Mật khẩu cũ <span class="red">(*)</span></label>
+                        <input type="password" class="form-control full-width" id="MatKhauCu" placeholder="**************">
+                       
+                    </div>
+                    <div class="including">
+                        <label>Mật khẩu mới <span class="red">(*)</span></label>
+                        <input type="password" class="form-control full-width" id="MatKhauMoi1" placeholder="**************">
+                    </div>
+                    <div class="including">
+                        <label>Nhập lại mật khẩu mới <span class="red">(*)</span></label>
+                        <input type="password" class="form-control full-width" id="MatKhauMoi2" placeholder="**************">
+                        <input type="email" class="form-control hidden" id="Mail_Pass" value="@Session["Email_TaiKhoan_SV"]">
+                    </div>
+                    <div class="including">
+                        <label>Email<span class="red">(*)</span></label>
+                        <input type="email" class="form-control full-width hidden" disabled id="Mail_Pass" value="@Session["Email_TaiKhoan_SV"]">
+                        <input type="email" class="form-control full-width" disabled  value="@Session["Email_TaiKhoan_SV"]">
+                    </div>
+                    <br />
+                    <button class="btn btn-default pull-right" onclick="HoSo.DoiMatKhau()"><i class="glyphicon glyphicon-save"></i> Thay đổi</button>
+               
+            </div>
+        </div>
+    </div>
+    <div id="col-12" class="col-12 col-md-12">
+    </div>
+     
+</div>
+@section scripts{
+    <script src="~/Scripts/Back-end/TaiKhoan/ConTroller_HoSo.js"></script>
+    <script>
+        var HoSo = new ConTroller_HoSo();
+        HoSo.Active();
+    </script>
+}

@@ -1,0 +1,91 @@
+﻿@using DataAccess
+@{
+	ViewBag.Title = "OnTap";
+	Layout = "~/Views/Shared/_LayoutCauHoiOnTap.cshtml";
+	var dscauhoi = ViewBag.dsCauHoi as List<CAUHOI>;
+	var dscautraloi = ViewBag.dsCauTraLoi as List<CAUTRALOI>;
+}
+
+<div class="grid-content">
+	<script type="text/javascript" src="assets/js/quiz2/scripts.js"></script>
+	<div class="col-12 col-md-12 including fadeIn animated col-list-quiz">
+		<div id="multiple">
+
+			<div class="heading heading-white">
+				<h1><i class="glyphicon glyphicon-align-right"></i> </h1>
+				<hr>
+
+			</div>
+			<section class="forms full_test" id="main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8">
+							<div class="card">
+								<div class="card-body">
+									<form id="testing_form" action="" method="POST">
+										<input type="hidden" name="test_id" value="14682" />
+										<input type="hidden" name="log_id" value="9852" />
+										<input type="hidden" name="token" value="f74d049c17fab4b5c89a39fccd85b949">
+										<div class="col-md-8 col-sm-8 col-xs-12">
+											<div class="col_box_test">
+												<div class="clear col_box_baihoc_view" id="fulltest_content">
+													@{ var x = 1;
+														foreach (var ch in dscauhoi)
+														{
+															var y = 1;
+															<div data-part="@x" class="question fullest_page_@x" data-page="@x" style="display: block;"
+																 id="test_question_128051">
+																<div class="myquestionarea">
+																	<div id="testing_answer_128051_@x">
+																		<div class="question_number"><b>Câu @x: </b><span>@ch.NOIDUNGCAUHOI</span></div>
+																		@foreach (var ctl in dscautraloi)
+																		{
+																			if (ch.IDCAUHOI == ctl.IDCAUHOI)
+																			{
+																				if (ctl.DUNGSAI)
+																				{
+
+
+																					<label class="fulltest_answer_label active" id="test_answer_label_731947">
+																						<input type="radio" data-iquestion="1" data-question="128051"
+																							   name="answer[128051][0]" value="731947">
+																						<strong style="background: #03ec07; color: #fff; border: 1px solid #02f906;">@CHUYENDOI.DoiCoSo(@y)</strong> <span style="color:green">
+																							@ctl.NOIDUNGCAUTL.Trim()
+																						</span>
+																					</label>				}
+																				else
+																				{
+																					<label class="fulltest_answer_label" id="test_answer_label_731947">
+																						<input type="radio" data-iquestion="1" data-question="128051"
+																							   name="answer[128051][0]" value="731947">
+																						<strong>@CHUYENDOI.DoiCoSo(@y)</strong> <span>
+																							@ctl.NOIDUNGCAUTL.Trim()
+																						</span>
+																					</label>				}
+
+																				y = y + 1;
+																			}
+
+																		}
+																	</div>
+																</div>
+															</div>		x = x + 1;
+														}
+													}
+												</div>
+											</div><!-- End -->
+										</div>
+									</form>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+
+

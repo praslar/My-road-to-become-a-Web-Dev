@@ -1,0 +1,19 @@
+﻿ 
+    <div class="grid-menu fadeIn animated">
+        <ul class="menu including">
+            <li><a href="/" data-toggle="tooltip" data-placement="right" title="Trang chủ"><div class="item item-home"><center><i class="iconsprite-logo iconlogo-home"></i></center></div></a></li>
+			@if (Session["ID_TaiKhoan_SV"] == Session["ID_TaiKhoan_SV"])
+			{
+				<li><a href="/thi-that/" data-toggle="tooltip" data-placement="right" title="Thi trực tuyến"><div class="item item-chemistry"><center><i class="iconsprite-logo iconlogo-chemistry"></i></center></div></a></li>
+			}
+			else
+			{
+				<li><a href="/dang-nhap/" data-toggle="tooltip" data-placement="right" title="Thi trực tuyến"><div class="item item-chemistry"><center><i class="iconsprite-logo iconlogo-chemistry"></i></center></div></a></li>
+			}
+            
+
+            <li><a  href="/thi-thu/" data-toggle="tooltip" data-placement="right" title="Thi thử"><div class="item item-formula"><center><i class="iconsprite-logo iconlogo-formula"></i></center></div></a></li>
+            <li><a href="/cauhoi-ontap/" data-toggle="tooltip" data-placement="right" title="Câu hỏi ôn tập"><div class="item item-quiz"><center><i class="iconsprite-logo iconlogo-quiz"></i></center></div></a></li>
+
+        </ul>
+    </div>

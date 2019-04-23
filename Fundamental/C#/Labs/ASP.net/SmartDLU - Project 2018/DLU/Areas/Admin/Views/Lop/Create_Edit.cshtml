@@ -1,0 +1,40 @@
+﻿<div class="modal fade" id="Modal_Create_Edit_Lop">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-blue">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title txt_title"></h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-3 control-label">Tên Lớp</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control hidden" id="txtID">
+                        <input type="text" class="form-control" id="txtTenLop" placeholder="Nhập tên Lớp">
+                    </div>
+                </div>
+                <br />
+                <br />
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-3 control-label">Mô tả</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="txtMoTaLop" placeholder="Nhập mô tả">
+                    </div>
+                </div>
+                <br/>
+                <br/>
+            </div>
+            <div class="clearfix"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn pull-left btn-flat btn-danger" data-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary btn-flat btn_Add" onclick="Lop.Create_Lop()">Thêm</button>
+                <button type="button" class="btn btn-primary btn-flat btn_Update" onclick="Lop.Edit_Lop()">Lưu</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->

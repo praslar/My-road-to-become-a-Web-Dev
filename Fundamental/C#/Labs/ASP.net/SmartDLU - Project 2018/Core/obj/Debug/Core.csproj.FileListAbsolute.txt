@@ -1,0 +1,43 @@
+C:\Users\dinhv\OneDrive\DLU\Core\bin\Debug\Core.dll
+C:\Users\dinhv\OneDrive\DLU\Core\bin\Debug\Core.pdb
+C:\Users\dinhv\OneDrive\DLU\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\dinhv\OneDrive\DLU\Core\obj\Debug\Core.dll
+C:\Users\dinhv\OneDrive\DLU\Core\obj\Debug\Core.pdb
+D:\Online\Core\bin\Debug\Core.dll
+D:\Online\Core\bin\Debug\Core.pdb
+D:\Online\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+D:\Online\Core\obj\Debug\Core.dll
+D:\Online\Core\obj\Debug\Core.pdb
+D:\DLU\Core\bin\Debug\Core.dll
+D:\DLU\Core\bin\Debug\Core.pdb
+D:\DLU\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+D:\DLU\Core\obj\Debug\Core.dll
+D:\DLU\Core\obj\Debug\Core.pdb
+E:\Analysis and Design OPP\code\Online\Core\bin\Debug\Core.dll
+E:\Analysis and Design OPP\code\Online\Core\bin\Debug\Core.pdb
+E:\Analysis and Design OPP\code\Online\Core\obj\Debug\Core.csprojAssemblyReference.cache
+E:\Analysis and Design OPP\code\Online\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+E:\Analysis and Design OPP\code\Online\Core\obj\Debug\Core.dll
+E:\Analysis and Design OPP\code\Online\Core\obj\Debug\Core.pdb
+C:\Users\dinhv\OneDrive\Desktop\online\Core\bin\Debug\Core.dll
+C:\Users\dinhv\OneDrive\Desktop\online\Core\bin\Debug\Core.pdb
+C:\Users\dinhv\OneDrive\Desktop\online\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\dinhv\OneDrive\Desktop\online\Core\obj\Debug\Core.dll
+C:\Users\dinhv\OneDrive\Desktop\online\Core\obj\Debug\Core.pdb
+C:\Users\dinhv\OneDrive\Desktop\online_v1\Core\bin\Debug\Core.dll
+C:\Users\dinhv\OneDrive\Desktop\online_v1\Core\bin\Debug\Core.pdb
+C:\Users\dinhv\OneDrive\Desktop\online_v1\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\dinhv\OneDrive\Desktop\online_v1\Core\obj\Debug\Core.dll
+C:\Users\dinhv\OneDrive\Desktop\online_v1\Core\obj\Debug\Core.pdb
+C:\Users\Praslar\Desktop\New folder (3)\Core\bin\Debug\Core.dll
+C:\Users\Praslar\Desktop\New folder (3)\Core\bin\Debug\Core.pdb
+C:\Users\Praslar\Desktop\New folder (3)\Core\obj\Debug\Core.csprojAssemblyReference.cache
+C:\Users\Praslar\Desktop\New folder (3)\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+C:\Users\Praslar\Desktop\New folder (3)\Core\obj\Debug\Core.dll
+C:\Users\Praslar\Desktop\New folder (3)\Core\obj\Debug\Core.pdb
+C:\Users\Praslar\Desktop\SmartDLU - Project 2018\Core\bin\Debug\Core.dll
+C:\Users\Praslar\Desktop\SmartDLU - Project 2018\Core\bin\Debug\Core.pdb
+C:\Users\Praslar\Desktop\SmartDLU - Project 2018\Core\obj\Debug\Core.csprojAssemblyReference.cache
+C:\Users\Praslar\Desktop\SmartDLU - Project 2018\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+C:\Users\Praslar\Desktop\SmartDLU - Project 2018\Core\obj\Debug\Core.dll
+C:\Users\Praslar\Desktop\SmartDLU - Project 2018\Core\obj\Debug\Core.pdb

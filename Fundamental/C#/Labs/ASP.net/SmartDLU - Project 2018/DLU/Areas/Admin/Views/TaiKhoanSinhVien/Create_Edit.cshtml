@@ -1,0 +1,114 @@
+﻿<div class="modal fade" id="Modal_Edit_Create_TaiKhoanSinhVien">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title txt_TaiKhoan">
+                    Sửa Tài Khoản Thi
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-12">
+
+                    <form role="form">
+                        <div class="box-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Tên Đăng Nhập</label>
+                                        <input type="text" class="form-control hidden IDTaiKhoan" placeholder="">
+                                        <div class="form-group id_TenDangNhap">
+                                            <sapan id="msg_html_TenDangNhap"> </sapan>
+                                            <input type="text" class="form-control TenDangNhap" id="TenDangNhap" placeholder="Tên đăng nhập">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Mật Khẩu</label>
+                                        <input type="text" class="form-control MatKhau" placeholder="Mật khẩu">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Mail</label>
+                                        <div class="form-group id_ckeckMail">
+                                            <sapan id="msg_html"> </sapan>
+                                            <input type="text" class="form-control Email" id="Email" placeholder="Mail">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Chọn Lớp</label>
+                                        <select style="width:100%" id="DanhSachLop2" class="form-control DanhSachLop2"></select>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Họ</label>
+                                        <input type="text" class="form-control Ho" placeholder="Ho" >
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Tên</label>
+                                        <input type="text" class="form-control Ten" placeholder="Tên" >
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Ngày Sinh</label>
+                                        <input type="text" class="form-control datepicker NgaySinh" placeholder="Ngay sinh" >
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group text-center doiradio">
+                                        <label for="exampleInputPassword1">Giới Tính</label>
+                                        <br />
+                                        <label>
+                                            <input type="radio" name="RADIO" value="true" class="minimal" checked> Nam
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="RADIO" value="false" class="minimal"> Nữ
+                                        </label>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Số CMND</label>
+                                <input type="text" class="form-control SoCMND" placeholder="Số CMND" >
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Địa Chỉ</label>
+                                <input type="text" class="form-control DiaChi" placeholder="Địa chỉ" >
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn pull-left btn-flat btn-danger" data-dismiss="modal">Đóng</button>
+                <button type="button" onclick="TaiKhoanSinhVien.Edit_TaiKhoanSinhVien()" id="Edit" class="btn btn-primary btn-flat AnHien">Sửa</button>
+                <button type="button" onclick="TaiKhoanSinhVien.Them_TaiKhoanSinhVien()" id="Add" class="btn btn-primary btn-flat AnHien">Thêm</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+

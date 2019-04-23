@@ -1,0 +1,132 @@
+﻿@using DataAccess;
+@{
+    ViewBag.Title = "KetQuaThiThu";
+    Layout = "~/Views/Shared/_LayoutCauHoiOnTap.cshtml";
+    var dsCauHoi = ViewBag.dsCauHoi as List<CAUHOI>;
+    var dsCauTraLoi = ViewBag.dsCauTraLoi as IEnumerable<CAUTRALOI>;
+    var dsKetQuaThi = ViewBag.DSKetQuaThi as List<KETQUATHITHU>;
+}
+
+<div class="grid-content">
+    <script type="text/javascript" src="assets/js/quiz2/scripts.js"></script>
+    <div class="col-12 col-md-12 including fadeIn animated col-list-quiz">
+        <div id="multiple">
+
+            <div class="heading heading-white">
+                <h1><i class="glyphicon glyphicon-align-right"></i> Kết quả</h1>
+                <hr>
+            </div>
+            <h2><i class="glyphicon glyphicon-align-right"></i> Điểm :@ViewBag.Diem</h2>
+            <h2><i class="glyphicon glyphicon-align-right"></i> Số câu đúng :@ViewBag.KQ</h2>
+
+            <h2><i></i> Đáp án đúng:<span style="color:green"> Xanh</span></h2>
+            <h2><i></i> Đáp án thí sinh: <span style="color:red"> Đỏ</span></h2>
+            <section class="forms full_test" id="main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="card">
+                                <div class="card-body">
+                                    <form id="testing_form" action="" method="POST">
+                                        <input type="hidden" name="test_id" value="14682" />
+                                        <input type="hidden" name="log_id" value="9852" />
+                                        <input type="hidden" name="token" value="f74d049c17fab4b5c89a39fccd85b949">
+                                        <div class="col-md-8 col-sm-8 col-xs-12">
+                                            <div class="col_box_test">
+                                                <div class="clear col_box_baihoc_view" id="fulltest_content">
+                                                    @{
+
+                                                        var i = 1;
+                                                        foreach (var cauHoi in dsCauHoi)
+                                                        {
+                                                            var j = 1;
+                                                            <div data-part="@i" class="question fullest_page_@i" data-page="@i" style="display: block;"
+                                                                 id="test_question_128051">
+                                                                <div class="myquestionarea">
+                                                                    <div id="testing_answer_128051_@i">
+                                                                        <div class="question_number"><b>Câu @i: </b><span>@cauHoi.NOIDUNGCAUHOI</span></div>
+                                                                        @foreach (var ctl in dsCauTraLoi)
+                                                                        {
+                                                                        if (cauHoi.IDCAUHOI == ctl.IDCAUHOI)
+                                                                        {
+                                                                        foreach (var kqt in dsKetQuaThi)
+                                                                        {
+                                                                        if (kqt.INDEXCAUHOI == i)
+                                                                        {
+                                                                        if (kqt.CAUTRALOI == ctl.IDCAUTL && !ctl.DUNGSAI)
+                                                                        {
+                                                                        <label class="fulltest_answer_label active">
+                                                                            <input type="radio" data-iquestion="@i" data-question="128051"
+                                                                                   name="answer[128051][@i]" value="@ctl.INDEXCTL" checked="checked">
+                                                                            <strong>@CHUYENDOI.DoiCoSo(@j)</strong> <span style="color:red">
+                                                                                @ctl.NOIDUNGCAUTL.Trim()
+                                                                            </span>
+                                                                        </label>
+                                                                        }
+                                                                        else if (ctl.DUNGSAI)
+                                                                        {
+                                                                        <label class="fulltest_answer_label active">
+                                                                            <input type="radio" data-iquestion="@i" data-question="128051"
+                                                                                   name="answer[128051][@i]" value="@ctl.INDEXCTL" checked="checked">
+                                                                            <strong style="background: #03ec07; color: #fff; border: 1px solid #02f906;">@CHUYENDOI.DoiCoSo(@j)</strong> <span style="color:green">
+                                                                                @ctl.NOIDUNGCAUTL.Trim()
+                                                                            </span>
+                                                                        </label>
+                                                                        }
+                                                                        else
+                                                                        {
+                                                                        <label class="fulltest_answer_label">
+                                                                            <input type="radio" data-iquestion="@i" data-question="128051"
+                                                                                   name="answer[128051][@i]" value="@ctl.INDEXCTL">
+                                                                            <strong>@CHUYENDOI.DoiCoSo(@j)</strong> <span>
+                                                                                @ctl.NOIDUNGCAUTL.Trim()
+                                                                            </span>
+                                                                        </label>
+                                                                        }
+
+                                                                        }
+                                                                        }
+
+                                                                        j = j + 1;
+
+                                                                        }
+
+                                                                        }
+                                                                    </div>
+                                                                </div>
+                                                            </div> i = i + 1;
+                                                        }
+                                                    }
+                                                </div>
+                                            </div><!-- End -->
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="support_online"></div>
+                <div class="modal fade" id="modal_message" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel">Thông báo</h4>
+                            </div>
+                            <div class="modal-body">
+
+                            </div>
+                            <div class="modal-footer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="fb-root"></div>
+            </section>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>@ViewBag.Title</title>
+	<link rel="shortcut icon" href="http://www.studyvn.com/assets/img/quiz-ico.ico" type="image/x-icon">
+	<link href="~/Content/Front-end/assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="~/Content/Front-end/assets/css/animate.css" rel="stylesheet" />
+	<link href="~/Content/Front-end/assets/css/newtheme/style.css" rel="stylesheet" />
+	<link href="~/Content/Front-end/assets/css/users2/style.css" rel="stylesheet" />
+	<link href="~/Content/Front-end/assets/css/comment/style.css" rel="stylesheet" />
+	<link href="~/Content/Front-end/assets/css/query.Jcrop.min.css" rel="stylesheet" />
+	<link href="~/Content/Front-end/assets/css/jquery.jscrollpane.css" rel="stylesheet" />
+	<link href="~/Content/Front-end/assets/css/toastr/toastr.min.css" rel="stylesheet" />
+	<link href="~/Content/Front-end/css/taikhoan/css.css" rel="stylesheet" />
+	<link href="~/Content/Back-end/bower_components/select2/dist/css/select2.css" rel="stylesheet" />
+	<link href="~/Content/Front-end/css/quanlythi/ketqua.css" rel="stylesheet" />
+	<script src="~/Content/Front-end/assets/js/jquery-1.8.0.min.js"></script>
+</head>
+<body>
+	<div class="including" style="height:93%">
+		@RenderPage("_Menu_Left.cshtml")
+		@RenderBody()
+	</div>
+	<div class="menu-button-slide left">
+		<button class="btn btn-default" id="button-slide-app"><i class="glyphicon glyphicon-th-large"></i></button>
+		<button class="btn btn-default" id="button-slide-category"><i class="glyphicon glyphicon-align-right"></i></button>
+	</div>
+	<div class="menu-button-slide right">
+		<button class="btn btn-default" id="button-slide-col-3"><i class="glyphicon glyphicon-tower"></i></button>
+	</div>
+	<div class="fog"></div>
+
+	<script src="~/Content/Front-end/assets/js/bootstrap.min.js"></script>
+	<script src="~/Content/Front-end/assets/js/default.js"></script>
+	<script src="~/Content/Front-end/assets/js/jquery.form.min.js"></script>
+	<script src="~/Content/Front-end/assets/js/toastr/toastr.min.js"></script>
+	<script src="~/Content/Front-end/assets/js/jquery.sticky.js"></script>
+	<script src="~/Content/Front-end/assets/js/user/default.js"></script>
+	<script src="~/Content/Front-end/assets/js/scrollbar/jquery.mousewheel.js"></script>
+	<script src="~/Content/Front-end/assets/js/newstyle/default-main.js"></script>
+	<script src="~/Content/Front-end/assets/js/scrollbar/jquery.jscrollpane.min.js"></script>
+	<script src="~/Content/Front-end/assets/js/newstyle/default.js"></script>
+	<script src="~/Content/Front-end/assets/js/my-plugin/jquery.comments.js"></script>
+	<script src="~/Content/Front-end/assets/js/my-plugin/jquery.menuslide.js"></script>
+	<script src="~/Content/Front-end/assets/js/my-plugin/jquery.tabs.js"></script>
+	<script src="~/Content/Front-end/assets/js/jquery-validate/jquery.validate.js"></script>
+	<script src="~/Content/Front-end/assets/js/jcrop/jquery.Jcrop.min.js"></script>
+	<script src="~/Content/Back-end/bower_components/select2/dist/js/select2.js"></script>
+	<script src="~/Content/Back-end/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+	<!--js của nhóm 8-->
+	<script src="~/Content/Front-end/assets/js/mshoatoeic.js"></script>
+	<script src="~/Content/Front-end/assets/js/front.js"></script>
+	<script type="text/javascript" src="https://www.anhngumshoa.com/theme/frontend/default/js/jquery.countdown.min.js"></script>
+	<!---->
+	@RenderSection("scripts", required: false)
+	<script type="text/javascript">
+        $(document).ready(function () {
+            $('.loading').html('<div class="followingBallsG followingBallsG_1"></div><div class="followingBallsG followingBallsG_2"></div><div class="followingBallsG followingBallsG_3"></div><div class="followingBallsG followingBallsG_4"></div>');
+        });
+	</script>
+	<!-- Hotjar Tracking Code for www.studyvn.com -->
+	<script>
+        (function (f, b) {
+            var c;
+            f.hj = f.hj || function () { (f.hj.q = f.hj.q || []).push(arguments) };
+            f._hjSettings = { hjid: 34277, hjsv: 4 };
+            c = b.createElement("script"); c.async = 1;
+            c.src = "//static.hotjar.com/c/hotjar-" + f._hjSettings.hjid + ".js?sv=" + f._hjSettings.hjsv;
+            b.getElementsByTagName("head")[0].appendChild(c);
+        })(window, document);
+	</script>
+	<script>
+        (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-57884672-6', 'auto');
+        ga('send', 'pageview');
+
+	</script>
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-4360832377189167",
+            enable_page_level_ads: true
+        });
+	</script>
+	<script>
+        $(function () {
+            $('#AlertBox').removeClass('hide');
+            $('#AlertBox').delay(5000).slideUp(1000);
+
+        });
+	</script>
+</body>
+</html>

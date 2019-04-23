@@ -1,0 +1,247 @@
+﻿@model DataAccess.BODE
+@{
+    ViewBag.Title = "SuaBoDe";
+    var dsCauHoi = ViewBag.dsCauHoi as List<DataAccess.CAUHOI>;
+    var idBoDe = ViewBag.idBoDe;
+    var idMonHoc = ViewBag.idMonHoc;
+}
+<section class="content-header">
+    <h1>
+        Sửa thông tin bộ đề thi
+
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="/admin/dashboard"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
+        <li><a href="/admin/monhoc/index">Môn học</a></li>
+        <li><a href="/admin/bo-de-thi-@idMonHoc">Bộ đề thi</a></li>
+        <li class="active">Sửa bộ đề thi</li>
+    </ol>
+</section>
+<!-- Main content -->
+<section class="content">
+    <!-- Main row -->
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="row">
+                <!-- row info -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="box box-warning">
+                            <div class="box-header text-center">
+                                <span id="idBoDe"></span>
+                                <h3 class="box-title">
+                                    Thông tin bộ đề thi
+                                </h3>
+
+                            </div>
+                            <div class="box-body box-profile">
+                                <div class="col-sm-8 col-sm-push-2">
+                                    <form id="MyForm">
+                                        <ul class="list-group list-group-unbordered">
+                                            <!-- li item -->
+                                            <li class="hide">
+                                                @Html.HiddenFor(m => m.IDBODE, new { @id = "IDBODE" })
+                                                @Html.HiddenFor(m => m.IDMONHOC, new { @id = "IDMONHOC" })
+                                                @Html.HiddenFor(m => m.SOLUONGCAUHOI, new { @id = "SOLUONGCAUHOI" })
+                                                @Html.HiddenFor(m => m.NGAYTAOBODE, new { @id = "NGAYTAOBODE" })
+                                            </li>
+                                            <!-- /.li item -->
+                                            <!-- li item -->
+                                            <li class="list-group-item">
+                                                <div class="form-group">
+                                                    <b>Tên bộ đề</b>
+                                                    @Html.TextBoxFor(m => m.TENBODE, new { @id = "TENBODE", @class = "form-control" })
+                                                </div>
+                                            </li>
+                                            <!-- /.li item -->
+                                            <!-- li item -->
+                                            <li class="list-group-item">
+                                                <div class="form-group">
+                                                    <b>Điểm tối đa</b>
+                                                    @Html.TextBoxFor(m => m.DIEMTOIDA, new { @id = "DIEMTOIDA", @class = "form-control" })
+                                                </div>
+                                            </li>
+                                            <!-- /.li item -->
+                                            <!-- li item -->
+                                            <li class="list-group-item">
+                                                <div class="form-group">
+                                                    <b>Mức điểm đạt</b>
+                                                    @Html.TextBoxFor(m => m.MUCDIEMDAT, new { @id = "MUCDIEMDAT", @class = "form-control" })
+                                                </div>
+                                            </li>
+                                            <!-- /.li item -->
+                                            <!-- li item -->
+                                            <li class="list-group-item">
+                                                <div class="form-group">
+                                                    <b>Thời gian làm bài( phút)</b>
+                                                    @Html.TextBoxFor(m => m.THOIGIANLAMBAI_PHUT_, new { @id = "THOIGIANLAMBAI_PHUT_", @class = "form-control" })
+                                                </div>
+                                            </li>
+                                            <!-- /.li item -->
+                                        </ul>
+                                    </form>
+                                    <div class="form-group">
+                                        <a href="#" onclick="SuaThongTinBoDe()" class="btn btn-primary col-xs-4 col-xs-offset-4">Xác nhận</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row info -->
+                <!-- row questions -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="box box-success">
+                            <div class="box-header text-center">
+                                <h3 class="box-title ">
+                                    Danh sách câu hỏi
+                                </h3>
+                            </div>
+                            <div class="box-body">
+                                <div class="col-sm-6 col-sm-push-2">
+                                    <div class="panel-group">
+                                        <span class="hidden" id="idCauHoiBiDOi"></span>
+
+                                        @for (int i = 0; i < dsCauHoi.Count; i++)
+                                        {
+                                            <div class="row">
+                                                <div class=" col-sm-8">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading " data-toggle="collapse" href="#collapse_@dsCauHoi[i].IDCAUHOI">
+                                                            <h4 class="panel-title">
+                                                                <span><b>Câu @(i + 1):</b> @Html.Raw(@dsCauHoi[i].NOIDUNGCAUHOI)</span>
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="btn col-sm-4 btn-info">
+                                                    <a href="#" onclick="DoiCauHoi(@dsCauHoi[i].IDCAUHOI)">Đổi câu này</a>
+                                                </div>
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row questions -->
+            </div>
+            <!-- /.box -->
+        </div>
+    </div>
+    <!-- /.row -->
+</section>
+
+<!--Popup-->
+<div class="modal fade" id="MyModalDoiCauHoi">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="titleModal">Thay đổi câu hỏi</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="danhSachCauHoi">
+                </div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<!--Popup comfirm-->
+<div class="modal fade" id="confirmDoiCauHoi">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="titleModal">Thay đổi câu hỏi</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <span id="idCauHoiMuonDoiThanh"></span>
+                <h4>
+                    Bạn có chắn chắn muốn đổi thành công này không?
+                </h4>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="close btn btn-primary" data-dismiss="modal">Không</a>
+                <a href="#" class=" btn btn-primary" onclick="ConfirmDoiCauHoi()">Có</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Popup comfirm-->
+<!--/Popup-->
+<script src="~/Scripts/Back-end/BoDe_DeThi/jquery-1.10.2.min.js"></script>
+<script>
+    function SuaThongTinBoDe() {
+        var data = $("#MyForm").serialize();
+        $.ajax({
+            url: "/admin/BoDe/SuaBoDe",
+            type: "POST",
+            data: data,
+            success: function (result) {
+                window.location.href = "/admin/BoDe/Index/" + $("#IDMONHOC").val();
+            }
+        });
+    }
+    function DoiCauHoi(idCauHoi) {
+        $("#idBoDe").val(@idBoDe);
+        $("#idCauHoiBiDOi").val(idCauHoi);
+        var idMonHoc = $("#IDMONHOC").val();
+        $.ajax({
+            url: "/admin/BoDe/LoadDanhSachCauHoiCuaMonHoc?idMonHoc=" + idMonHoc+"&&idBoDe="+@idBoDe,
+            type: "GET",
+            success: function (data) {
+               $("#danhSachCauHoi").html("");
+                var listObject = JSON.parse(data);
+                $.each(listObject, function (val, key) {
+                    var myLines = "<div class='col- sm - 6 col- sm - push - 2'>" +
+                        "   <div class='panel-group'>" +
+                        "       <div class='row'>" +
+                        "           <div class=' col-sm-8'>" +
+                        "               <div class='panel panel-defaul'>" +
+                        "                   <div class='panel-heading ' data-toggle='collapse' href='#'>" +
+                        "                       <h4 class='panel-title'>" +
+                        "                           <span> " + key.NOIDUNGCAUHOI + "</span>" +
+                        "                       </h4>" +
+                        "                   </div>" +
+                        "               </div>" +
+                        "           </div>" +
+                        "               <div class='btn col-sm-4 btn-info'>" +
+                        "               <a href='#' onclick='ChonDoiCauHoi(" + key.IDCAUHOI + ")'>Đổi thành câu này</a>" +
+                        "           </div>" +
+                        "       </div>" +
+                        "   </div>" +
+                        "</div>";
+                    $("#danhSachCauHoi").append(myLines)
+                });
+                $("#MyModalDoiCauHoi").modal("show");
+            }
+        });
+    }
+    function ChonDoiCauHoi(id) {
+        $("#idCauHoiMuonDoiThanh").val(id);
+        $("#confirmDoiCauHoi").modal("show");
+    }
+    function ConfirmDoiCauHoi() {
+        var idBoDe = parseInt($("#idBoDe").val());
+        var idCauHoiBiDoi = parseInt($("#idCauHoiBiDOi").val());
+        var idCauHoiMuonDoiThanh = parseInt($("#idCauHoiMuonDoiThanh").val());
+        data = JSON.stringify({idCauHoiBiDoi: idCauHoiBiDoi, idCauHoiMuonDoiThanh: idCauHoiMuonDoiThanh });
+        $.ajax({
+            url: "/admin/BoDe/DoiCauHoi?idBoDe=" + idBoDe + "&&idCauHoiBiDoi=" + idCauHoiBiDoi + "&&idCauHoiMuonDoiThanh=" + idCauHoiMuonDoiThanh,
+            type: "POST",
+            data: data,
+            success: function (result) {
+                window.location.href = "/admin/BoDe/SuaBoDe?idBoDe="+@idBoDe+"&&idMonHoc="+@idMonHoc;
+            }
+        });
+    }
+</script>

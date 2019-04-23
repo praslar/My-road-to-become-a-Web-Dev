@@ -1,0 +1,660 @@
+﻿
+@{
+    ViewBag.Title = "TaoBoDe";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    var idMonHoc = ViewBag.IDMONHOC;
+}
+<style>
+    .error {
+        color: red;
+    }
+</style>
+
+@model IEnumerable<object>
+@{
+    List<DataAccess.CHUONGHOC> listChuong = Model.ToList()[0] as List<DataAccess.CHUONGHOC>;
+    List<DataAccess.CAUHOI> listCauHoi = Model.ToList()[1] as List<DataAccess.CAUHOI>;
+    List<DataAccess.DOKHO> listDoKho = Model.ToList()[2] as List<DataAccess.DOKHO>;
+    List<DataAccess.CAUTRALOI> listCauTraLoi = Model.ToList()[3] as List<DataAccess.CAUTRALOI>;
+}
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Tạo bộ đề thi
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="/admin/dashboard"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
+        <li><a href="/admin/monhoc/index">Môn học</a></li>
+        <li><a href="/admin/bo-de-thi-@idMonHoc">Bộ đề thi</a></li>
+        <li class="active">Tạo bộ đề</li>
+    </ol>
+</section>
+<!-- Main content -->
+<section class="content">
+
+    <div class="row" id="rowHand">
+        <div class="col-sm-12">
+            <div class="box box-info">
+                <div class="box-header text-center">
+                    <h3 class="box-title">
+                        Tạo bộ đề thi thủ công
+                    </h3>
+                    <div class="box-tool pull-right">
+                        <button class="btn btn-box-tool" data-widget="collapse">
+                            <li class="fa fa-minus"></li>
+                        </button>
+                    </div>
+                </div>
+                <div class="box-body box-profile">
+                    <div class="col-md-12 ">
+                        <ul class="list-group list-group-unbordered">
+                            <!-- nav-tab -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <!-- Custom Tabs -->
+                                    <div class="nav-tabs-custom">
+                                        <ul class="nav nav-tabs">
+                                            <li id="liNhapThongTin" class="active"><a href="#tab_1" data-toggle="tab">Nhập thông tin</a>
+                                            <li id="liChonCauHoi"><a href="#tab_2" data-toggle="tab">Chọn câu hỏi</a></li>
+                                            <li id="liXemKetQua"><a href="#tab_3" data-toggle="tab">Xem kết quả</a></li>
+                                        </ul>
+                                        <div class="tab-content ">
+                                            <div class="tab-pane active" id="tab_1">
+
+                                                <form id="ThongTinBanDau" action="" method="POST" class="form-horizontal" role="form">
+                                                    <div class="box-body">
+
+                                                        <!-- form-group -->
+                                                        <div class="form-group">
+                                                            <label for="input-id" class="col-sm-3 control-label">Tên bộ đề</label>
+                                                            <div class="col-sm-9">
+                                                                <input type="text" name="tenBoDe" id="tenBoDe" class="form-control" placeholder="Tên bộ đề" required>
+                                                            </div>
+                                                        </div>
+                                                        <!-- /.form-group -->
+                                                        <!-- form-group -->
+                                                        <div class="form-group">
+                                                            <label for="input-id" class="col-sm-3 control-label">Điểm tối đa</label>
+                                                            <div class="col-sm-9">
+                                                                <input type="number" name="diemToiDa" id="diemToiDa" class="form-control" placeholder="Điểm tối đa" required>
+                                                            </div>
+                                                        </div>
+                                                        <!-- /.form-group -->
+                                                        <!-- form-group -->
+                                                        <div class="form-group">
+                                                            <label for="input-id" class="col-sm-3 control-label">Điểm đạt</label>
+                                                            <div class="col-sm-9">
+                                                                <input type="number" name="diemDat" id="diemDat" class="form-control" placeholder="Điểm đạt" required>
+                                                            </div>
+                                                        </div>
+                                                        <!-- /.form-group -->
+                                                        <!-- form-group -->
+                                                        <div class="form-group">
+                                                            <label for="input-id" class="col-sm-3 control-label">Thời gian thi( phút)</label>
+                                                            <div class="col-sm-9">
+                                                                <input type="number" name="thoiGianThi" id="thoiGianThi" class="form-control" placeholder="Thời gian thi (phút)" required>
+                                                            </div>
+                                                        </div>
+                                                        <!-- /.form-group -->
+
+                                                    </div>
+                                                    <div class="box-footer text-center">
+                                                        <a id="NextTabChonCauHoi" data-toggle="tab" href=""><button type="submit" class="btn btn-info" id="nhapThongTin">Xác nhận</button></a>
+                                                    </div>
+                                                </form>
+
+                                            </div>
+                                            <table>
+                                                <div class="tab-pane" id="tab_2">
+                                                    <div class="row">
+                                                        <div class="col-sm-4 col-md-3">
+                                                            <div class="box box-warning">
+                                                                <div class="box-header with-border">
+                                                                    <h3 class="box-title">Kiểu chọn</h3>
+
+                                                                </div>
+                                                                <div class="box-body">
+                                                                    <ul class="nav nav-stacked nav-pills">
+                                                                        <li class="active">
+                                                                            <a data-toggle="tab" href="#tabOption1">
+                                                                                Chọn trực tiếp câu hỏi
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a data-toggle="tab" href="#tabOption2">
+                                                                                Random câu hỏi theo chương
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a data-toggle="tab" href="#tabOption3">
+                                                                                Random theo mức độ khó
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-8 col-md-9">
+                                                            <div class="tab-content">
+                                                                <div id="tabOption1" class="tab-pane active">
+                                                                    <div class="box box-success">
+                                                                        <div class="box-header with-border">
+                                                                            <h3 class="box-title">Chọn trực tiếp câu hỏi</h3>
+                                                                        </div>
+
+
+                                                                        <form action="" method="POST" class="form-horizontal" id="hand-select" role="form">
+                                                                            @foreach (var item in listChuong)
+                                                                            {
+                                                                                <div class="box-body">
+
+                                                                                    <h5><b id="chuong1">@item.TENCHUONGHOC</b>:</h5>
+                                                                                    <hr>
+                                                                                    @foreach (var item1 in listCauHoi)
+                                                                                    {
+                                                                                        if (item1.IDCHUONGHOC == item.IDCHUONGHOC)
+                                                                                        {
+                                                                                            <div class="row">
+                                                                                                <div class="col-xs-1 control-label">
+                                                                                                    <input class="pull-left" type="checkbox" id="item_@item1.IDCAUHOI">
+                                                                                                </div>
+                                                                                                <div class="col-xs-10 col-md-11 pull-right ">
+                                                                                                    <div class="panel-group">
+                                                                                                        <div class="panel panel-default">
+                                                                                                            <div class="panel-heading " data-toggle="collapse" href="#collapse1">
+                                                                                                                <h4 class="panel-title">
+                                                                                                                    <span>@Html.Raw(@item1.NOIDUNGCAUHOI) </span>
+                                                                                                                </h4>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        }
+
+                                                                                    }
+
+                                                                                </div>
+                                                                            }
+                                                                            <div class="box-footer ">
+                                                                                <span>Số câu hỏi đã chọn: <b id="numberQuestion"></b></span>
+                                                                                <a data-toggle="tab" href="#tab_3"><button type="submit" class="btn btn-info pull-right" id="chonTrucTiep">Xác nhận</button></a>
+
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div id="tabOption2" class="tab-pane ">
+                                                                    <div class="box box-success">
+                                                                        <div class="box-header with-border">
+                                                                            <h3 class="box-title">Random câu hỏi theo chương</h3>
+                                                                        </div>
+
+
+                                                                        <form id="form_LayCauHoiTheoChuong" action="" method="POST" class="form-horizontal" role="form">
+                                                                            @foreach (var item in listChuong)
+                                                                            {
+                                                                                int i = 0;
+                                                                                <div class="box-body">
+                                                                                    <h5 id="chuong">Chương: @item.TENCHUONGHOC</h5>
+                                                                                    <hr>
+                                                                                    @foreach (var item1 in listCauHoi)
+                                                                                    {
+                                                                                        if (item1.IDCHUONGHOC == item.IDCHUONGHOC)
+                                                                                        {
+                                                                                            i++;
+                                                                                            <div class="row">
+                                                                                                <div class="col-xs-10 col-md-11 pull-right ">
+                                                                                                    <div class="panel-group">
+                                                                                                        <div class="panel panel-default">
+                                                                                                            <div class="panel-heading " data-toggle="collapse" href="#collapse1">
+                                                                                                                <h4 class="panel-title">
+                                                                                                                    <span>@Html.Raw(@item1.NOIDUNGCAUHOI) </span>
+                                                                                                                </h4>
+                                                                                                            </div>
+
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        }
+                                                                                    }
+                                                                                    <span>
+                                                                                        Tổng số câu của chương "@item.TENCHUONGHOC":
+                                                                                        <span id="tongSoCau_@item.IDCHUONGHOC">@i</span>
+                                                                                    </span>
+
+                                                                                </div>
+                                                                            }
+
+                                                                            <div class="box-footer text-center">
+                                                                                    <div class="box-body">
+                                                                                        <div class="row col-sm-8">
+                                                                                            <p>Nhập vào số câu muốn lấy của mỗi chương, nếu có chương nào bạn không muốn lấy câu hỏi thì hãy nhập 0.</p>
+                                                                                            @foreach (var item in listChuong)
+                                                                                            {
+                                                                                                <div class="form-group">
+                                                                                                    <label for="input-id" class="col-sm-4 control-label"> @item.TENCHUONGHOC:</label>
+                                                                                                    <div class="col-sm-6" id="soCauHoiTheoChuong">
+                                                                                                        <input type="number" name="soLuongCauHoiCanLay" id="@item.IDCHUONGHOC" class="form-control" placeholder="nhập số câu muốn lấy của chương này">
+                                                                                                        <p id="validate_@item.IDCHUONGHOC" style="display:none;color:red">Số câu hỏi không hợp lệ</p>
+                                                                                                    </div>
+                                                                                                    <br />
+                                                                                                    <br />
+                                                                                                </div>
+                                                                                            }
+
+
+
+                                                                                        </div>
+
+                                                                                    </div>
+                                                                                    <div class="box-footer text-center">
+                                                                                        <a id="NextTabTaoBoDe" data-toggle="tab" href=""><button type="submit" class="btn btn-info pull-right" id="chonTheoChuong">Xác nhận</button></a>
+
+                                                                                    </div>
+
+
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+                                                                <div id="tabOption3" class="tab-pane ">
+                                                                    <div class="box box-success">
+                                                                        <div class="box-header with-border">
+                                                                            <h3 class="box-title">Random theo mức độ khó</h3>
+                                                                        </div>
+
+
+                                                                        <form action="" method="POST" class="form-horizontal" role="form">
+                                                                            <div class="box-body">
+                                                                                <div class="row col-sm-8">
+                                                                                    <div class="form-group">
+                                                                                        <label for="input-id" class="col-sm-4 control-label">Nhập số câu</label>
+                                                                                        <div class="col-sm-6">
+                                                                                            <input type="number" name="" id="soLuongCauDoKho" class="form-control" placeholder="nhập số câu">
+                                                                                        </div>
+                                                                                        <br />
+                                                                                        <br />
+                                                                                    </div>
+                                                                                    <!-- form-group -->
+                                                                                    @foreach (var item in listDoKho)
+                                                                                    {
+                                                                                        <div class="form-group">
+                                                                                            <label for="input-id" class="col-sm-4 control-label">Độ khó @item.TENDOKHO (%):</label>
+                                                                                            <div class="col-sm-6">
+                                                                                                <input type="number" name="" id="soCauDoKho" class="form-control">
+                                                                                            </div>
+                                                                                            <br />
+                                                                                            <br />
+                                                                                        </div>
+                                                                                    }
+                                                                                    <!-- /.form-group -->
+                                                                                </div>
+
+                                                                            </div>
+                                                                            <div class="box-footer text-center">
+                                                                                <p id="spanChonTheoDoKho"><a data-toggle="tab" href="#tab_3"><button type="submit" class="btn btn-info pull-right" id="chonTheoDoKho">Xác nhận</button></a></p>
+
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- /.tab-pane -->
+                                                </div>
+                                            </table>
+                                            <table></table>
+                                            <div class="tab-pane" id="tab_3">
+                                                <div class="row">
+                                                    <!-- row info -->
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <div class="box box-warning">
+                                                                <div class="box-header text-center">
+                                                                    <h3 class="box-title">
+                                                                        Thông tin bộ đề thi
+                                                                    </h3>
+
+                                                                </div>
+                                                                <div class="box-body box-profile">
+                                                                    <div class="col-sm-8 col-sm-push-2">
+                                                                        <ul class="list-group list-group-unbordered">
+                                                                            <!-- li item -->
+                                                                            <li class="list-group-item">
+                                                                                <b>Tên bộ đề</b>
+                                                                                <span class="pull-right" id="xNhanTenBoDe">
+
+                                                                                </span>
+                                                                            </li>
+                                                                            <!-- /.li item -->
+                                                                            <!-- li item -->
+                                                                            <!-- /.li item -->
+                                                                            <!-- li item -->
+                                                                            <!-- /.li item -->
+                                                                            <!-- li item -->
+                                                                            <li class="list-group-item">
+                                                                                <b>Số câu hỏi</b>
+                                                                                <span class="pull-right" id="xNhanSoCauHoi">
+
+                                                                                </span>
+                                                                            </li>
+                                                                            <!-- /.li item -->
+                                                                            <!-- li item -->
+                                                                            <li class="list-group-item">
+                                                                                <b>Điểm tối đa</b>
+                                                                                <span class="pull-right" id="xNhanDiemToiDa">
+
+                                                                                </span>
+                                                                            </li>
+                                                                            <li class="list-group-item">
+                                                                                <b>Điểm đạt</b>
+                                                                                <span class="pull-right" id="xNhanDiemDat">
+
+                                                                                </span>
+                                                                            </li>
+                                                                            <!-- /.li item -->
+                                                                            <!-- li item -->
+                                                                            <li class="list-group-item">
+                                                                                <b>Thời gian làm bài</b>
+                                                                                <span class="pull-right" id="xNhanThoiGianThi">
+
+                                                                                </span>
+                                                                            </li>
+                                                                            <!-- /.li item -->
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /.row info -->
+                                                    <!-- row questions -->
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <div class="box box-success">
+                                                                <div class="box-header text-center">
+                                                                    <h3 class="box-title ">
+                                                                        Danh sách câu hỏi
+                                                                    </h3>
+                                                                </div>
+                                                                <div class="box-body">
+                                                                    <div id="danhSachCauHoi" class="col-sm-8 col-sm-push-2 text-left">
+
+
+
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /.row questions -->
+                                                </div>
+                                                <div class="text-center">
+                                                    <a href="#"><button type="submit" class="btn btn-info" id="xacNhan">Bắt đầu tạo bộ đề</button></a>
+                                                </div>
+                                            </div>
+                                            <!-- /.tab-pane -->
+
+                                        </div>
+                                        <!-- /.tab-content -->
+                                    </div>
+                                    <!-- nav-tabs-custom -->
+                                </div>
+                                <!-- /.col -->
+                                <!-- ./nav-tab -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.row hand -->
+
+</section>
+
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script src="~/Scripts/Back-end/BoDe_DeThi/jquery.validate.min.js"></script>
+<script>
+    $(document).ready(function () {
+        function getSum(total, num) {
+            return total + num;
+        }
+
+        var boDe = {
+            IDBODE :null,
+            IDMONHOC: @idMonHoc,
+            TENBODE: null,
+            SOLUONGCAUHOI: null,
+            NGAYTAOBODE: null,
+            DIEMTOIDA: null,
+            MUCDIEMDAT: null,
+            THOIGIANLAMBAI_PHUT_: null
+
+        };
+
+        var numChecked = $(' .col-xs-1.control-label input[type="checkbox"]');
+        numChecked.change(function () {
+            var num = numChecked.filter(':checked').length;
+            $('#numberQuestion').text(num);
+
+        })
+        $('#nhapThongTin').on("click", function () {
+            $("#ThongTinBanDau").validate({
+                rules: {
+                    tenBoDe: "required",
+                    diemToiDa: "required",
+                    diemDat: "required",
+                    thoiGianThi:"required"
+                },
+                messages: {
+                    tenBoDe: "Hãy điền tên bộ đề",
+                    diemToiDa: "Hãy điền điểm tối đa",
+                    diemDat: "Hãy điền mức điểm đạt",
+                    thoiGianThi:"Hãy diền thời gian thi( phút)"
+                }
+            });
+            if (!$("#ThongTinBanDau").valid()) {
+                return false;
+            };
+            boDe.TENBODE = $('#tenBoDe').val();
+            boDe.DIEMTOIDA = $('#diemToiDa').val();
+            boDe.MUCDIEMDAT = $('#diemDat').val();
+            boDe.THOIGIANLAMBAI_PHUT_ = $('#thoiGianThi').val();
+            $('#liNhapThongTin').removeAttr("class");
+            $('#liChonCauHoi').addClass('active');
+            $('#NextTabChonCauHoi').attr("href", "#tab_2");
+        });
+        $('#chonTrucTiep').click(function () {
+            var ItemIdArray = [];
+            document.getElementById("xNhanTenBoDe").innerHTML = boDe.TENBODE;
+            document.getElementById("xNhanDiemToiDa").innerHTML = boDe.DIEMTOIDA;
+            document.getElementById("xNhanThoiGianThi").innerHTML = boDe.THOIGIANLAMBAI_PHUT_;
+            document.getElementById("xNhanDiemDat").innerHTML = boDe.MUCDIEMDAT;
+
+            $(" input[type=checkbox]").each(function (index, val) {
+
+                var Id = $(val).attr("id");
+                var ischecked = $("#" + Id).is(":checked", true);
+
+                if (ischecked) {
+
+                    var array = Id.split("_");
+                    var ItemId = array[1];
+
+                    ItemIdArray.push(ItemId);
+
+                }
+            })
+            if (ItemIdArray.length != 0) {
+                $.ajax({
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    url: "/admin/BoDe/SaveSoCauHoiTrucTiep",
+                    traditional: true,
+                    data: JSON.stringify({
+                        list: ItemIdArray
+                    }),
+                    dataType: "json",
+                    success: function (data) {
+                        $('#liChonCauHoi').removeClass('active');
+                        $('#liXemKetQua').addClass('active');
+                        $("#danhSachCauHoi").html("");
+                        var listObject = JSON.parse(data);
+                        document.getElementById("xNhanSoCauHoi").innerHTML = listObject.soCauHoi;
+                        $.each(listObject.dsCauHoi, function (val, key) {
+                            var myLines="<div class='panel-group'>"+
+                                            "<div class='panel panel-default'>"+
+                                                " <div class='panel-heading ' data-toggle='collapse'>"+
+                                                    "<h4 class='panel-title'>"+
+                                                        "<span>"+key.NOIDUNGCAUHOI+"</span>" +
+                                                    " </h4>" +
+                                                "</div>" +
+                                            " </div>" +
+                                " </div>";
+                            $('#danhSachCauHoi').append(myLines)
+                        });
+                    }
+                });
+            }
+
+        });
+
+        $('#chonTheoChuong').click(function () {
+            var bool = true;
+            var ItemIdArray = [];
+            document.getElementById("xNhanTenBoDe").innerHTML = boDe.TENBODE;
+            document.getElementById("xNhanDiemToiDa").innerHTML = boDe.DIEMTOIDA;
+            document.getElementById("xNhanThoiGianThi").innerHTML = boDe.THOIGIANLAMBAI_PHUT_;
+            document.getElementById("xNhanDiemDat").innerHTML = boDe.MUCDIEMDAT;
+            $("#soCauHoiTheoChuong input[type=number]").each(function (index, val) {
+
+                var Id = $(val).attr("id");
+                var value = parseInt($(val).val());
+                var tongSoCauCuaChuong = parseInt($("#tongSoCau_" + Id).text());
+                if (value < 0 || value > tongSoCauCuaChuong || isNaN(value) == true) {
+                    $("#validate_" + Id).show();
+                    bool = false;
+                    return false;
+                }
+                else if (value != null) {
+                    $("#validate_" + Id).hide();
+                    ItemIdArray.push(value);
+                }
+            });
+            if (bool == false) {
+                return false;
+            }
+            if (ItemIdArray.length != 0) {
+                $.ajax({
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    url: "/admin/BODE/SaveSoCauHoiTheoChuong?idMonHoc="+@idMonHoc ,
+                    traditional: true,
+                    data: JSON.stringify({
+                        itemNumbers: ItemIdArray
+                    }),
+                    dataType: "json",
+                    success: function (data) {
+                        $('#liChonCauHoi').removeClass('active');
+                        $('#liXemKetQua').addClass('active');
+                        $("#danhSachCauHoi").html("");
+                        var listObject = JSON.parse(data);
+                        document.getElementById("xNhanSoCauHoi").innerHTML = listObject.soCauHoi;
+                        $.each(listObject.dsCauHoi, function (val, key) {
+                            var myLines = "<div class='panel-group'>" +
+                                "<div class='panel panel-default'>" +
+                                " <div class='panel-heading ' data-toggle='collapse'>" +
+                                "<h4 class='panel-title'>" +
+                                "<span>" + key.NOIDUNGCAUHOI + "</span>" +
+                                " </h4>" +
+                                "</div>" +
+                                " </div>" +
+                                " </div>";
+                            $('#danhSachCauHoi').append(myLines)
+                        });
+                    }
+                });
+            }
+            $("#NextTabTaoBoDe").attr("href", "#tab_3");
+            $('#liChonCauHoi').removeAttr("class");
+            $('#liXemKetQua').addClass('active');
+        });
+
+        $('#chonTheoDoKho').click(function () {
+            var soCau = $('#soLuongCauDoKho').val();
+            var ItemIdArray = [];
+            document.getElementById("xNhanTenBoDe").innerHTML = boDe.TENBODE;
+            document.getElementById("xNhanDiemToiDa").innerHTML = boDe.DIEMTOIDA;
+            document.getElementById("xNhanThoiGianThi").innerHTML = boDe.THOIGIANLAMBAI_PHUT_;
+            document.getElementById("xNhanDiemDat").innerHTML = boDe.MUCDIEMDAT;
+            $(" input[type=number]#soCauDoKho").each(function (index, val) {
+
+                var Id = $(val).val();
+
+                if (Id) {
+                    ItemIdArray.push(parseInt(Id));
+                }
+            })
+            if (ItemIdArray.reduce(getSum) != 100) {
+                alert("ban phai nhap dung 100%");
+                $('#aChonTheoDoKho').removeAttr('href');
+            }
+            if (ItemIdArray.reduce(getSum) == 100) {
+                $.ajax({
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    url: "/admin/BODE/SaveSoCauHoiTheoDoKho?idMonHoc="+@idMonHoc+"&&soLuongCauHoi=" + soCau,
+                    traditional: true,
+                    data: JSON.stringify({
+                        itemNumbers: ItemIdArray
+                    }),
+                    dataType: "json",
+                    success: function (data) {
+                        $('#liChonCauHoi').removeClass('active');
+                        $('#liXemKetQua').addClass('active');
+                        $("#danhSachCauHoi").html("");
+                        var listObject = JSON.parse(data);
+                        document.getElementById("xNhanSoCauHoi").innerHTML = listObject.soCauHoi;
+                        $.each(listObject.dsCauHoi, function (val, key) {
+                            var myLines = "<div class='panel-group'>" +
+                                "<div class='panel panel-default'>" +
+                                " <div class='panel-heading ' data-toggle='collapse'>" +
+                                "<h4 class='panel-title'>" +
+                                "<span> " + key.NOIDUNGCAUHOI + "</span>"
+                                " </h4>" +
+                                "</div>" +
+                                " </div>" +
+                                " </div>";
+                            $('#danhSachCauHoi').append(myLines)
+                        });
+                    }
+                });
+            }
+        });
+
+        $('#xacNhan').click(function () {
+            boDe.SOLUONGCAUHOI = document.getElementById("xNhanSoCauHoi").innerHTML;
+            $.ajax({
+                type: "POST",
+                contentType: "application/json; charset=utf-8",
+                url: "/admin/BODE/XacNhanTaoBoDe",
+
+                data: "{boDe:" + JSON.stringify(boDe) + "}",
+                dataType: "json",
+                success: function (data) {
+                    window.location.href = "/admin/bo-de-thi-@idMonHoc";
+                }
+            });
+        });
+
+        });
+
+</script>
+
+

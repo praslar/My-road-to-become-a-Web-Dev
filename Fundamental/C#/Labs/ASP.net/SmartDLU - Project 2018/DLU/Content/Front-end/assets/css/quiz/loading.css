@@ -1,0 +1,233 @@
+﻿.loading{
+position:relative;
+width:250px;
+height:20px;
+display: none;
+margin: 10px auto;
+}
+
+.followingBallsG{
+background-color:#1ABC9C;
+position:absolute;
+top:0;
+left:0;
+width:20px;
+height:20px;
+-moz-border-radius:10px;
+-moz-animation-name:bounce_followingBallsG;
+-moz-animation-duration:1.9s;
+-moz-animation-iteration-count:infinite;
+-moz-animation-direction:linear;
+-webkit-border-radius:10px;
+-webkit-animation-name:bounce_followingBallsG;
+-webkit-animation-duration:1.9s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:linear;
+-o-border-radius:10px;
+-o-animation-name:bounce_followingBallsG;
+-o-animation-duration:1.9s;
+-o-animation-iteration-count:infinite;
+-o-animation-direction:linear;
+-ms-border-radius:10px;
+-ms-animation-name:bounce_followingBallsG;
+-ms-animation-duration:1.9s;
+-ms-animation-iteration-count:infinite;
+-ms-animation-direction:linear;
+border-radius:10px;
+animation-name:bounce_followingBallsG;
+animation-duration:1.9s;
+animation-iteration-count:infinite;
+animation-direction:linear;
+}
+
+.followingBallsG_1{
+-moz-animation-delay:0s;
+}
+
+.followingBallsG_1{
+-webkit-animation-delay:0s;
+}
+
+.followingBallsG_1{
+-o-animation-delay:0s;
+}
+
+.followingBallsG_1{
+-ms-animation-delay:0s;
+}
+
+.followingBallsG_1{
+animation-delay:0s;
+}
+
+.followingBallsG_2{
+-moz-animation-delay:0.19s;
+-webkit-animation-delay:0.19s;
+-o-animation-delay:0.19s;
+-ms-animation-delay:0.19s;
+animation-delay:0.19s;
+}
+
+.followingBallsG_3{
+-moz-animation-delay:0.38s;
+-webkit-animation-delay:0.38s;
+-o-animation-delay:0.38s;
+-ms-animation-delay:0.38s;
+animation-delay:0.38s;
+}
+
+.followingBallsG_4{
+-moz-animation-delay:0.57s;
+-webkit-animation-delay:0.57s;
+-o-animation-delay:0.57s;
+-ms-animation-delay:0.57s;
+animation-delay:0.57s;
+}
+
+@-moz-keyframes bounce_followingBallsG{
+0%{
+left:0px;
+background-color:#1ABC9C;
+}
+
+50%{
+left:236px;
+background-color:#1ABC9C;
+}
+
+100%{
+left:0px;
+background-color:#1ABC9C;
+}
+
+}
+
+@-webkit-keyframes bounce_followingBallsG{
+0%{
+left:0px;
+background-color:#1ABC9C;
+}
+
+50%{
+left:236px;
+background-color:#1ABC9C;
+}
+
+100%{
+left:0px;
+background-color:#1ABC9C;
+}
+
+}
+
+@-o-keyframes bounce_followingBallsG{
+0%{
+left:0px;
+background-color:#1ABC9C;
+}
+
+50%{
+left:236px;
+background-color:#1ABC9C;
+}
+
+100%{
+left:0px;
+background-color:#1ABC9C;
+}
+
+}
+
+@-ms-keyframes bounce_followingBallsG{
+0%{
+left:0px;
+background-color:#1ABC9C;
+}
+
+50%{
+left:236px;
+background-color:#1ABC9C;
+}
+
+100%{
+left:0px;
+background-color:#1ABC9C;
+}
+
+}
+
+@keyframes bounce_followingBallsG{
+0%{
+left:0px;
+background-color:#1ABC9C;
+}
+
+50%{
+left:236px;
+background-color:#1ABC9C;
+}
+
+100%{
+left:0px;
+background-color:#1ABC9C;
+}
+
+}
+.ytLoad {
+    position: fixed;display: none;
+    z-index: 2147483647;
+    top: 0;
+    left: -6px;
+    width: 0%;
+    height: 8px;
+    background: #1ABC9C;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    -moz-box-shadow: #1ABC9C 1px 0 6px 1px;
+    -ms-box-shadow: #1ABC9C 1px 0 6px 1px;
+    -webkit-box-shadow: #1ABC9C 1px 0 6px 1px;
+    box-shadow:#1ABC9C 1px 0 6px 1px;
+    -webkit-transition: width 1s ease;
+    -moz-transition: width 1s ease;
+    -o-transition: width 1s ease;
+    -ms-transition: width 1s ease;
+    transition: width 1s ease;
+}
+.ytLoad.error {
+    background: #C20A47;
+}
+
+.ytLoad dd, .ytLoad dt {
+    position: absolute;
+    top: 0;
+    height: 8px;
+    -moz-box-shadow: #C9312C 1px 0 6px 1px;
+    -ms-box-shadow: #C9312C 1px 0 6px 1px;
+    -webkit-box-shadow: #C9312C 1px 0 6px 1px;
+    box-shadow: #C9312C 1px 0 6px 1px;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.ytLoad.error dd, .ytLoad.error dt {
+    -moz-box-shadow: #C20A47 1px 0 6px 1px;
+    -ms-box-shadow: #C20A47 1px 0 6px 1px;
+    -webkit-box-shadow: #C20A47 1px 0 6px 1px;
+    box-shadow: #C20A47 1px 0 6px 1px;
+}
+
+.ytLoad dt {
+    opacity: .6;
+    width: 180px;
+    right: -80px;
+    clip: rect(-6px,90px,14px,-6px);
+}
+
+.ytLoad dd {
+    opacity: .6;
+    width: 20px;
+    right: 0;
+    clip: rect(-6px,22px,14px,10px);
+}

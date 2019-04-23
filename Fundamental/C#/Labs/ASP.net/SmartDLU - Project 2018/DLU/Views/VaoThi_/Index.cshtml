@@ -1,0 +1,69 @@
+﻿
+@{
+	ViewBag.Title = "Index";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="grid-content">
+	<script type="text/javascript" src="assets/js/quiz2/scripts.js"></script>
+	<div class="col-12 col-md-12 including fadeIn animated col-list-quiz">
+		<!--Đề thi online ở trang chủ-->
+		<div id="multiple">
+
+			<div class="heading heading-white">
+				<h1><i class="glyphicon glyphicon-align-right"></i> Đề thi đang diễn ra</h1>
+				<hr>
+			</div>
+
+			<div id="quizs" class="new many online">
+				<div class="container">
+					<div class="quiz including" style="border-top: 3px solid #f8a31c">
+						<div class="including">
+							<h1 class="pull-left"><a href="#">Tin học cơ sở </a></h1>
+							<div class="pull-right bookmark">
+								<a href="#"
+								   data-id="215"><i class="glyphicon glyphicon-bookmark" class="a-bookmark"></i></a>
+							</div>
+						</div>
+						<p class="description">
+							câu hỏi: <span class="color-red">50</span> , thời gian: <span class="color-red">90 phút</span>
+							, chuyên mục: <a href="#" class="color-red">
+								<span class="color-red">Công nghệ thông tin</span>
+							</a>
+							, loại đề thi: <span class="color-red">Kết thúc học phần</span>,
+							người đăng: <a href="#"><span class="color-red">Admin</span></a>
+						</p>
+						<a href="Thi.html">
+							<button class="btn btn-default pull-right" style="background: #f8a31c">
+								Vào thi
+							</button>
+						</a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<script type="text/javascript" src="assets/js/newstyle/default-main.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			//$(".col-1-slide").menuslide({element_action:'#slide-menu-1'});
+			tabs = $("#multiple").tabs({ redirect: true });
+
+			category = $("#category-all");
+			category.closest('ul').find('li').removeClass('active');//Loại bỏ active
+			li_select = $("#category-all").closest('li');//Lựa chọn select
+			color = li_select.attr('data-color');//Lấy màu
+			li_select.addClass('active');
+			$(".list-category li.active").css('border-right', '3px solid ' + color);//Thêm màu cho active
+
+			$("#search-form input[name=text_search]").live('click', function () {
+				$("#search-form").find('.select').fadeIn();
+			});
+			$("#nav-category").addClass('active');
+		});
+	</script>
+</div>
+

@@ -1,0 +1,239 @@
+﻿
+@{
+	ViewBag.Title = "Index";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="grid-content">
+	<script type="text/javascript" src="assets/js/quiz2/scripts.js"></script>
+	<div id="div-category" class="col-1 col-1-slide col-md-3 fadeIn animated">
+		<form id="search-form" class="including" action="#" method="GET">
+			<div class="including">
+				<input type="text" class="form-control no-border pull-left" placeholder="TÌM KIẾM ..."
+					   name="text_search" value=""><button class="btn btn-default pull-right" type="submit">
+					<i class="iconmini-search iconsprite-mini"></i>
+				</button>
+			</div>
+			<div class="select" style="display:none">
+				<select class="form-control no-border" name="type_id">
+					<option value="all">Chọn loại đề thi</option>
+					<option value="5">30%</option>
+					<option value="6">70%</option>
+					<option value="8">Tất cả</option>
+				</select><select class="form-control no-border" name="education_id">
+					<option value="all">Học vấn</option>
+					<option value="1">Đại học</option>
+					<option value="2">Kỹ sư</option>
+					<option value="3">Cử nhân</option>
+					<option value="5">Tiến sĩ</option>
+					<option value="all">Tất cả</option>
+				</select><select class="form-control no-border" name="level_id">
+					<option value="all">Trình độ</option>
+					<option value="13">Cơ bản</option>
+					<option value="14">Nâng cao</option>
+					<option value="all">Tất cả</option>
+				</select><select class="form-control no-border" name="category_id">
+					<option value="all">Chuyên mục</option>
+					<option value="7">Lập trình JAVA</option>
+					<option value="8">Lập trình ASP .NET</option>
+					<option value="11">Lập trình C#</option>
+					<option value="10">Lập trình C++</option>
+					<option value="12">Lập trình PHP</option>
+					<option value="13">Tin học cơ sở</option>
+					<option value="9">Lập trình Python</option>
+					<option value="14">Lập trình ASM</option>
+					<option value="all">Tất cả</option>
+				</select><input type="hidden" name="search" value="true" />
+			</div>
+		</form>
+		<div class="heading">
+			<h1>Chuyên mục</h1>
+			<hr>
+		</div>
+		<ul class="list-category including">
+			<li class="active" data-color="#2980b9">
+				<a href="#">
+					<i class="iconcolor" style="background: #2980b9"></i>Tất
+					cả <span class="color-red">( 133 )</span>
+				</a>
+			</li>
+			<li data-color="#f8a31c">
+				<a href="#" title="Lập trình A" id="category-7"><i class="iconcolor" style="background: red"></i>Tin học cơ sở <span class="color-red">( 30 )</span></a>
+			</li>
+			<li data-color="#f8a31c">
+				<a href="#" title="Lập trình B" id="category-7"><i class="iconcolor" style="background: blue"></i>Mạng máy tính <span class="color-red">( 34 )</span></a>
+			</li>
+			<li data-color="#f8a31c">
+				<a href="#" title="Lập trình C" id="category-7"><i class="iconcolor" style="background: green"></i>Hệ điều hành <span class="color-red">( 35 )</span></a>
+			</li>
+			<li data-color="#f8a31c">
+				<a href="#" title="Lập trình D" id="category-7"><i class="iconcolor" style="background: #f8a31c"></i>Cấu trúc dữ liệu và thuật giải <span class="color-red">( 31 )</span></a>
+			</li>
+		</ul>
+	</div>
+	<div id="col-2" class="col-12 col-md-9 including fadeIn animated col-list-quiz">
+		<!--Đề thi online ở trang chủ-->
+		<div id="multiple">
+
+			<div class="heading heading-white">
+				<h1><i class="glyphicon glyphicon-align-right"></i> Đề thi </h1>
+				<hr>
+			</div>
+
+			<div id="quizs" class="new many online">
+				<div class="quiz including" style="border-top: 3px solid #f8a31c">
+					<div class="including">
+						<h1 class="pull-left"><a href="#">Đề thi thử số 1</a></h1>
+						<div class="pull-right bookmark">
+							<a href="#" data-id="215"><i class="glyphicon glyphicon-bookmark" class="a-bookmark"></i></a>
+						</div>
+					</div>
+					<p class="description">
+						câu hỏi: <span class="color-red">50</span> , thời gian: <span class="color-red">90 phút</span>
+						, lượt thi: <span class="color-red">1976</span> , chuyên mục: <a href="7.html" class="color-red">
+							<span class="color-red">Công nghệ thông tin</span>
+						</a>
+						, trình độ: <span class="color-red">Nâng cao</span> , loại đề thi: <span class="color-red">
+							Kết
+							thúc học phần
+						</span>,
+						người đăng: <a href="#"><span class="color-red">Admin</span></a>
+					</p>
+					<a href="Thi.html"><button class="btn btn-default pull-right" style="background: #f8a31c">Truy cập</button></a>
+				</div>
+
+			</div>
+			<div id="quizs" class="new many online">
+				<div class="quiz including" style="border-top: 3px solid #f8a31c">
+					<div class="including">
+						<h1 class="pull-left"><a href="#">Đề thi thử số 2</a></h1>
+						<div class="pull-right bookmark">
+							<a href="#" data-id="215"><i class="glyphicon glyphicon-bookmark" class="a-bookmark"></i></a>
+						</div>
+					</div>
+					<p class="description">
+						câu hỏi: <span class="color-red">50</span> , thời gian: <span class="color-red">90 phút</span>
+						, lượt thi: <span class="color-red">1976</span> , chuyên mục: <a href="7.html" class="color-red">
+							<span class="color-red">Công nghệ thông tin</span>
+						</a>
+						, trình độ: <span class="color-red">Nâng cao</span> , loại đề thi: <span class="color-red">
+							Kết
+							thúc học phần
+						</span>,
+						người đăng: <a href="#"><span class="color-red">Admin</span></a>
+					</p>
+					<a href="Thi.html"><button class="btn btn-default pull-right" style="background: #f8a31c">Truy cập</button></a>
+				</div>
+
+			</div>
+			<div id="quizs" class="new many online">
+				<div class="quiz including" style="border-top: 3px solid #f8a31c">
+					<div class="including">
+						<h1 class="pull-left"><a href="#">Đề thi thử số 3</a></h1>
+						<div class="pull-right bookmark">
+							<a href="#" data-id="215"><i class="glyphicon glyphicon-bookmark" class="a-bookmark"></i></a>
+						</div>
+					</div>
+					<p class="description">
+						câu hỏi: <span class="color-red">50</span> , thời gian: <span class="color-red">90 phút</span>
+						, lượt thi: <span class="color-red">1976</span> , chuyên mục: <a href="7.html" class="color-red">
+							<span class="color-red">Công nghệ thông tin</span>
+						</a>
+						, trình độ: <span class="color-red">Nâng cao</span> , loại đề thi: <span class="color-red">
+							Kết
+							thúc học phần
+						</span>,
+						người đăng: <a href="#"><span class="color-red">Admin</span></a>
+					</p>
+					<a href="Thi.html"><button class="btn btn-default pull-right" style="background: #f8a31c">Truy cập</button></a>
+				</div>
+
+			</div>
+			<div id="quizs" class="new many online">
+				<div class="quiz including" style="border-top: 3px solid #f8a31c">
+					<div class="including">
+						<h1 class="pull-left"><a href="#">Đề thi thử số 4</a></h1>
+						<div class="pull-right bookmark">
+							<a href="#" data-id="215"><i class="glyphicon glyphicon-bookmark" class="a-bookmark"></i></a>
+						</div>
+					</div>
+					<p class="description">
+						câu hỏi: <span class="color-red">50</span> , thời gian: <span class="color-red">90 phút</span>
+						, lượt thi: <span class="color-red">1976</span> , chuyên mục: <a href="7.html" class="color-red">
+							<span class="color-red">Công nghệ thông tin</span>
+						</a>
+						, trình độ: <span class="color-red">Nâng cao</span> , loại đề thi: <span class="color-red">
+							Kết
+							thúc học phần
+						</span>,
+						người đăng: <a href="#"><span class="color-red">Admin</span></a>
+					</p>
+					<a href="Thi.html"><button class="btn btn-default pull-right" style="background: #f8a31c">Truy cập</button></a>
+				</div>
+
+			</div>
+			<div id="quizs" class="new many online">
+				<div class="quiz including" style="border-top: 3px solid #f8a31c">
+					<div class="including">
+						<h1 class="pull-left"><a href="#">Đề thi thử số 5</a></h1>
+						<div class="pull-right bookmark">
+							<a href="#" data-id="215"><i class="glyphicon glyphicon-bookmark" class="a-bookmark"></i></a>
+						</div>
+					</div>
+					<p class="description">
+						câu hỏi: <span class="color-red">50</span> , thời gian: <span class="color-red">90 phút</span>
+						, lượt thi: <span class="color-red">1976</span> , chuyên mục: <a href="7.html" class="color-red">
+							<span class="color-red">Công nghệ thông tin</span>
+						</a>
+						, trình độ: <span class="color-red">Nâng cao</span> , loại đề thi: <span class="color-red">
+							Kết
+							thúc học phần
+						</span>,
+						người đăng: <a href="#"><span class="color-red">Admin</span></a>
+					</p>
+					<a href="Thi.html"><button class="btn btn-default pull-right" style="background: #f8a31c">Truy cập</button></a>
+				</div>
+				<div class="full-width including">
+					<div class="text-center" id="pagination">
+						<div class="pagination">
+							<ul class="pagination">
+								<li class="disabled"><span>&laquo;</span></li>
+								<li class="active"><span>1</span></li>
+								<li><a href="trac-nghiem18c0.html?p&amp;page=2">2</a></li>
+								<li><a href="trac-nghiem42ef.html?p&amp;page=3">3</a></li>
+								<li><a href="trac-nghiem5825.html?p&amp;page=4">4</a></li>
+								<li><a href="trac-nghiem461b.html?p&amp;page=5">5</a></li>
+								<li><a href="trac-nghiemf4db.html?p&amp;page=6">6</a></li>
+								<li><a href="trac-nghiem4890.html?p&amp;page=7">7</a></li>
+								<li><a href="trac-nghiem0010.html?p&amp;page=8">8</a></li>
+								<li><a href="trac-nghiem796d.html?p&amp;page=9">9</a></li>
+								<li><a href="trac-nghiembc0d.html?p&amp;page=10">10</a></li>
+								<li><a href="trac-nghiem18c0.html?p&amp;page=2">&raquo;</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/js/newstyle/default-main.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			//$(".col-1-slide").menuslide({element_action:'#slide-menu-1'});
+			tabs = $("#multiple").tabs({ redirect: true });
+
+			category = $("#category-all");
+			category.closest('ul').find('li').removeClass('active');//Loại bỏ active
+			li_select = $("#category-all").closest('li');//Lựa chọn select
+			color = li_select.attr('data-color');//Lấy màu
+			li_select.addClass('active');
+			$(".list-category li.active").css('border-right', '3px solid ' + color);//Thêm màu cho active
+
+			$("#search-form input[name=text_search]").live('click', function () {
+				$("#search-form").find('.select').fadeIn();
+			});
+			$("#nav-category").addClass('active');
+		});
+	</script>
+</div>
+

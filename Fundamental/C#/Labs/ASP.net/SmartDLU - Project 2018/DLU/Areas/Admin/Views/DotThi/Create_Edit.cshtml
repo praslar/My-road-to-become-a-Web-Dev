@@ -1,0 +1,40 @@
+﻿<div class="modal fade" id="Modal_Create_Edit_DotThi">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-blue">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title txt_title"></h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-3 control-label">Tên Đợt thi</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control hidden" id="txtID">
+                        <input type="text" class="form-control" id="txtTenDotThi" placeholder="Nhập tên đợt thi">
+                    </div>
+                </div>
+                <br />
+                <br />
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-3 control-label">Mô tả</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="txtMoTaDotThi" placeholder="Nhập mô tả">
+                    </div>
+                </div>
+                <br/>
+                <br/>
+            </div>
+            <div class="clearfix"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn pull-left btn-flat btn-danger" data-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary btn-flat btn_Add" onclick="DotThi.Create_DotThi()">Thêm</button>
+                <button type="button" class="btn btn-primary btn-flat btn_Update" onclick="DotThi.Edit_DotThi()">Lưu</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->

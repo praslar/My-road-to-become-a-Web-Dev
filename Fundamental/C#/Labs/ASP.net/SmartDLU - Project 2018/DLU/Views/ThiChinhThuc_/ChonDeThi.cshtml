@@ -1,0 +1,94 @@
+﻿
+@using DataAccess
+@{
+	var dethi = Model as List<GETDETHIMODELVIEW>;
+	ViewBag.Title = "ChonDeThi";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="grid-content">
+	<script type="text/javascript" src="assets/js/quiz2/scripts.js"></script>
+	<div class="col-12 col-md-12 including fadeIn animated col-list-quiz">
+		<div id="multiple">
+
+			<div class="heading heading-white">
+				<h1><i class="glyphicon glyphicon-align-right"></i> Đề thi đang diễn ra</h1>
+				<hr>
+			</div>
+			<section class="forms">
+				<div class="container-fluid">
+					<div class="row">
+
+						@{
+							foreach (var item in dethi)
+							{
+								<div class="col-lg-5">
+									<div class="card">
+										<div class="card-header d-flex align-items-center ">
+											<h4>@item.TENMONHOC</h4>
+										</div>
+										<div class="card-body">
+											<div>
+												<div class="form-horizontal">
+													<div class="form-group row">
+														<label class="col-sm-2">Đề thi</label>
+														<div class="col-sm-10">
+															<h6>@item.TENDETHI</h6>
+														</div>
+													</div>
+													<div class="form-group row">
+														<label class="col-sm-2">Thời gian làm bài</label>
+														<div class="col-sm-10">
+															<h6>@item.THOIGIANLAMBAI_PHUT_</h6>
+														</div>
+													</div>
+													<div class="form-group row">
+														<label class="col-sm-2">Học kì</label>
+														<div class="col-sm-10">
+															<h6>@item.TENHOCKI</h6>
+														</div>
+													</div>
+													<div class="form-group row">
+														<label class="col-sm-2">Đợt thi</label>
+														<div class="col-sm-10">
+															<h6>@item.TENDOTTHI</h6>
+														</div>
+													</div>
+													<div class="form-group row">
+														<label class="col-sm-2">Ngày thi</label>
+														<div class="col-sm-10">
+															<h6>@item.NGAYTHI</h6>
+														</div>
+													</div>
+													<div class="form-group row">
+														<label class="col-sm-2">Số câu</label>
+														<div class="col-sm-10">
+															<h6>@item.SOLUONGCAUHOI</h6>
+														</div>
+													</div>
+													<div class="form-group row">
+														<div class="col-sm-10 offset-sm-2">
+															@using (Html.BeginForm("CheckLamBai", "ThiChinhThuc_", FormMethod.Post))
+															{
+																<input type="text" name="MaDeThi" value="@item.IDMADE" hidden>
+																<input type="text" name="thoigian" value="@item.THOIGIANLAMBAI_PHUT_" hidden>
+																<button class="btn btn-default pull-right" onclick="return confirm('Bạn muốn làm bài?')" style="background: #f8a31c">
+																	Truy cập
+																</button>			}
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							}
+						}
+
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "Lịch sử làm bài";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="grid-content">
+    <div id="div-category" class="col-1 col-1-slide col-md-2 fadeIn animated" style="overflow: hidden; padding: 0px; width: 253px;">
+        <div class="jspContainer" style="width: 253px; height: 681px;">
+            <div class="jspPane" style="padding: 0px; top: 0px; left: 0px; width: 253px;">
+                
+                @RenderPage("../Shared/_Menu_SinhVien.cshtml")
+            </div>
+        </div>
+    </div>
+    <div id="div-main-user" class="col-12 col-md-9 including fadeIn animated col-list-quiz">
+        <!--Đề thi online ở trang chủ-->
+        <div class="heading heading-white">
+            <h1><i class="glyphicon glyphicon-list-alt"></i> LỊCH SỬ THI CỦA SINH VIÊN</h1>
+            <hr>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Mã HP</th>
+                        <th>Tên Học Phần</th>
+                        <th>Thời Gian Thi</th>
+                        <th>Số Câu Đúng</th>
+                        <th>Điểm</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7">Chưa có lịch sử nào ... </td>
+                    </tr>
+                    <!-- <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td><a class="btn btn-success btn-xs">Xem</a></td>
+
+                      </tr>
+
+                    </tbody> -->
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <div id="col-12" class="col-12 col-md-12">
+    </div>
+    <script type="text/javascript" src="http://www.studyvn.com/assets/js/newstyle/default-main.js"></script>
+
+
+</div>
+

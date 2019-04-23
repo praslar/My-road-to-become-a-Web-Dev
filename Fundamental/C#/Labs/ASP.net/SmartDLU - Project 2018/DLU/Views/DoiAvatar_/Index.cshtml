@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "Thay dổi hình ảnh";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="grid-content">
+    <div id="div-category" class="col-1 col-1-slide col-md-2 fadeIn animated" style="overflow: hidden; padding: 0px; width: 253px;">
+        <div class="jspContainer" style="width: 253px; height: 681px;">
+            <div class="jspPane" style="padding: 0px; top: 0px; left: 0px; width: 253px;">
+                
+                @RenderPage("../Shared/_Menu_SinhVien.cshtml")
+            </div>
+        </div>
+    </div>
+    <div id="div-main-user" class="col-12 col-md-9 including fadeIn animated col-list-quiz">
+        <!--Đề thi online ở trang chủ-->
+        <div class="Container" style="width: 602px; height: 681px;">
+            <div class="jspPane" style="padding: 0px; top: 0px; left: 0px; width: 602px;">
+                <div class="heading heading-white">
+                    <h1><i class="glyphicon glyphicon-copyright-mark"></i> Thay đổi avatar</h1>
+                    <hr>
+                </div><form action="http://www.studyvn.com/user/edit-avatar" method="post" class="form" id="frm-edit-avatar">
+                    <div id="edit-avatar">
+                        <div class="form-group col-md-12">
+                            <div class="including">
+                                <div class="loading"><div class="followingBallsG followingBallsG_1"></div><div class="followingBallsG followingBallsG_2"></div><div class="followingBallsG followingBallsG_3"></div><div class="followingBallsG followingBallsG_4"></div></div>
+                                <div class="col-md-12" id="avatar-tmp">
+                                    <img src="http://www.studyvn.com/assets/img/system/avatar/no-avatar.png">
+                                </div>
+                            </div>
+                            <input type="file" name="avatar" id="exampleInputFile">
+                            <p class="help-block">Chỉ được lựa chọn các file jpg, jpeg, png</p>
+                            <p class="error" id="error-avatar"></p>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <button class="btn btn-default pull-right" id="btn-register"><i class="glyphicon glyphicon-upload"></i> Cập nhật</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="col-12" class="col-12 col-md-12">
+    </div>
+    <script type="text/javascript" src="http://www.studyvn.com/assets/js/newstyle/default-main.js"></script>
+
+</div>
+

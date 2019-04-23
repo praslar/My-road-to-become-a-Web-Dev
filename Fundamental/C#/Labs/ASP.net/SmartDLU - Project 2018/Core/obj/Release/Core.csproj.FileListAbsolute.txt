@@ -1,0 +1,5 @@
+E:\DLU\Core\bin\Release\Core.dll
+E:\DLU\Core\bin\Release\Core.pdb
+E:\DLU\Core\obj\Release\Core.csproj.CoreCompileInputs.cache
+E:\DLU\Core\obj\Release\Core.dll
+E:\DLU\Core\obj\Release\Core.pdb

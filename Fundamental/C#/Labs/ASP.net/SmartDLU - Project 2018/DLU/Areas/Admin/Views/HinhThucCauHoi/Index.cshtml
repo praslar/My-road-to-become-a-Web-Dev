@@ -1,0 +1,104 @@
+﻿@using DataAccess
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+<!-- Content Wrapper. Contains page content -->
+<!-- Main content -->
+<section class="content">
+    <div class="row">
+        @if (TempData["AlertMessage"] != null)
+        {
+            <div class="col-lg-12" hide>
+                <div id="AlertBox" class="alert text-center @TempData["AlertType"]">
+                    @Html.Raw(TempData["AlertMessage"])
+                </div>
+            </div>
+        }
+        <div class="col-xs-12 box">
+            <div class="box-info col-md-12">
+                <div class="box-header col-md-10">
+                    <h2 class="box-title" style="font-weight: bold">DANH MỤC HÌNH THỨC CÂU HỎI</h2>
+                    <br/>
+                    <small> Nhấn vào tìm kiếm để mở màn hình tìm kiếm <font color="red">Danh mục hình thức</font> theo điều kiện. </small>
+                    <br/>
+                    <small> Hoặc tìm kiếm nhanh bằng cách nhập thông tin vào <font color="red">Search</font> </small>
+                </div>
+                <div class="col-md-2">
+                    <div class="box-body">
+                        <a class="btn btn-app" style="color: green" onclick="LoaiCauHoi.Modal_CreateLoaicauhoi()">
+                            <i class="fa fa-save"></i> Thêm
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+                <table id="example2" class="table table-bordered table-hover" style="border-width: thick">
+                    <thead>
+                    <tr>
+                        <th>Mã hình thức</th>
+                        <th>Tên hình thức</th>
+                        <th>Chức năng</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @{
+
+                        foreach (LOAICAUHOI row in ViewBag.Data_LoaiCauHoi)
+                        {
+
+                            <tr>
+
+                                <td>@row.IDLOAICAUHOI</td>
+                                <td>@row.TENLOAICAUHOI</td>
+                                <td class="text-center">
+                                    <a href="#" class="btn btn-success btn-xs btn-flat" onclick="LoaiCauHoi.Modal_EditLoaicauhoi(@row.IDLOAICAUHOI)">Sửa</a>
+                                    <a class="btn btn-danger btn-xs btn-flat" onclick="LoaiCauHoi.Modal_DeleteLoaicauhoi(@row.IDLOAICAUHOI)">Xóa</a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <th>Mã hình thức</th>
+                        <th>Tên hình thức</th>
+                        <th>Chức năng</th>
+                    </tr>
+                    </tfoot>
+                </table>
+
+            </div>
+            <!-- /.box-body -->
+        </div>
+    </div>
+</section>
+@RenderPage("Create.cshtml")
+@RenderPage("Delete.cshtml")
+@RenderPage("Edit.cshtml")
+@section Myscripts{
+
+    <!-- page script -->
+
+    <script src="~/Scripts/Back-end/ThuVien/Controller_LoaiCauHoi.js"></script>
+    <script>
+        var LoaiCauHoi = new Controller_Loaicauhoi();
+
+        $(".Select2").select2();
+        $('#example2').DataTable({
+            'paging': true,
+            'lengthChange': true,
+            'searching': true,
+            'ordering': true,
+            'info': true,
+        })
+    </script>
+}
+  

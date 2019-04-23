@@ -1,0 +1,84 @@
+﻿@using DataAccess;
+@{
+    ViewBag.Title = "ChonDe";
+    Layout = "~/Views/Shared/_LayoutCauHoiOnTap.cshtml";
+    List<DETHI> dethi = ViewBag.DeThi;
+}
+
+<div class="grid-content">
+
+    <div id="col-2" class="col-12 col-md-9 including fadeIn animated col-list-quiz">
+        <div id="multiple">
+
+            <div class="heading heading-white">
+                <h1><i class="glyphicon glyphicon-align-right"></i> Đề thi </h1>
+                <hr>
+            </div>
+
+            <div id="quizs" class="new many online">
+                @{
+                    foreach (var item in dethi)
+                    {
+                <div class="quiz including" style="border-top: 3px solid #f8a31c">
+                    <div class="including">
+                        <h1 class="pull-left"><a href="#">@item.TENDETHI</a></h1>
+                        <div class="pull-right bookmark">
+                            <a href="#" data-id="215"><i class="glyphicon glyphicon-bookmark" class="a-bookmark"></i></a>
+                        </div>
+                    </div>
+                    @using (Html.BeginForm("LuuDe", "ThiThu_", FormMethod.Post))
+                    {
+                        <input type="text" name="idDe" value="@item.IDMADE" hidden>
+                        <button class="btn btn-default pull-right" style="background: #f8a31c">
+                            Truy cập
+                        </button>
+                    }
+                </div>
+                    }
+                }
+                <div class="full-width including">
+                    <div class="text-center" id="pagination">
+                        <div class="pagination">
+                            <ul class="pagination">
+                                <li class="disabled"><span>&laquo;</span></li>
+                                <li class="active"><span>1</span></li>
+                                <li><a href="trac-nghiem18c0.html?p&amp;page=2">2</a></li>
+                                <li><a href="trac-nghiem42ef.html?p&amp;page=3">3</a></li>
+                                <li><a href="trac-nghiem5825.html?p&amp;page=4">4</a></li>
+                                <li><a href="trac-nghiem461b.html?p&amp;page=5">5</a></li>
+                                <li><a href="trac-nghiemf4db.html?p&amp;page=6">6</a></li>
+                                <li><a href="trac-nghiem4890.html?p&amp;page=7">7</a></li>
+                                <li><a href="trac-nghiem0010.html?p&amp;page=8">8</a></li>
+                                <li><a href="trac-nghiem796d.html?p&amp;page=9">9</a></li>
+                                <li><a href="trac-nghiembc0d.html?p&amp;page=10">10</a></li>
+                                <li><a href="trac-nghiem18c0.html?p&amp;page=2">&raquo;</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/js/newstyle/default-main.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function () {
+			//$(".col-1-slide").menuslide({element_action:'#slide-menu-1'});
+			tabs = $("#multiple").tabs({ redirect: true });
+
+			category = $("#category-all");
+			category.closest('ul').find('li').removeClass('active');//Loại bỏ active
+			li_select = $("#category-all").closest('li');//Lựa chọn select
+			color = li_select.attr('data-color');//Lấy màu
+			li_select.addClass('active');
+			$(".list-category li.active").css('border-right', '3px solid ' + color);//Thêm màu cho active
+
+			$("#search-form input[name=text_search]").live('click', function () {
+				$("#search-form").find('.select').fadeIn();
+			});
+			$("#nav-category").addClass('active');
+		});
+    </script>
+</div>
+
+
+

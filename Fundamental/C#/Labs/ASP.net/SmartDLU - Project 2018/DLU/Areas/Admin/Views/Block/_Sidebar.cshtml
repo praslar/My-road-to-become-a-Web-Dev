@@ -1,0 +1,119 @@
+﻿<aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <!-- search form -->
+        @*<form action="#" method="get" class="sidebar-form">
+            <div class="input-group">
+                <input type="text" name="q" class="form-control" placeholder="Tìm Kiếm">
+                <span class="input-group-btn">
+                    <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+        </form>*@
+        <!-- /.search form -->
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu" data-widget="tree">
+            <li class="header">BẢNG ĐIỀU KHIỂN</li>
+            <li class="dashboard">
+                <a href="/admin/dashboard/">
+                    <i class="fa fa-dashboard"></i> <span> Trang Chủ</span>
+                </a>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                    <span>Quản lý câu hỏi </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="/admin/cauhoi/index"><i class="fa fa-circle-o text-red"></i>Ngân hàng câu hỏi</a></li>
+                    <li><a href="/admin/cautraloi/index"><i class="fa fa-circle-o text-green"></i>Câu trả lời</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                    <span>Thư viện </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="/admin/monhoc/index"><i class="fa fa-circle-o text-red"></i>Môn học</a></li>
+                    <li><a href="/admin/chuong/index"><i class="fa fa-circle-o text-blue"></i>Chương</a></li>
+                    <li><a href="/admin/hinhthuccauhoi/index"><i class="fa fa-circle-o text-yellow"></i>Hình thức câu hỏi</a></li>
+                    <li><a href="/admin/dokho/index"><i class="fa fa-circle-o text-white"></i>Độ khó</a></li>
+                    <li><a href="/admin/soluongdokho/index"><i class="fa fa-circle-o text-green"></i>Số lượng độ khó</a></li>
+                </ul>
+            </li>
+			<!--Nhóm 8-->
+			<li class="treeview QuanLyThi">
+				<a href="#">
+					<i class="fa fa-question-circle" aria-hidden="true"></i>
+					<span>Quản lý thi </span>
+				</a>
+				<ul class="treeview-menu">
+					<li><a href="/admin/lichthi/index"><i class="fa fa-circle-o text-red"></i>Lịch thi</a></li>
+                    <li class="DanhSachThi"><a href="/admin/danh-sach-thi/"> <i class="fa fa-circle-o text-green"></i> <span>Danh sách thi</span></a>
+                    </li>
+					<li><a href="/admin/diemthi/index"><i class="fa fa-circle-o text-green"></i>Điểm thi</a></li>
+					<li><a href="/admin/dotthi/index"><i class="fa fa-circle-o text-green"></i>Đợt thi</a></li>
+					<li><a href="/admin/hocki/index"><i class="fa fa-circle-o text-green"></i>Học kì</a></li>
+					<li><a href="/admin/xulysuco/index"><i class="fa fa-circle-o text-green"></i>Xử lý sự cố</a></li>
+				</ul>
+			</li>
+			<!---->
+            
+            @if (Session["ID_TaiKhoan"] != null)
+            {
+                {
+                    if (Session["IDMaCV"].ToString() == "AD")
+                    {
+                        <li class="Lop">
+                            <a href="/admin/lop/">
+                                <i class="fa fa-graduation-cap"></i>
+                                <span>Lớp </span>
+                            </a>
+
+                        </li>
+                        <li class="ChucVu">
+                            <a href="/admin/chuc-vu/">
+                                <i class="fa fa-signal" aria-hidden="true"></i>
+                                <span>Chức Vụ</span>
+                            </a>
+                        </li>
+                        <li class="TaiKhoan">
+                            <a href="/admin/tai-khoan/">
+                                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                <span>Tài Khoản </span>
+                            </a>
+
+                        </li>
+                    }
+                }
+            }
+            <li class="TaiKhoanSinhVien">
+                <a href="/admin/tai-khoan-sinh-vien/">
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                    <span>Tài khoản sinh viên</span>
+
+                </a>
+            </li>
+       
+            <li class="HoSoCuaBan">
+                <a href="/admin/ho-so-@Session["ID_TaiKhoan"]">
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                    <span>Hồ sơ của bạn</span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/admin/">
+                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    <span>Đăng xuất</span>
+                </a>
+            </li>
+
+        </ul>
+    </section>
+    <!-- /.sidebar -->
+</aside>
