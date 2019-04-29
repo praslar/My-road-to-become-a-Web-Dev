@@ -3,9 +3,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	color: #000;
-	background-color: #fff;
 } 
-
 h1, h2, h3
 {
 	max-width: 500px;
@@ -32,12 +30,14 @@ p
 	padding: 10px 20px 30px;
 	text-indent: 20px;
 	text-align: justify;
-	width: 80%;
+	width: 60%;
 }
 ul li
-{
-	list-style-type: circle;
+{	
+
+	list-style-type: none;
 	line-height: 200%;
+	margin: 10px;
 }
 ol li{
 	width: 50%;
@@ -46,17 +46,16 @@ ol li{
 	/*ID*/
 #miamiBuilding {
 	float: right;
-	margin: 10px;
-	margin-bottom: 50px;
-	margin-right: 20%;
+	margin: 0px;
 	width: 30%;
+	opacity: 0.7;	
 
 }
 #navigation
 {
 
 	position: absolute;
-	z-index: 10;
+	z-index: 10;		
 	width: 210px;
 	height: 700px;
 	margin: 0;
@@ -74,11 +73,27 @@ ol li{
 	min-width: 500px;
 
 }
-	/*link*/
-a:link {color: green; text-decoration: none;}   
-a:visited { color: green; background: red; }   
-a:hover { color: blue; text-decoration: underline;} 
+
+a:link, a:visited {
+	 background-color: #84b2e4; 
+	 text-decoration: none;
+	 padding: 5px; 
+	 border-radius: 20px; 
+	 color: #000; 
+	 display: block;
+	 width: 130px;
+	 transition: margin-bottom .35s ease-out;
+
+	}     
+
+a:hover {
+	color: #fff; 
+	background-color: #000;
+	margin-bottom: 20px;
+} 
+
 a:active { color: green; font-weight: bold;}
 
 #centerDoc a:link {color: green; text-decoration: underline;}   
-#centerDoc a:hover { color: blue;} 
+#centerDoc a:hover { color: blue; margin-bottom: 0px;} 
+#centerDoc a {background-color: transparent;}
