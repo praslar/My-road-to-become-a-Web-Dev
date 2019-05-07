@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Triangle</title>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<style type="text/css">
+	body{
+			font-family: 'Montserrat', sans-serif;
+			font-size: 25px;
+	}
+	.title{
+		position: absolute;
+		margin-left: 500px;
+		margin-top: 0px;
+		padding: 5px;
+		width: 260px;	}
+
+	.lines
+	{
+		
+		position: absolute;
+		margin-left: 1000px;
+	}
+	form
+	{	
+		position: absolute;
+		width: 260px;
+		padding: 5px;
+	}
+	input
+	{
+		height: 20px;
+		border-radius: 20px;
+		width: 100px;
+		text-align: center;
+	}
+	#options a img
+	{
+		margin-top: 150px;
+		position: relative;
+		width: 200px;
+		height: 200px;
+		padding: 5px 90px;
+		margin-right: 20px;
+		margin-left: 30px;
+		border-radius: 20px;
+		border: 1px solid #000;
+	}
+	#drawed
+	{
+		position: absolute;
+		padding: 5px;
+		margin-left: 550px;
+		margin-top: 20px;
+		width: 200px;
+		height: 200px;
+		border-radius: 20px;
+		border: 2px solid #000;
+	}
+</style>
+<body>
+	<navigation>
+		<form action="index.php">
+			<input type="radio" name="iteration" value="for"> For </br>
+			<input type="radio" name="iteration" value="while"> While </br>
+			<input type="radio" name="iteration" value="doWhile"> Do while </br>
+		</form>
+		<h1 class="title">Triangles</h1>
+		<div class="lines">
+			<label>Number of line: </label>
+			<input type="number" name="lineNumber" value="2" min=2 max=50 required>
+		</div>
+	</navigation>
+	<div id="options">
+		<a href="#"><img src="img/regular.png"></a>
+		<a href="#"><img src="img/rightTop.svg"></a>
+		<a href="#"><img src="img/rightTriangle.svg"></a>
+	</div>
+	<div id="drawed">
+		
+	</div>
+</body>
+</html>
