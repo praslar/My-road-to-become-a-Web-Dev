@@ -9,11 +9,11 @@ if (isset($_POST['signup-submit'])) {
 	$passwordRepeat = $_POST['pwd-repeat'];
 
 	if (!preg_match("/^[a-zA-z0-9]*$/", $username)) {
-		header("Location:  https://praslar.000webhostapp.com/index.php");
+		header("Location:  ../signup.php?error=invalidusername&mail=".$email);
 		exit();
 	}
-	else if($password != $passwordRepeat){
-		header("Location:  https://praslar.000webhostapp.com/index.php");
+	else if($password !== $passwordRepeat){
+		header("Location:  ../signup.php?error=passwordcheckuid=".$username."&mail=".$email);
 		exit();
 	}
 	else
@@ -21,7 +21,7 @@ if (isset($_POST['signup-submit'])) {
 		$sql = "SELECT uidUsers FROM users WHERE uidUsers=?";
 		$stmt = mysqli_stmt_init($conn);
 		if(!mysqli_stmt_prepare($stmt, $sql)){
-			header("Location:  https://praslar.000webhostapp.com/index.php");
+			header("Location:  ../signup.php?error=sqlerror");
 			exit();
 		} else {
 			//data type pass into database
@@ -32,13 +32,13 @@ if (isset($_POST['signup-submit'])) {
 			$resultCheck = mysqli_stmt_num_rows($stmt);
 			if($resultCheck > 0)
 			{
-				header("Location:  https://praslar.000webhostapp.com/index.php");
+				header("Location:  ../signup.php?error=usertaken&mail=".$email);
 				exit();
 			} else {
 				$sql = "INSERT INTO users (uidUsers, emailUsers, pwdUsers) VALUES (?,?,?)";
 				$stmt = mysqli_stmt_init($conn);
 				if(!mysqli_stmt_prepare($stmt, $sql)){
-					header"Location:  https://praslar.000webhostapp.com/index.php");
+					header("Location: ../signup.php?error=sqlerror");
 					exit();
 				} else {
 					//something c
@@ -47,7 +47,7 @@ if (isset($_POST['signup-submit'])) {
 					mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashedPwd);
 					//something
 					mysqli_stmt_execute($stmt);
-					header("Location:  https://praslar.000webhostapp.com/index.php");
+					header("Location:  ../signup.php?signup=success");
 					exit();
 				}
 			}
@@ -57,6 +57,6 @@ if (isset($_POST['signup-submit'])) {
 	mysqli_stmt_close($stmt);
 	mysqli_close($conn);	
 } else {
-	header("Location:  https://praslar.000webhostapp.com/index.php");
+	header("Location:  ../sigup.php");
 	exit();
 }

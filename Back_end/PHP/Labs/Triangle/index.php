@@ -11,7 +11,7 @@
 	}
 	.title{
 		position: absolute;
-		margin-left: 500px;
+		margin-left: 450px;
 		margin-top: 0px;
 		padding: 5px;
 		width: 260px;	}
@@ -19,7 +19,7 @@
 		#lines
 		{	
 			position: absolute;
-			margin-left: 1000px;
+			margin-left: 900px;
 		}
 		#interation
 		{	
@@ -39,7 +39,7 @@
 		{
 			position: absolute;
 
-			margin-left: 500px;
+			margin-left: 350px;
 			margin-top: 20px;
 			width: 200px;
 			height: 200px;
@@ -54,11 +54,11 @@
 		{
 			margin-top: 150px;
 			position: relative;
-			width: 200px;
-			height: 200px;
+			width: 50px;
+			height: 180px;
 			padding: 5px 90px;
 			margin-right: 20px;
-			margin-left: 165px;
+			margin-left: 100px;
 			border-radius: 20px;
 			border: 1px solid #000;
 

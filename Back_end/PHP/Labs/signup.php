@@ -15,7 +15,7 @@ require "header.php"
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input type="text" class="form-control" name="uid" placeholder="username" minlength=8 required>
+						<input type="text" class="form-control" name="uid" placeholder="username" minlength=7 required>
 					</div>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
