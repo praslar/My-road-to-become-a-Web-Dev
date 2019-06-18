@@ -1,0 +1,10 @@
+c:\users\admin\Desktop\W-on\Project C#\HangManTester\HangManTester\bin\Debug\HangManTester.exe.config
+c:\users\admin\Desktop\W-on\Project C#\HangManTester\HangManTester\bin\Debug\HangManTester.exe
+c:\users\admin\Desktop\W-on\Project C#\HangManTester\HangManTester\bin\Debug\HangManTester.pdb
+c:\users\admin\Desktop\W-on\Project C#\HangManTester\HangManTester\obj\Debug\HangManTester.csprojResolveAssemblyReference.cache
+c:\users\admin\Desktop\W-on\Project C#\HangManTester\HangManTester\obj\Debug\HangManTester.HangManTester.resources
+c:\users\admin\Desktop\W-on\Project C#\HangManTester\HangManTester\obj\Debug\HangManTester.Properties.Resources.resources
+c:\users\admin\Desktop\W-on\Project C#\HangManTester\HangManTester\obj\Debug\HangManTester.csproj.GenerateResource.Cache
+c:\users\admin\Desktop\W-on\Project C#\HangManTester\HangManTester\obj\Debug\HangManTester.exe
+c:\users\admin\Desktop\W-on\Project C#\HangManTester\HangManTester\obj\Debug\HangManTester.pdb
+C:\Users\Admin\Desktop\W-on\Project C#\HangManTester\HangManTester\obj\Debug\HangManTester.UserControlAlphabet.resources

@@ -1,0 +1,5 @@
+﻿  Program.cpp
+c:\users\admin\desktop\w-on\project c#\lab_ontap_278.2\lab_ontap_278.2\library.h(112): warning C4996: 'strcmpi': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strcmpi. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(548): note: see declaration of 'strcmpi'
+  lab_ontap_278.2.vcxproj -> c:\users\admin\Desktop\W-on\Project C#\lab_ontap_278.2\Debug\lab_ontap_278.2.exe
+  lab_ontap_278.2.vcxproj -> c:\users\admin\Desktop\W-on\Project C#\lab_ontap_278.2\Debug\lab_ontap_278.2.pdb (Partial PDB)

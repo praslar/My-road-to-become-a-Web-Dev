@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1510251_PhamXuanThang_1510238_VoNguyenMinhQuan", "1510251_PhamXuanThang_1510238_VoNguyenMinhQuan\1510251_PhamXuanThang_1510238_VoNguyenMinhQuan.csproj", "{4C296B65-703E-46EA-AB98-1661EB6681C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab2_Vidu2", "Lab2_Vidu2\Lab2_Vidu2.csproj", "{8462591E-7F07-4170-B9AD-5152EED4DD13}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C296B65-703E-46EA-AB98-1661EB6681C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C296B65-703E-46EA-AB98-1661EB6681C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C296B65-703E-46EA-AB98-1661EB6681C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C296B65-703E-46EA-AB98-1661EB6681C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8462591E-7F07-4170-B9AD-5152EED4DD13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8462591E-7F07-4170-B9AD-5152EED4DD13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8462591E-7F07-4170-B9AD-5152EED4DD13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8462591E-7F07-4170-B9AD-5152EED4DD13}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

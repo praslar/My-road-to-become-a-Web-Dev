@@ -1,0 +1,11 @@
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab6_WindowsEx\bin\Debug\Lab6_WindowsEx.exe.config
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab6_WindowsEx\bin\Debug\Lab6_WindowsEx.exe
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab6_WindowsEx\bin\Debug\Lab6_WindowsEx.pdb
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab6_WindowsEx\obj\Debug\Lab6_WindowsEx.csprojResolveAssemblyReference.cache
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab6_WindowsEx\obj\Debug\Lab6_WindowsEx.frmChild.resources
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab6_WindowsEx\obj\Debug\Lab6_WindowsEx.frmParent.resources
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab6_WindowsEx\obj\Debug\Lab6_WindowsEx.Properties.Resources.resources
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab6_WindowsEx\obj\Debug\Lab6_WindowsEx.csproj.GenerateResource.Cache
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab6_WindowsEx\obj\Debug\Lab6_WindowsEx.exe
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab6_WindowsEx\obj\Debug\Lab6_WindowsEx.pdb
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab6_WindowsEx\obj\Debug\Lab6_WindowsEx.frmBasicExplorer.resources

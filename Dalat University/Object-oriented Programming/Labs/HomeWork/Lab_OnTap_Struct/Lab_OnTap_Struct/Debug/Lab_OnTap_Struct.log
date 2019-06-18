@@ -1,0 +1,14 @@
+﻿  Program.cpp
+c:\users\admin\desktop\w-on\project c#\lab_ontap_struct\lab_ontap_struct\thuvien.h(258): warning C4996: 'strcmpi': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strcmpi. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(548): note: see declaration of 'strcmpi'
+c:\users\admin\desktop\w-on\project c#\lab_ontap_struct\lab_ontap_struct\thuvien.h(268): warning C4996: 'strcmpi': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strcmpi. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(548): note: see declaration of 'strcmpi'
+c:\users\admin\desktop\w-on\project c#\lab_ontap_struct\lab_ontap_struct\thuvien.h(273): warning C4996: 'strcmpi': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strcmpi. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(548): note: see declaration of 'strcmpi'
+c:\users\admin\desktop\w-on\project c#\lab_ontap_struct\lab_ontap_struct\thuvien.h(274): warning C4996: 'strcmpi': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strcmpi. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(548): note: see declaration of 'strcmpi'
+c:\users\admin\desktop\w-on\project c#\lab_ontap_struct\lab_ontap_struct\thuvien.h(279): warning C4996: 'strcmpi': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strcmpi. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(548): note: see declaration of 'strcmpi'
+c:\users\admin\desktop\w-on\project c#\lab_ontap_struct\lab_ontap_struct\menu.h(129): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  Lab_OnTap_Struct.vcxproj -> C:\Users\Admin\Desktop\W-on\Project C#\Lab_OnTap_Struct\Debug\Lab_OnTap_Struct.exe
+  Lab_OnTap_Struct.vcxproj -> C:\Users\Admin\Desktop\W-on\Project C#\Lab_OnTap_Struct\Debug\Lab_OnTap_Struct.pdb (Partial PDB)

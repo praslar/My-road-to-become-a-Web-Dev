@@ -1,0 +1,4 @@
+c:\users\admin\Desktop\W-on\Project C#\GoLaiLab2\GoLaiLab2\obj\Debug\GoLaiLab3.csprojResolveAssemblyReference.cache
+c:\users\admin\Desktop\W-on\Project C#\GoLaiLab2\GoLaiLab2\obj\Debug\GoLaiLab2.FormMain.resources
+c:\users\admin\Desktop\W-on\Project C#\GoLaiLab2\GoLaiLab2\obj\Debug\GoLaiLab2.Properties.Resources.resources
+c:\users\admin\Desktop\W-on\Project C#\GoLaiLab2\GoLaiLab2\obj\Debug\GoLaiLab3.csproj.GenerateResource.Cache

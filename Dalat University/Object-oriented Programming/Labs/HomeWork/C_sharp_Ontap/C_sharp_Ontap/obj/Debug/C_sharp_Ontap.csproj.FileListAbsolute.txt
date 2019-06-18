@@ -1,0 +1,6 @@
+c:\users\admin\Desktop\W-on\Project C#\C_sharp_Ontap\C_sharp_Ontap\bin\Debug\C_sharp_Ontap.exe.config
+c:\users\admin\Desktop\W-on\Project C#\C_sharp_Ontap\C_sharp_Ontap\bin\Debug\C_sharp_Ontap.exe
+c:\users\admin\Desktop\W-on\Project C#\C_sharp_Ontap\C_sharp_Ontap\bin\Debug\C_sharp_Ontap.pdb
+c:\users\admin\Desktop\W-on\Project C#\C_sharp_Ontap\C_sharp_Ontap\obj\Debug\C_sharp_Ontap.csprojResolveAssemblyReference.cache
+c:\users\admin\Desktop\W-on\Project C#\C_sharp_Ontap\C_sharp_Ontap\obj\Debug\C_sharp_Ontap.exe
+c:\users\admin\Desktop\W-on\Project C#\C_sharp_Ontap\C_sharp_Ontap\obj\Debug\C_sharp_Ontap.pdb

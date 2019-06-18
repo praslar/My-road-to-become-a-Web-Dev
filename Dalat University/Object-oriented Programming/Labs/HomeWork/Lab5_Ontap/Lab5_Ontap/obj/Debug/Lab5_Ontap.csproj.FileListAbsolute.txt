@@ -1,0 +1,10 @@
+c:\users\admin\Desktop\W-on\Project C#\Lab5_Ontap\Lab5_Ontap\bin\Debug\Lab5_Ontap.exe.config
+c:\users\admin\Desktop\W-on\Project C#\Lab5_Ontap\Lab5_Ontap\bin\Debug\Lab5_Ontap.exe
+c:\users\admin\Desktop\W-on\Project C#\Lab5_Ontap\Lab5_Ontap\bin\Debug\Lab5_Ontap.pdb
+c:\users\admin\Desktop\W-on\Project C#\Lab5_Ontap\Lab5_Ontap\obj\Debug\Lab5_Ontap.csprojResolveAssemblyReference.cache
+c:\users\admin\Desktop\W-on\Project C#\Lab5_Ontap\Lab5_Ontap\obj\Debug\Lab5_Ontap.Form1.resources
+c:\users\admin\Desktop\W-on\Project C#\Lab5_Ontap\Lab5_Ontap\obj\Debug\Lab5_Ontap.Properties.Resources.resources
+c:\users\admin\Desktop\W-on\Project C#\Lab5_Ontap\Lab5_Ontap\obj\Debug\Lab5_Ontap.UserControlColor.resources
+c:\users\admin\Desktop\W-on\Project C#\Lab5_Ontap\Lab5_Ontap\obj\Debug\Lab5_Ontap.csproj.GenerateResource.Cache
+c:\users\admin\Desktop\W-on\Project C#\Lab5_Ontap\Lab5_Ontap\obj\Debug\Lab5_Ontap.exe
+c:\users\admin\Desktop\W-on\Project C#\Lab5_Ontap\Lab5_Ontap\obj\Debug\Lab5_Ontap.pdb

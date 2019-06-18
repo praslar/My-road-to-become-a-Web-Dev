@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <script src="clock.js"></script>
+    </div>
+    <form name="calcu">
+        a: <input type="text" id="c" name="a" value="" /><br />
+        b: <input type="text" id="d" name="b" value="" /><br />
+        <input type="button" name="add" value="+" onclick=" myFunc();cal1();"/>
+        <input type="button" name="sub" value="-" onclick=" myFunc();cal2();" />
+        <input type="button" name="mul" value="*" onclick=" myFunc();cal3();" />
+        <input type="button" name="div" value="/"onclick="myFunc();cal4(); " /><br />
+        Result: <input type="text" name="result" value="" />
+    </form>
+    <p id="alert"></p>
+    <script>
+        function cal1() {
+            var x = Number(document.forms["calcu"]["a"].value);
+            var y = Number(document.forms["calcu"]["b"].value);
+            document.forms["calcu"]["result"].value = x + y;
+        }
+        function cal2() {
+            var x = Number(document.forms["calcu"]["a"].value);
+            var y = Number(document.forms["calcu"]["b"].value);
+            document.forms["calcu"]["result"].value = x - y;
+        }
+        function cal3() {
+            var x = Number(document.forms["calcu"]["a"].value);
+            var y = Number(document.forms["calcu"]["b"].value);
+            document.forms["calcu"]["result"].value = x * y;
+        }
+        function cal4() {
+            var x = Number(document.forms["calcu"]["a"].value);
+            var y = Number(document.forms["calcu"]["b"].value);
+            document.forms["calcu"]["result"].value = x / y;
+        }
+        function myFunc() {
+            var x,y, text;
+            x = document.getElementById("c").value;
+            y = document.getElementById("d").value;
+            if (isNaN(x) || isNaN(y)) {
+                text = "Input not valid"
+            } else {
+                text = "Input Ok";
+            }
+            document.getElementById("alert").innerHTML = text;
+        }
+    </script>
+    <h1>Time</h1>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+	int dau;
+	for (int i = 0; i < n; i++)
+		c[i] = 1;
+	m = 0;
+	for (int i = 0; i < n; i++)
+	{
+		dau = 0;
+		for (int j = 0; j < m; j++)
+		{
+			if (a[i] == b[j])
+			{
+				dau = 1;
+				c[j]++;
+				break;
+			}
+
+		}
+			if (!dau)
+			{
+				b[m] = a[i];
+				m++;
+			}
+	}
+
+//Xuat
+cout << setiosflags(ios::left);
+cout << endl << setw(20) << "Gia tri Phan Biet"
+<< setw(20) << "So lan xuat hien";
+for (i = 0; i < m; i++)
+{
+cout << endl << setw(20) << b[i]
+<< setw(20) <<c[i];
+}

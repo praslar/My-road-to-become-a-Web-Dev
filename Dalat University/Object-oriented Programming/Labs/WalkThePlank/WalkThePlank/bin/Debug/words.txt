@@ -1,0 +1,25 @@
+wolf*Use howls to communicate*this is an animal*0
+tiger*the largest cat species*0
+leopard*the fastest mammal*0
+whiteshark*large predator of marine mammals*0
+bear*large mammal which loves eating salom*0
+chef*work in restaurant*1
+doctor*saves people live*1
+teacher*helps others to acquire knowledge*1
+engineer*make machine*1
+singer*person who sings*1
+pacific*biggest ocean*2
+atlantic*second largest of the world's oceans*2
+arctic*smallest and shallowest of the world's oceans*2
+southern*known as the Antarctic Ocean*2
+indian*third largest of the world's oceanic*2
+basketball*five players on each side*3
+tennis*play singles or doubles with a small ball *3
+badminton* hit a shuttlecock across a net*3
+volleyball* ix players are separated by a net*3
+swimming*using arms and legs to move the body through water*3
+ironman*genius,billionaire,playboy and philanthropits*4
+batman*God in DC*4
+wolverine*He died*4
+spiderman*Youngest superhero in marvel*4
+deadpool*Immortal*4

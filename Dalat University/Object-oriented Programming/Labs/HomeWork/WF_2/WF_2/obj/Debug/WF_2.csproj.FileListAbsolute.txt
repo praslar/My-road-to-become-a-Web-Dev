@@ -1,0 +1,9 @@
+c:\users\admin\Desktop\W-on\Project C#\WF_2\WF_2\bin\Debug\WF_2.exe.config
+c:\users\admin\Desktop\W-on\Project C#\WF_2\WF_2\bin\Debug\WF_2.exe
+c:\users\admin\Desktop\W-on\Project C#\WF_2\WF_2\bin\Debug\WF_2.pdb
+c:\users\admin\Desktop\W-on\Project C#\WF_2\WF_2\obj\Debug\WF_2.csprojResolveAssemblyReference.cache
+c:\users\admin\Desktop\W-on\Project C#\WF_2\WF_2\obj\Debug\WF_2.Form1.resources
+c:\users\admin\Desktop\W-on\Project C#\WF_2\WF_2\obj\Debug\WF_2.Properties.Resources.resources
+c:\users\admin\Desktop\W-on\Project C#\WF_2\WF_2\obj\Debug\WF_2.csproj.GenerateResource.Cache
+c:\users\admin\Desktop\W-on\Project C#\WF_2\WF_2\obj\Debug\WF_2.exe
+c:\users\admin\Desktop\W-on\Project C#\WF_2\WF_2\obj\Debug\WF_2.pdb

@@ -1,0 +1,10 @@
+void XuatMT (int a[MAX][MAX], int m, int n)
+{
+int i, j;
+for (i = 0; i < m ; i++)
+{
+cout<<?\n?;
+for (j = 0; j < n ; j++)
+cout<<a[i][j]<<?\t?;
+}
+}

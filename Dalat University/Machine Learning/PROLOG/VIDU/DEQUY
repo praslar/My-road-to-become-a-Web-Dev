@@ -1,0 +1,34 @@
+trace
+domains
+	i = integer
+predicates
+	giai_thua(i,i)
+	fibo(i,i)
+	thn(i,i,i,i)
+	nto(i,i)
+clauses
+	giai_thua(N,1)        :- N=0.
+	giai_thua(N,BaoNhieu) :- 
+		N>0, N1 = N-1,
+		giai_thua(N1,May),
+		May*N=BaoNhieu.
+	
+	fibo(N,1) 	 :- N=1;N=2.
+	fibo(N,BaoNhieu) :- N>2,
+		N1=N-1, fibo(N1, May1), 
+	 	N2=N-2, fibo(N2, May2),
+	 	May1+May2=BaoNhieu.
+	 	
+	 thn(N, XP, D, _) :- N=1, 
+	 	nl, write ("Chuyen dia tu ", XP, " sang ", D). 
+	 thn(N, XP, Dich, TG) :- N>1, 
+	 	N1=N-1, 
+	 	thn (N1, XP, TG, Dich),
+	 	thn (1, XP, Dich, TG),
+	 	thn (N1, TG, Dich, XP).
+	 	
+	 nto (N, I) :- N>1, N=I.
+	 nto (N, I) :- N>1, 
+	 	Du = N mod I, Du <> 0,
+	 	I1 = I+1, nto (N, I1).
+	 	

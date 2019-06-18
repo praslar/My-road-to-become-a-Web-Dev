@@ -1,0 +1,5 @@
+﻿SV.00002*Nguyễn Văn A*10/15/1989*Đà Lạt*CTK34*SinhVien1.png*1*Mạng truyền thông,Công nghệ phần mềm
+SV.00010*Nguyễn Thị Hoa*7/20/1990*Hà Nội*CTK34*SinhVien2.png*0*Công nghệ phần mềm,Trí tuệ nhân tạo,Hệ thống thông tin
+SV.00020*Nguyễn Văn Hùng*8/25/1992*Gia Lai*CTK34*SinhVien3.png*1*Mạng truyền thông,Trí tuệ nhân tạo,Hệ thống thông tin
+SV.00018*Lê Thị Anh Thư*11/20/1990*Đà Lạt*CTK34*SinhVien4.png*0*Công nghệ phần mềm,Trí tuệ nhân tạo,Hệ thống thông tin
+SV.00013*Hoàng Lâm Vi*9/20/1990*Bình Định*CTK34*SinhVien5.png*0*Mạng truyền thông,Trí tuệ nhân tạo,Hệ thống thông tin

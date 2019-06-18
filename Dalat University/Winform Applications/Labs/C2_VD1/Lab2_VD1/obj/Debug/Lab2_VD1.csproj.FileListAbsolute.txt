@@ -1,0 +1,9 @@
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab2_VD1\bin\Debug\Lab2_VD1.exe.config
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab2_VD1\bin\Debug\Lab2_VD1.exe
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab2_VD1\bin\Debug\Lab2_VD1.pdb
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab2_VD1\obj\Debug\Lab2_VD1.csprojResolveAssemblyReference.cache
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab2_VD1\obj\Debug\Lab2_VD1.frmTinhTien.resources
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab2_VD1\obj\Debug\Lab2_VD1.Properties.Resources.resources
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab2_VD1\obj\Debug\Lab2_VD1.csproj.GenerateResource.Cache
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab2_VD1\obj\Debug\Lab2_VD1.exe
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab2_VD1\obj\Debug\Lab2_VD1.pdb

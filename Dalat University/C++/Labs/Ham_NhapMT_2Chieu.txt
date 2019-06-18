@@ -1,0 +1,10 @@
+void NhapMT (int a[MAX][MAX], int m, int n)
+{
+int i, j;
+for (i = 0; i < m ; i++) // hang i
+for (j = 0; j < n ; j++) //cot j
+{
+cout<<"a["<<i<<"]["<<j<<"]= ";
+cin>>a[i][j];
+}
+}

@@ -1,0 +1,11 @@
+C:\Users\Admin\Desktop\W-on\Project C#\Lab2_Ontap\Lab2_Ontap\bin\Debug\Lab2_Ontap.exe.config
+C:\Users\Admin\Desktop\W-on\Project C#\Lab2_Ontap\Lab2_Ontap\bin\Debug\Lab2_Ontap.exe
+C:\Users\Admin\Desktop\W-on\Project C#\Lab2_Ontap\Lab2_Ontap\bin\Debug\Lab2_Ontap.pdb
+C:\Users\Admin\Desktop\W-on\Project C#\Lab2_Ontap\Lab2_Ontap\obj\Debug\Lab2_Ontap.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\W-on\Project C#\Lab2_Ontap\Lab2_Ontap\obj\Debug\Lab2_Ontap.FormGiaoVien.resources
+C:\Users\Admin\Desktop\W-on\Project C#\Lab2_Ontap\Lab2_Ontap\obj\Debug\Lab2_Ontap.FormTBGiaoVien.resources
+C:\Users\Admin\Desktop\W-on\Project C#\Lab2_Ontap\Lab2_Ontap\obj\Debug\Lab2_Ontap.Properties.Resources.resources
+C:\Users\Admin\Desktop\W-on\Project C#\Lab2_Ontap\Lab2_Ontap\obj\Debug\Lab2_Ontap.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\W-on\Project C#\Lab2_Ontap\Lab2_Ontap\obj\Debug\Lab2_Ontap.exe
+C:\Users\Admin\Desktop\W-on\Project C#\Lab2_Ontap\Lab2_Ontap\obj\Debug\Lab2_Ontap.pdb
+C:\Users\Admin\Desktop\W-on\Project C#\Lab2_Ontap\Lab2_Ontap\obj\Debug\Lab2_Ontap.TimTTGiaoVien.resources

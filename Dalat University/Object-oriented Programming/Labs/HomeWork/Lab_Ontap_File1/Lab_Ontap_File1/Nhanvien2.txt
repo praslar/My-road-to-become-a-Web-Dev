@@ -1,0 +1,4 @@
+
+ 123456 Pham Xuan Pop 11 8 1997 Da_Lat 20000000
+ 123459 Pham Xuan Vip 11 8 1997 Da_Lat 30000000
+ 123457 Pham Xuan Vl 11 8 1997 Da_Lat 40000000

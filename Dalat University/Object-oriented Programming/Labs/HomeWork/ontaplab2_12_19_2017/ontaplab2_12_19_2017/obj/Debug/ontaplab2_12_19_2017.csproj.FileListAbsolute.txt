@@ -1,0 +1,9 @@
+c:\users\admin\Desktop\W-on\Project C#\ontaplab2_12_19_2017\ontaplab2_12_19_2017\bin\Debug\ontaplab2_12_19_2017.exe.config
+c:\users\admin\Desktop\W-on\Project C#\ontaplab2_12_19_2017\ontaplab2_12_19_2017\bin\Debug\ontaplab2_12_19_2017.exe
+c:\users\admin\Desktop\W-on\Project C#\ontaplab2_12_19_2017\ontaplab2_12_19_2017\bin\Debug\ontaplab2_12_19_2017.pdb
+c:\users\admin\Desktop\W-on\Project C#\ontaplab2_12_19_2017\ontaplab2_12_19_2017\obj\Debug\ontaplab2_12_19_2017.csprojResolveAssemblyReference.cache
+c:\users\admin\Desktop\W-on\Project C#\ontaplab2_12_19_2017\ontaplab2_12_19_2017\obj\Debug\ontaplab2_12_19_2017.FormMain.resources
+c:\users\admin\Desktop\W-on\Project C#\ontaplab2_12_19_2017\ontaplab2_12_19_2017\obj\Debug\ontaplab2_12_19_2017.Properties.Resources.resources
+c:\users\admin\Desktop\W-on\Project C#\ontaplab2_12_19_2017\ontaplab2_12_19_2017\obj\Debug\ontaplab2_12_19_2017.csproj.GenerateResource.Cache
+c:\users\admin\Desktop\W-on\Project C#\ontaplab2_12_19_2017\ontaplab2_12_19_2017\obj\Debug\ontaplab2_12_19_2017.exe
+c:\users\admin\Desktop\W-on\Project C#\ontaplab2_12_19_2017\ontaplab2_12_19_2017\obj\Debug\ontaplab2_12_19_2017.pdb

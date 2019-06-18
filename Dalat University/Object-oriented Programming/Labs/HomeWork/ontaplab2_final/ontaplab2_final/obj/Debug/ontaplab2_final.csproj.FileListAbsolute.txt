@@ -1,0 +1,9 @@
+c:\users\admin\Desktop\W-on\Project C#\ontaplab2_final\ontaplab2_final\bin\Debug\ontaplab2_final.exe.config
+c:\users\admin\Desktop\W-on\Project C#\ontaplab2_final\ontaplab2_final\bin\Debug\ontaplab2_final.exe
+c:\users\admin\Desktop\W-on\Project C#\ontaplab2_final\ontaplab2_final\bin\Debug\ontaplab2_final.pdb
+c:\users\admin\Desktop\W-on\Project C#\ontaplab2_final\ontaplab2_final\obj\Debug\ontaplab2_final.csprojResolveAssemblyReference.cache
+c:\users\admin\Desktop\W-on\Project C#\ontaplab2_final\ontaplab2_final\obj\Debug\ontaplab2_final.Form1.resources
+c:\users\admin\Desktop\W-on\Project C#\ontaplab2_final\ontaplab2_final\obj\Debug\ontaplab2_final.Properties.Resources.resources
+c:\users\admin\Desktop\W-on\Project C#\ontaplab2_final\ontaplab2_final\obj\Debug\ontaplab2_final.csproj.GenerateResource.Cache
+c:\users\admin\Desktop\W-on\Project C#\ontaplab2_final\ontaplab2_final\obj\Debug\ontaplab2_final.exe
+c:\users\admin\Desktop\W-on\Project C#\ontaplab2_final\ontaplab2_final\obj\Debug\ontaplab2_final.pdb

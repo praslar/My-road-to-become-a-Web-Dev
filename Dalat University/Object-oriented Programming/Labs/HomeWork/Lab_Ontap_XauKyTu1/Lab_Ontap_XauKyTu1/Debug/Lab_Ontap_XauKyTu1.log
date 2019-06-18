@@ -1,0 +1,6 @@
+﻿  program.cpp
+c:\users\admin\desktop\w-on\project c#\lab_ontap_xaukytu1\lab_ontap_xaukytu1\menu.h(1): error C3872: '0x2028': this character is not allowed in an identifier
+c:\users\admin\desktop\w-on\project c#\lab_ontap_xaukytu1\lab_ontap_xaukytu1\menu.h(1): warning C4068: unknown pragma
+c:\users\admin\desktop\w-on\project c#\lab_ontap_xaukytu1\lab_ontap_xaukytu1\menu.h(1): error C3873: '0x2028': this character is not allowed as a first character of an identifier
+c:\users\admin\desktop\w-on\project c#\lab_ontap_xaukytu1\lab_ontap_xaukytu1\program.cpp(19): error C3861: 'ChonMenu': identifier not found
+c:\users\admin\desktop\w-on\project c#\lab_ontap_xaukytu1\lab_ontap_xaukytu1\program.cpp(20): error C3861: 'XuLyMenu': identifier not found

@@ -1,0 +1,6 @@
+1/ for(int i =0;i< n && dau;i++)
+2/ XuLyMenu()
+	int kq,x,y;
+switch()
+	case 0:
+int dem =0; => loi 'dem' skipped by 'case';

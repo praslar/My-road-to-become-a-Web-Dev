@@ -1,0 +1,55 @@
+//menu.h
+void XuatMenu()
+{
+	cout << endl << "===================He Thong Chuc Nang=======================";
+	cout << endl << "============================================================";
+}
+int	NhapMenu(int soMenu)
+{
+	int stt;
+	for (;;)
+	{
+		system("CLS");
+		XuatMenu();
+		cout << endl << "Nhap chuc nang can thuc hien: ";
+		cin >> stt;
+		if (stt >= 0 && stt <= soMenu)
+			break;
+	}
+	return stt;
+}
+void XuLyMenu(int menu,DaySo a, int &n)
+{
+	switch (menu)
+	{
+	case 0:
+		cout << endl << "Goodbye!" << endl << "Remember: Always do your best!!!";
+		_getch();
+		break;
+	case 1:
+		break;
+		_getch();
+	}
+}
+//program.cs
+#include <iostream>
+#include <conio.h>
+#include <time.h>
+#include <stdlib.h>
+using namespace std;
+#include "thuvien.h"
+#include "menu.h"
+void ChayChuongTrinh()
+{
+	int menu, soMenu = 9;
+	int n=0;
+	DaySo a;
+	do {
+		menu = NhapMenu(soMenu);
+		XuLyMenu(menu,a, n);
+	} while (menu > 0);
+}
+//Thuvien.h
+#define MAX 100
+#define TAB '\t'
+typedef int DaySo[MAX];

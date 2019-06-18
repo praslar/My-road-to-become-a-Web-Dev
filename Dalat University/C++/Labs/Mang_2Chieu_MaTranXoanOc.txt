@@ -1,0 +1,48 @@
+void Tao_MaTran_XoanOC(MaTranXoanOc a, int n)
+{
+	int value, Top, Bot, Left, Right,i,j;
+	Top = 0;
+	Right = n - 1;
+	Bot = n - 1;
+	Left = 0;
+	value = 1;
+	while (value <= n*n)
+	{
+		//gán giá tri value cho hàng trên
+		for (j = Left; (j <= Right) && (value <= n*n); j++)
+		{
+			a[Top][j] = value;
+			value++;
+		}
+		if (value > n*n)
+			break;
+		Top++;
+		// gán giá tr? value cho hàng ph?i
+		for (i = Top; (i <= Bot) && (value <= n*n); i++)
+		{
+			a[i][Right] = value;
+			value++;
+		}
+		if (value > n*n)
+			break;
+		Right--;
+		// gán giá tr? value cho hàng du?i
+		for (j = Right; (j >= Left) && (value <= n*n); j--)
+		{
+			a[Bot][j] = value;
+			value++;
+		}
+		if (value > n*n)
+			break;
+		Bot--;
+		//gán giá tr? value cho hàng trái
+		for (i = Bot;(i >= Top) && (value <= n*n);i--)
+		{
+			a[i][Left] = value;
+			value++;
+		}
+		if (value > n*n)
+			break;
+		Left++;
+	}
+}

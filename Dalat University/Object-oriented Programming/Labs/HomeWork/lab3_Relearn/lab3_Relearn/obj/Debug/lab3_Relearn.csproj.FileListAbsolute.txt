@@ -1,0 +1,9 @@
+c:\users\admin\Desktop\W-on\Project C#\lab3_Relearn\lab3_Relearn\bin\Debug\lab3_Relearn.exe.config
+c:\users\admin\Desktop\W-on\Project C#\lab3_Relearn\lab3_Relearn\bin\Debug\lab3_Relearn.exe
+c:\users\admin\Desktop\W-on\Project C#\lab3_Relearn\lab3_Relearn\bin\Debug\lab3_Relearn.pdb
+c:\users\admin\Desktop\W-on\Project C#\lab3_Relearn\lab3_Relearn\obj\Debug\lab3_Relearn.csprojResolveAssemblyReference.cache
+c:\users\admin\Desktop\W-on\Project C#\lab3_Relearn\lab3_Relearn\obj\Debug\lab3_Relearn.FormTTSV.resources
+c:\users\admin\Desktop\W-on\Project C#\lab3_Relearn\lab3_Relearn\obj\Debug\lab3_Relearn.Properties.Resources.resources
+c:\users\admin\Desktop\W-on\Project C#\lab3_Relearn\lab3_Relearn\obj\Debug\lab3_Relearn.csproj.GenerateResource.Cache
+c:\users\admin\Desktop\W-on\Project C#\lab3_Relearn\lab3_Relearn\obj\Debug\lab3_Relearn.exe
+c:\users\admin\Desktop\W-on\Project C#\lab3_Relearn\lab3_Relearn\obj\Debug\lab3_Relearn.pdb

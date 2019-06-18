@@ -1,0 +1,49 @@
+﻿
+p {
+    color:green;
+    font-family:Arial;
+    font-size:12pt;
+    text-indent: 50px;
+  }
+h1{
+    color:pink;
+}
+p#id1{
+    color:purple;
+}
+p.class1{
+    color: #CC9900
+}
+p.class2{
+    font-weight:bold;
+}
+table, tr, td,th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align:left;
+    font-size:12pt;
+    color:blue;
+}
+th{
+    font-weight:bold;
+}
+.lastname {
+    background-color: green;
+}
+.firstrow {
+    color: violet;
+}
+.lastname1{
+    color:violet;
+    background-color:green;
+}
+div{
+    float:left;
+    width:50%;
+    height:auto;
+}
+
+
+
+
+

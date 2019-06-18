@@ -1,0 +1,3312 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>thegioididong</title>
+    <style>
+        /* 10:24:04 21/10/2017 */ * {
+            margin: 0;
+            padding: 0
+        }
+
+        body {
+            min-width: 1024px
+        }
+
+        img {
+            border: 0
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        ul, ol {
+            list-style: none
+        }
+
+        .clr {
+            clear: both
+        }
+
+        p {
+            -webkit-margin-before: 0;
+            -webkit-margin-after: 0;
+            -webkit-margin-start: 0;
+            -webkit-margin-end: 0;
+            text-rendering: geometricPrecision
+        }
+
+        input[type=text], input[type=tel], textarea {
+            -webkit-appearance: none
+        }
+
+        body, input, button, option, textarea, label, legend, h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+            font: 14px/18px Helvetica,Arial,'DejaVu Sans','Liberation Sans',Freesans,sans-serif;
+            color: #333;
+            outline: none;
+            zoom: 1
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            min-width: 1024px;
+            background: #fed700;
+            width: 100%;
+            height: 55px
+        }
+
+        section {
+            max-width: 1200px;
+            width: 100%;
+            min-width: 980px;
+            margin: 55px auto 0;
+            position: relative
+        }
+
+        footer {
+            width: 100%;
+            min-width: 1024px;
+            margin: 0 auto;
+            background: #fff;
+            overflow: hidden;
+            clear: both
+        }
+
+        .wrap-main {
+            max-width: 1200px;
+            min-width: 1024px;
+            width: 100%;
+            height: 55px;
+            background: #000;
+            margin: auto;
+            position: relative;
+            display: block
+        }
+
+        .logo {
+            float: left;
+            width: 165px;
+            display: block;
+            padding: 14px 0 11px 5px
+        }
+
+            .logo a {
+                display: block;
+                overflow: hidden
+            }
+
+        #search-site {
+            float: left;
+            width: 230px;
+            height: 35px;
+            margin: 10px 10px 0 10px;
+            background: #fff;
+            position: relative;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px
+        }
+
+        .topinput {
+            float: left;
+            width: 162px;
+            margin-left: 8px;
+            padding-top: 3px;
+            border: 0;
+            position: relative;
+            background: #fff;
+            height: 30px;
+            text-indent: 10px;
+            font-size: 13px
+        }
+
+        .btntop {
+            float: right;
+            width: 40px;
+            height: 35px;
+            border: 0;
+            background: none
+        }
+
+        nav {
+            width: 780px;
+            background: #fed700;
+            margin: 0;
+            padding: 0;
+            display: table;
+            *display: block;
+            *float: none
+        }
+
+            nav a {
+                display: table-cell;
+                *float: left;
+                width: 75px;
+                height: 43px;
+                padding: 3px 0 4px;
+                color: #000;
+                background: #fed700;
+                font-size: 11px;
+                text-align: center;
+                text-transform: uppercase;
+                position: relative
+            }
+
+                nav a:hover, nav a.actmenu {
+                    background-color: #f5f5f5
+                }
+
+                nav a.mobile {
+                    width: 70px
+                }
+
+                nav a.tablet {
+                    width: 60px
+                }
+
+                nav a.laptop {
+                    width: 60px
+                }
+
+                nav a.phukien {
+                    width: 60px
+                }
+
+                nav a.simcard {
+                    width: 60px
+                }
+
+                nav a.ask {
+                    width: 60px
+                }
+
+                nav a.gameapp {
+                    width: 60px
+                }
+
+                nav a span {
+                    display: block;
+                    position: absolute;
+                    top: 9px;
+                    width: 23px;
+                    margin: auto;
+                    left: 0;
+                    right: 0;
+                    font-size: 11px
+                }
+
+                nav a.cardsim, nav a.utility {
+                    text-transform: none;
+                    font-size: 13px;
+                    padding: 0;
+                    vertical-align: middle;
+                    line-height: 19px;
+                    border-left: 1px solid rgba(0,0,0,.1);
+                    padding-top: 6px
+                }
+
+                nav a.utility {
+                    width: 100px
+                }
+
+        [class^="icontgdd-"], [class*="icontgdd-"], [class^="iconmobile-"], [class*="iconmobile-"] {
+            background-image: url(https://cdn2.tgdd.vn/v2015/Content/desktop/images/V4/icondesktop@1x.png);
+            background-repeat: no-repeat;
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+            vertical-align: middle
+        }
+
+        @media all and (-webkit-min-device-pixel-ratio:1.5) {
+            [class^="icontgdd-"], [class*="icontgdd-"], [class^="iconmobile-"], [class*="iconmobile-"] {
+                background-image: url(https://cdn3.tgdd.vn/v2015/Content/desktop/images/V4/icondesktop@2x.png);
+                background-size: 500px 100px
+            }
+        }
+
+        .icontgdd-logo {
+            background-position: 0 0;
+            width: 156px;
+            height: 30px;
+            display: block;
+            margin: auto
+        }
+
+        .icontgdd-topsearch {
+            background-position: -160px 0;
+            width: 20px;
+            height: 20px;
+            display: block;
+            margin: 1px auto 0
+        }
+
+        .icontgdd-mobile {
+            background-position: -190px 0;
+            width: 15px;
+            height: 25px;
+            display: block;
+            margin: 2px auto 3px
+        }
+
+        .icontgdd-tablet {
+            background-position: -209px 0;
+            display: block;
+            margin: 0 auto 5px;
+            width: 33px;
+            height: 22px
+        }
+
+        .icontgdd-laptop {
+            background-position: -245px 0;
+            display: block;
+            margin: 0 auto 5px;
+            width: 39px;
+            height: 21px
+        }
+
+        .icontgdd-phukien {
+            background-position: -288px 0;
+            display: block;
+            margin: 0 auto 5px;
+            width: 22px;
+            height: 22px
+        }
+
+        .icontgdd-maydoitra {
+            background-position: -315px 0;
+            display: block;
+            margin: 0 auto 4px;
+            width: 34px;
+            height: 26px
+        }
+
+        .icontgdd-simcard {
+            background-position: -355px 0;
+            display: block;
+            margin: 0 auto 5px;
+            width: 18px;
+            height: 23px
+        }
+
+        .icontgdd-news {
+            background-position: -375px 0;
+            display: block;
+            margin: 0 auto 2px;
+            width: 29px;
+            height: 24px
+        }
+
+        .icontgdd-ask {
+            background-position: -410px 0;
+            display: block;
+            margin: 0 auto 3px;
+            width: 25px;
+            height: 25px
+        }
+
+        .icontgdd-gameapp {
+            background-position: -439px 0;
+            display: block;
+            margin: 0 auto 5px;
+            height: 20px;
+            width: 32px
+        }
+
+        .icontgdd-promo {
+            background-position: -475px 0;
+            display: block;
+            margin: 0 auto 3px;
+            width: 22px;
+            height: 24px
+        }
+
+        .rowfoot1 {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            min-width: 1024px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px 0
+        }
+
+        .colfoot {
+            float: left;
+            width: 28%;
+            margin: 0;
+            position: relative
+        }
+
+        .collast {
+            width: 11%;
+            float: right
+        }
+
+        .colfoot li {
+            float: none;
+            position: relative;
+            font-size: 13px;
+            color: #444
+        }
+
+            .colfoot li a {
+                display: block;
+                color: #288ad6;
+                font-size: 14px;
+                line-height: 25px;
+                padding-top: 5px
+            }
+
+                .colfoot li a:hover {
+                    color: #666
+                }
+
+            .colfoot li p {
+                display: block;
+                padding-top: 5px;
+                line-height: 25px;
+                font-size: 14px;
+                color: #666
+            }
+
+                .colfoot li p a {
+                    display: inline;
+                    font-weight: 600;
+                    color: #333;
+                    padding: 0 5px
+                }
+
+            .colfoot li.showmore {
+                font-weight: bold
+            }
+
+                .colfoot li.showmore a:after {
+                    content: '';
+                    display: inline-block;
+                    width: 0;
+                    height: 0;
+                    border-top: 5px solid #288ad6;
+                    border-left: 5px solid transparent;
+                    border-right: 5px solid transparent;
+                    margin: 0 0 0 5px;
+                    position: relative;
+                    top: -2px
+                }
+
+                .colfoot li.showmore a:hover:after {
+                    border-top: 5px solid #666
+                }
+
+            .colfoot li.hidden {
+                display: none
+            }
+
+            .colfoot li a.linkfb {
+                float: left;
+                padding: 0 10px 0 0;
+                margin: 9px 0 2px;
+                border-right: 1px solid #e9e9e9;
+                font-size: 12px;
+                line-height: 1;
+                color: #288ad6
+            }
+
+            .colfoot li a.linkyt {
+                float: left;
+                padding: 0 0 0 10px;
+                margin: 9px 0 2px;
+                font-size: 12px;
+                color: #288ad6;
+                line-height: 1
+            }
+
+            .colfoot li a.dmx {
+                display: block;
+                overflow: hidden;
+                clear: both;
+                padding: 5px 0
+            }
+
+        .rowfoot2 {
+            width: 100%;
+            min-width: 980px;
+            overflow: hidden;
+            background: #f8f8f8;
+            padding: 10px 0
+        }
+
+            .rowfoot2 p {
+                display: block;
+                width: 100%;
+                margin: auto;
+                font-size: 10px;
+                color: #999;
+                text-align: center
+            }
+
+            .rowfoot2 a {
+                color: #999
+            }
+
+        .icontgdd-share1 {
+            background-position: 0 -30px;
+            width: 13px;
+            height: 13px;
+            margin-right: 3px
+        }
+
+        .icontgdd-share3 {
+            background-position: -16px -30px;
+            width: 17px;
+            height: 13px;
+            margin-right: 3px
+        }
+
+        .icontgdd-dmx {
+            background-position: -36px -30px;
+            width: 100px;
+            height: 19px
+        }
+
+        .icontgdd-bct {
+            background-position: 0 -50px;
+            width: 123px;
+            height: 38px
+        }
+
+        .stickcart {
+            position: fixed;
+            right: 70px;
+            bottom: 42px;
+            background: #fff;
+            border-radius: 40px;
+            box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
+            font-size: 14px;
+            color: #288ad6;
+            padding: 0 10px 0 0;
+            width: 130px;
+            z-index: 99
+        }
+
+            .stickcart div {
+                float: left;
+                width: 38px;
+                height: 38px;
+                border-radius: 40px;
+                background: #ffde31;
+                margin: 2px 5px 2px 2px
+            }
+
+            .stickcart span {
+                display: block;
+                padding: 4px 0 0;
+                white-space: nowrap
+            }
+
+            .stickcart strong {
+                display: block;
+                white-space: nowrap
+            }
+
+        .icontgdd-cartstick {
+            background-position: -265px -30px;
+            width: 22px;
+            height: 18px;
+            display: block;
+            margin: 11px 0 0 6px
+        }
+
+        [class^="iconlogo-"], [class*="iconlogo-"] {
+            background-image: url(/Content/desktop/images/V4/logosite@1x.png);
+            background-repeat: no-repeat;
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+            vertical-align: middle
+        }
+
+        @media(-webkit-min-device-pixel-ratio:1.5) {
+            [class^="iconlogo-"], [class*="iconlogo-"] {
+                background-image: url(/Content/desktop/images/V4/logosite@2x.png);
+                background-size: 425px 20px
+            }
+        }
+
+        .iconlogo-bhx {
+            background-position: -235px 0;
+            width: 110px;
+            height: 19px
+        }
+
+        .iconlogo-dmx {
+            background-position: -115px 0;
+            width: 111px;
+            height: 19px
+        }
+
+        .iconlogo-vv {
+            background-position: -350px 0;
+            width: 74px;
+            height: 19px
+        }
+
+        .group {
+            display: block;
+            overflow: hidden;
+            clear: both
+        }
+
+            .group label {
+                display: block;
+                font-size: 12px;
+                color: #888;
+                margin-top: 10px
+            }
+
+            .group a {
+                display: block;
+                vertical-align: top;
+                padding-top: 0 !important
+            }
+
+        .breadcrumb {
+            display: block;
+            overflow: hidden;
+            margin: 0;
+            background: #fff;
+            line-height: 32px;
+            padding-top: 5px
+        }
+
+            .breadcrumb li {
+                display: inline-block;
+                vertical-align: middle;
+                overflow: hidden
+            }
+
+                .breadcrumb li a {
+                    display: inline-block;
+                    white-space: nowrap;
+                    font-size: 14px;
+                    color: #288ad6;
+                    padding: 0 10px 0 0
+                }
+
+            .breadcrumb span {
+                display: inline-block;
+                font-size: 20px;
+                color: #999;
+                padding: 2px 5px 0 0;
+                line-height: 1
+            }
+
+            .breadcrumb li h1, .breadcrumb li h2 {
+                display: inline-block;
+                font-size: 14px;
+                color: #288ad6;
+                font-weight: normal;
+                line-height: 32px
+            }
+
+                .breadcrumb li h1 a {
+                    color: #288ad6
+                }
+
+                .breadcrumb li h2 a {
+                    padding-left: 2px;
+                    color: #288ad6
+                }
+
+        #back-top {
+            display: none;
+            z-index: 99
+        }
+
+            #back-top span:before {
+                cursor: pointer;
+                background: #fdd504;
+                width: 40px;
+                position: fixed;
+                right: 20px;
+                bottom: 45px;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+                font-size: 18px;
+                -webkit-transition: all .2s linear;
+                -moz-transition: all .2s linear;
+                -o-transition: all .2s linear;
+                -transition: all .2s linear;
+                color: #000;
+                content: "▲";
+                opacity: .7;
+                z-index: 8;
+                border-radius: 5px
+            }
+
+            #back-top span:hover:before {
+                opacity: 1
+            }
+
+        #dlding, #imgtrack, .none {
+            display: none
+        }
+
+        .wrap-suggestion {
+            display: block;
+            border: 1px solid #e2e2e2;
+            background: #fff;
+            position: absolute;
+            left: 0;
+            width: 345px;
+            top: 45px;
+            z-index: 9
+        }
+
+            .wrap-suggestion:after, .wrap-suggestion:before {
+                bottom: 100%;
+                left: 80px;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute
+            }
+
+            .wrap-suggestion:after {
+                border-color: rgba(255,255,255,0);
+                border-bottom-color: #fff;
+                border-width: 8px;
+                margin-left: -8px
+            }
+
+            .wrap-suggestion:before {
+                border-color: rgba(218,218,218,0);
+                border-bottom-color: #dadada;
+                border-width: 9px;
+                margin-left: -9px
+            }
+
+            .wrap-suggestion li {
+                display: block;
+                background: #fff;
+                overflow: hidden;
+                list-style: none;
+                border-bottom: 1px dotted #ccc
+            }
+
+                .wrap-suggestion li:last-child {
+                    border-bottom: 0
+                }
+
+                .wrap-suggestion li:hover, .wrapp-producthome .wrap-suggestion li.selected, .wrap-main .wrap-suggestion li.selected {
+                    background: #f8f8f8
+                }
+
+                .wrap-suggestion li a {
+                    display: block;
+                    overflow: hidden;
+                    padding: 6px;
+                    color: #333;
+                    font-size: 12px
+                }
+
+                    .wrap-suggestion li a img {
+                        float: left;
+                        width: 50px;
+                        height: auto;
+                        margin: 0 6px 0 0
+                    }
+
+                    .wrap-suggestion li a h3 {
+                        display: block;
+                        width: auto;
+                        color: #333;
+                        font-size: 14px;
+                        font-weight: 700;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap
+                    }
+
+                    .wrap-suggestion li a h6 {
+                        font-size: 12px;
+                        color: #e67e22
+                    }
+
+                    .wrap-suggestion li a span {
+                        float: left;
+                        font-size: 13px;
+                        color: #333
+                    }
+
+                        .wrap-suggestion li a span.price {
+                            font-size: 12px;
+                            color: #c70100;
+                            float: none
+                        }
+
+                    .wrap-suggestion li a label {
+                        display: block;
+                        font-size: 12px;
+                        color: #999;
+                        padding-left: 56px
+                    }
+
+                        .wrap-suggestion li a label strong {
+                            font-size: 12px;
+                            color: #d0021b
+                        }
+
+                .wrap-suggestion li.samsung img {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 80px
+                }
+
+                .wrap-suggestion li.samsung b {
+                    display: inline-block;
+                    vertical-align: middle;
+                    color: #333
+                }
+
+        @media screen and (max-width:1220px) {
+            .wrap-main {
+                width: 1024px
+            }
+
+            .logo {
+                width: 35px
+            }
+
+            .icontgdd-logo {
+                width: 28px
+            }
+
+            #search-site {
+                width: 200px
+            }
+
+            .topinput {
+                width: 152px
+            }
+
+            nav {
+                width: 764px
+            }
+
+                nav a {
+                    font-size: 11px
+                }
+
+            .colfoot li a {
+                padding: 0 0 0 5px;
+                line-height: 30px
+            }
+
+            .colfoot {
+                width: 26.5%
+            }
+
+            .collast {
+                width: 13%
+            }
+
+            .colfoot li a.bct {
+                padding: 0
+            }
+
+            .breadcrumb {
+                margin: 0 10px
+            }
+        }
+        /* 04:52:35 14/10/2016 */ .owl-carousel .owl-wrapper:after {
+            content: ".";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            line-height: 0;
+            height: 0
+        }
+
+        .owl-carousel {
+            display: none;
+            position: relative;
+            width: 100%;
+            -ms-touch-action: pan-y
+        }
+
+            .owl-carousel .owl-wrapper {
+                display: none;
+                position: relative;
+                -webkit-transform: translate3d(0,0,0)
+            }
+
+            .owl-carousel .owl-wrapper-outer {
+                overflow: hidden;
+                position: relative;
+                width: 100%
+            }
+
+                .owl-carousel .owl-wrapper-outer.autoHeight {
+                    -webkit-transition: height 500ms ease-in-out;
+                    -moz-transition: height 500ms ease-in-out;
+                    -ms-transition: height 500ms ease-in-out;
+                    -o-transition: height 500ms ease-in-out;
+                    transition: height 500ms ease-in-out
+                }
+
+            .owl-carousel .owl-item {
+                float: left
+            }
+
+        .owl-controls .owl-page, .owl-controls .owl-buttons div {
+            cursor: pointer
+        }
+
+        .owl-controls {
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-tap-highlight-color: rgba(0,0,0,0)
+        }
+
+        .owl-carousel .owl-wrapper, .owl-carousel .owl-item {
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            -webkit-transform: translate3d(0,0,0);
+            -moz-transform: translate3d(0,0,0);
+            -ms-transform: translate3d(0,0,0)
+        }
+
+        .owl-theme .owl-controls {
+            margin-top: 0;
+            text-align: center
+        }
+
+            .owl-theme .owl-controls .owl-buttons div {
+                display: inline-block;
+                zoom: 1;
+                *display: inline
+            }
+
+            .owl-theme .owl-controls.clickable .owl-buttons div:hover {
+                text-decoration: none
+            }
+
+            .owl-theme .owl-controls .owl-page {
+                display: inline-block;
+                zoom: 1;
+                *display: inline
+            }
+
+                .owl-theme .owl-controls .owl-page span {
+                    display: block;
+                    width: 4px;
+                    height: 4px;
+                    margin: 0 5px;
+                    -webkit-border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    border-radius: 20px;
+                    background: #d8d8d8
+                }
+
+                .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+                    background: #ef8a32
+                }
+
+                .owl-theme .owl-controls .owl-page span.owl-numbers {
+                    height: auto;
+                    width: auto;
+                    color: #fff;
+                    padding: 2px 10px;
+                    font-size: 12px;
+                    -webkit-border-radius: 30px;
+                    -moz-border-radius: 30px;
+                    border-radius: 30px
+                }
+        /* 04:30:43 13/11/2017 */ body {
+            background: #f0f0f0
+        }
+
+        section {
+            margin: 65px auto 0
+        }
+
+        .homebanner {
+            float: left;
+            width: 65.834%;
+            height: 356px;
+            overflow: hidden;
+            position: relative;
+            background: #f0f0f0
+        }
+
+            .homebanner img {
+            }
+
+        #sync1 .item {
+            background: #f8f8f8;
+            text-align: center;
+            height: 300px;
+            color: #fff
+        }
+
+        #sync2 {
+            display: block;
+            width: 100%;
+            border-top: 0;
+            background: #fff;
+            height: 55px
+        }
+
+            #sync2 .owl-item {
+                height: 55px;
+                position: relative
+            }
+
+                #sync2 .owl-item:after {
+                    content: '';
+                    float: right;
+                    height: 30px;
+                    border-right: 1px solid #e5e5e5;
+                    position: absolute;
+                    top: 13px;
+                    right: 0
+                }
+
+                #sync2 .owl-item:last-child:after {
+                    border: 0
+                }
+
+            #sync2 .item {
+                display: table;
+                width: 98%;
+                vertical-align: middle;
+                position: relative;
+                background: #fff;
+                color: #666;
+                text-align: center;
+                cursor: pointer;
+                height: 55px;
+                font-size: 12px;
+                padding: 0 1%
+            }
+
+                #sync2 .item h3 {
+                    font-size: 12px;
+                    line-height: 1.3em;
+                    display: inline-block;
+                    vertical-align: middle;
+                    display: table-cell
+                }
+
+            #sync2 .synced .item {
+            }
+
+                #sync2 .synced .item h3 {
+                    font-weight: 600
+                }
+
+        .owl-theme .owl-controls .owl-buttons {
+            position: absolute;
+            top: 38%;
+            height: 0;
+            width: 100%;
+            display: none
+        }
+
+        .homebanner:hover .owl-buttons {
+            display: block
+        }
+
+        .owl-theme .owl-controls .owl-buttons .owl-prev {
+            position: absolute;
+            left: 10px;
+            padding: 12px 0 0;
+            margin: 0;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            background: rgba(0,0,0,.3);
+            width: 48px;
+            height: 40px;
+            text-align: center;
+            font-size: 46px;
+            color: #fff;
+            font-family: -webkit-body
+        }
+
+        .owl-theme .owl-controls .owl-buttons .owl-next {
+            position: absolute;
+            right: 10px;
+            padding: 12px 0 0;
+            margin: 0;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            background: rgba(0,0,0,.3);
+            width: 48px;
+            height: 40px;
+            text-align: center;
+            font-size: 46px;
+            color: #fff;
+            font-family: -webkit-body
+        }
+
+        .homenews {
+            float: right;
+            width: 33.33%;
+            height: 356px;
+            overflow: hidden
+        }
+
+            .homenews figure {
+                display: block;
+                overflow: hidden;
+                border-bottom: 3px solid #fdd504;
+                background: #f0f0f0
+            }
+
+            .homenews h2 {
+                float: left;
+                padding: 12px 10px 8px;
+                background: #fdd504;
+                line-height: 1.3em;
+                text-transform: uppercase;
+                text-align: center
+            }
+
+                .homenews h2 a {
+                    font-size: 14px;
+                    color: #333
+                }
+
+            .homenews figure b {
+                float: left;
+                width: 0;
+                height: 0;
+                border-left: 0 solid transparent;
+                border-right: 20px solid transparent;
+                border-bottom: 38px solid #af9300
+            }
+
+            .homenews figure .readmore {
+                float: right;
+                padding: 3px 10px;
+                background: #fff;
+                border-radius: 2px;
+                -webkit-border-radius: 2px;
+                -moz-border-radius: 2px;
+                font-size: 12px;
+                color: #288ad8;
+                text-transform: uppercase;
+                margin-top: 8px
+            }
+
+            .homenews figure a:hover {
+                text-decoration: underline
+            }
+
+            .homenews ul {
+                display: block;
+                overflow: hidden;
+                background: #fff;
+                height: 230px
+            }
+
+            .homenews li {
+                display: block;
+                border-bottom: 1px solid #ededed;
+                background: #fff;
+                margin: 0 10px;
+                padding: 8px 0
+            }
+
+                .homenews li img {
+                    float: right;
+                    width: 100px;
+                    height: 57px;
+                    margin-left: 10px
+                }
+
+                .homenews li a {
+                    display: block;
+                    overflow: hidden
+                }
+
+                .homenews li h3 {
+                    display: block;
+                    overflow: hidden;
+                    height: 36px;
+                    line-height: 1.3em;
+                    font-size: 14px;
+                    color: #333;
+                    margin-bottom: 5px
+                }
+
+                .homenews li:hover h3 {
+                    color: #288ad6
+                }
+
+                .homenews li span {
+                    font-size: 12px;
+                    color: #999;
+                    margin-right: 10px
+                }
+
+                .homenews li .cyan {
+                    display: inline-block;
+                    font-size: 14px;
+                    color: #999
+                }
+
+                .homenews li .red {
+                    display: inline-block;
+                    font-size: 14px;
+                    color: #f89406
+                }
+
+                .homenews li:last-child {
+                    border-bottom: 0
+                }
+
+        .icontgdd-comcyan {
+            background-position: -325px -30px;
+            width: 12px;
+            height: 12px;
+            margin-right: 3px
+        }
+
+        .icontgdd-comred {
+            background-position: -340px -30px;
+            width: 12px;
+            height: 12px;
+            margin-right: 3px
+        }
+
+        .twobanner {
+            margin-top: 9px;
+            display: block;
+            overflow: hidden
+        }
+
+            .twobanner a:nth-child(1) {
+                float: left;
+                width: 49%
+            }
+
+            .twobanner a img {
+                float: left
+            }
+
+            .twobanner a:nth-child(2) {
+                float: right;
+                width: 49%
+            }
+
+                .twobanner a:nth-child(2) img {
+                    float: right
+                }
+
+        .homeproduct {
+            display: block;
+            overflow: hidden;
+            margin: 10px auto 0
+        }
+
+            .homeproduct li {
+                float: left;
+                position: relative;
+                width: 33.33%;
+                height: 255px;
+                margin: 0 0 10px;
+                overflow: hidden;
+                cursor: pointer
+            }
+
+                .homeproduct li:nth-child(3n+3) {
+                    background: #fff;
+                    float: right
+                }
+
+                .homeproduct li a {
+                    display: block;
+                    overflow: hidden;
+                    width: 97.5%;
+                    height: 100%;
+                    background: #fff;
+                    cursor: pointer;
+                    font-size: 80%;
+                    voice-family: "\"}\"";
+                    voice-family: inherit;
+                    -webkit-text-size-adjust: none;
+                    -ms-text-size-adjust: none;
+                    -moz-text-size-adjust: none;
+                    text-size-adjust: none;
+                    -webkit-text-size-adjust: 100%;
+                    -ms-text-size-adjust: 100%
+                }
+
+                    .homeproduct li a:hover h3 {
+                        color: #288ad6
+                    }
+
+                .homeproduct li img {
+                    display: block;
+                    width: 400px;
+                    height: auto;
+                    margin-left: -5px;
+                    margin-bottom: 10px
+                }
+
+                .homeproduct li h3 {
+                    display: block;
+                    line-height: 1.3em;
+                    font-size: 16px;
+                    color: #333;
+                    font-weight: 600;
+                    margin: 0 10px 5px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis
+                }
+
+                .homeproduct li strong {
+                    float: left;
+                    font-size: 14px;
+                    color: #c10017;
+                    margin: 0 9px 5px
+                }
+
+                .homeproduct li div {
+                    display: block;
+                    font-size: 12px;
+                    color: #333
+                }
+
+                    .homeproduct li div p {
+                        display: block;
+                        padding: 0 10px
+                    }
+
+                    .homeproduct li div b {
+                        color: #333
+                    }
+
+                .homeproduct li label {
+                    display: inline-block;
+                    vertical-align: middle;
+                    position: relative;
+                    font-size: 11px;
+                    color: #fff;
+                    font-weight: 600;
+                    background: #fff;
+                    border-radius: 3px;
+                    padding: 0 5px 0 8px;
+                    margin: 1px 10px 0 5px;
+                    height: 18px;
+                    float: right
+                }
+
+                    .homeproduct li label.installment {
+                        background: #ff6a00
+                    }
+
+                        .homeproduct li label.installment:before {
+                            content: '';
+                            width: 0;
+                            height: 0;
+                            border-top: 9px solid transparent;
+                            border-bottom: 9px solid transparent;
+                            border-right: 7px solid #ff6a00;
+                            position: absolute;
+                            top: 0;
+                            left: -6px
+                        }
+
+                        .homeproduct li label.installment:after {
+                            content: '•';
+                            color: #fff;
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin-right: 5px;
+                            font-size: 16px;
+                            position: absolute;
+                            top: 1px;
+                            right: 85%
+                        }
+
+                    .homeproduct li label.new {
+                        background: #3fb846
+                    }
+
+                        .homeproduct li label.new:before {
+                            content: '';
+                            width: 0;
+                            height: 0;
+                            border-top: 9px solid transparent;
+                            border-bottom: 9px solid transparent;
+                            border-right: 7px solid #3fb846;
+                            position: absolute;
+                            top: 0;
+                            left: -6px
+                        }
+
+                        .homeproduct li label.new:after {
+                            content: '•';
+                            color: #fff;
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin-right: 5px;
+                            font-size: 16px;
+                            position: absolute;
+                            top: 1px;
+                            right: 85%
+                        }
+
+                    .homeproduct li label.shock {
+                        background: #d0021b
+                    }
+
+                        .homeproduct li label.shock:before {
+                            content: '';
+                            width: 0;
+                            height: 0;
+                            border-top: 9px solid transparent;
+                            border-bottom: 9px solid transparent;
+                            border-right: 7px solid #d0021b;
+                            position: absolute;
+                            top: 0;
+                            left: -6px
+                        }
+
+                        .homeproduct li label.shock:after {
+                            content: '•';
+                            color: #fff;
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin-right: 5px;
+                            font-size: 16px;
+                            position: absolute;
+                            top: 1px;
+                            right: 85%
+                        }
+
+                .homeproduct li .bginfo {
+                    display: block;
+                    overflow: hidden;
+                    background: #fff;
+                    height: 96%;
+                    padding: 2% 0;
+                    font-size: 12px;
+                    color: #fff;
+                    line-height: 16px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 9px;
+                    bottom: 0;
+                    z-index: 9;
+                    -webkit-transition-duration: .7s;
+                    -moz-transition-duration: .7s;
+                    -o-transition-duration: .7s;
+                    transition-duration: .7s;
+                    -ms-opacity: 0;
+                    opacity: 0;
+                    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                    filter: alpha(opacity=0);
+                    pointer-events: none
+                }
+
+                .homeproduct li:hover .bginfo {
+                    -ms-opacity: 1;
+                    opacity: 1;
+                    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+                    filter: alpha(opacity=100);
+                    -khtml-opacity: 1
+                }
+
+                .homeproduct li .bginfo div {
+                    border-bottom: 1px solid #ddd;
+                    margin-bottom: 10px;
+                    padding-bottom: 5px
+                }
+
+                .homeproduct li .bginfo span {
+                    display: block;
+                    color: #333;
+                    padding: 2px 5px;
+                    margin-left: 5px;
+                    text-decoration: none;
+                    font-size: 12px;
+                    line-height: 18px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis
+                }
+
+                .homeproduct li .bginfo .name {
+                    display: block;
+                    line-height: 1.3em;
+                    font-size: 16px;
+                    color: #333;
+                    font-weight: 600;
+                    padding: 0;
+                    margin: 0 10px 5px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    max-width: 70%
+                }
+
+                .homeproduct li:hover .bginfo .name {
+                    cursor: pointer;
+                    color: #288ad6
+                }
+
+                .homeproduct li .bginfo strong {
+                    position: absolute;
+                    top: 9px;
+                    right: 6px;
+                    font-size: 16px;
+                    color: #c10017
+                }
+
+                .homeproduct li .bginfo label {
+                    color: #288ad6;
+                    bottom: 10px;
+                    cursor: pointer;
+                    float: right;
+                    margin-right: 10px;
+                    font-size: 14px;
+                    font-weight: 300
+                }
+
+                    .homeproduct li .bginfo label.compr {
+                        pointer-events: all
+                    }
+
+                    .homeproduct li .bginfo label:hover {
+                        color: #333
+                    }
+
+                .homeproduct li .hisprice {
+                    font-size: 12px;
+                    color: #999;
+                    text-decoration: line-through
+                }
+
+                .homeproduct li cite {
+                    color: #fff;
+                    background: #d0021b;
+                    padding: 3px 5px;
+                    font-style: normal;
+                    font-weight: bold
+                }
+
+        .acchome {
+            display: block;
+            overflow: hidden;
+            background: #fff
+        }
+
+        .naviacc {
+            display: block;
+            overflow: hidden;
+            padding-top: 5px
+        }
+
+            .naviacc h2 {
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 15px;
+                color: #333;
+                padding: 10px;
+                text-transform: uppercase
+            }
+
+            .naviacc a {
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 14px;
+                color: #388ad6;
+                padding: 10px
+            }
+
+                .naviacc a:hover {
+                    color: #333
+                }
+
+        .acchome ul {
+            display: block;
+            overflow: hidden;
+            background: #fff
+        }
+
+        .acchome li {
+            float: left;
+            overflow: hidden;
+            height: 240px;
+            width: 12.5%
+        }
+
+            .acchome li a {
+                display: block;
+                overflow: hidden
+            }
+
+            .acchome li h3 {
+                display: block;
+                overflow: hidden;
+                height: 54px;
+                font-size: 14px;
+                color: #333;
+                padding: 0 10px;
+                text-align: center
+            }
+
+            .acchome li:hover h3 {
+                color: #288ad6
+            }
+
+            .acchome li img {
+                display: block;
+                margin: 10px auto;
+                width: 120px;
+                max-height: 120px
+            }
+
+            .acchome li strong {
+                display: block;
+                overflow: hidden;
+                font-size: 14px;
+                color: #c10017;
+                text-align: center;
+                padding: 5px 0 0 0
+            }
+
+            .acchome li span {
+                font-size: 12px;
+                color: #999;
+                text-decoration: line-through;
+                text-align: center;
+                display: block
+            }
+
+        .wrap_card {
+            *display: block;
+            display: table;
+            background: #f0f0f0;
+            margin: 10px 0;
+            width: 100%
+        }
+
+        .mobile_card {
+            *float: left;
+            display: table-cell;
+            background: #fff;
+            width: 49%;
+            border-right: 10px solid #f0f0f0;
+            position: relative
+        }
+
+            .mobile_card h3 {
+                display: inline;
+                overflow: hidden;
+                line-height: 1.3em;
+                font-size: 14px;
+                color: #333;
+                padding: 10px 10px 0;
+                text-transform: uppercase
+            }
+
+        .content {
+            background: #fff;
+            padding: 10px;
+            display: block;
+            overflow: visible;
+            clear: both
+        }
+
+        .area_input {
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: bottom;
+            width: 51%
+        }
+
+        .area_btn {
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: bottom;
+            width: 48%
+        }
+
+        .content label {
+            display: inline-block;
+            overflow: hidden;
+            font-size: 14px;
+            color: #333;
+            margin: 0 30px 10px 0;
+            float: left;
+            cursor: pointer
+        }
+
+        .icontgdd-opt {
+            background-position: -380px -30px;
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            vertical-align: sub
+        }
+
+        .content .check .icontgdd-opt {
+            background-position: -400px -30px
+        }
+
+        .content input {
+            display: block;
+            width: 96.5%;
+            margin: 0 0 10px;
+            padding: 10px 0;
+            height: 18px;
+            text-indent: 5px;
+            font-size: 14px;
+            color: #333;
+            border: 1px solid #d9d9d9;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px
+        }
+
+            .content input::-webkit-input-placeholder {
+                color: #999
+            }
+
+            .content input::-moz-placeholder {
+                color: #999
+            }
+
+            .content input:-ms-input-placeholder {
+                color: #999
+            }
+
+            .content input:-moz-placeholder {
+                color: #999
+            }
+
+        .content .btndis {
+            display: inline-block;
+            width: 48.5%;
+            vertical-align: top;
+            padding: 4px 0;
+            background: #fafafa;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            color: #999;
+            font-size: 12px;
+            line-height: 1.3em;
+            cursor: pointer;
+            margin-bottom: 10px
+        }
+
+        .content .atm {
+            background: #4a90e2;
+            color: #fff;
+            border-color: #2465c7;
+            background: -webkit-gradient(linear,0% 0%,0% 100%,from(#205db6),to(#2a71d8));
+            background: -webkit-linear-gradient(top,#2a71d8,#205db6);
+            background: -moz-linear-gradient(top,#2a71d8,#205db6);
+            background: -ms-linear-gradient(top,#2a71d8,#205db6);
+            background: -o-linear-gradient(top,#2a71d8,#205db6);
+            margin-bottom: 10px
+        }
+
+        .content .visa {
+            background: #0037a0;
+            color: #fff;
+            border-color: #001f5b;
+            background: -webkit-gradient(linear,0% 0%,0% 100%,from(#00308a),to(#0037a0));
+            background: -webkit-linear-gradient(top,#0037a0,#00308a);
+            background: -moz-linear-gradient(top,#0037a0,#00308a);
+            background: -ms-linear-gradient(top,#0037a0,#00308a);
+            background: -o-linear-gradient(top,#0037a0,#00308a);
+            margin-bottom: 10px
+        }
+
+        .wrapchoose {
+            display: block;
+            height: 32px;
+            margin: 10px 0;
+            clear: both;
+            text-align: left;
+            position: relative
+        }
+
+        .choosenum {
+            float: left;
+            position: relative;
+            padding: 5px 0 5px 10px;
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 3px;
+            cursor: pointer
+        }
+
+            .choosenum:after {
+                content: '';
+                width: 0;
+                height: 0;
+                border-top: 5px solid #999;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0 5px;
+                position: relative;
+                top: -1px
+            }
+
+        .numcard {
+            display: none;
+            overflow: visible;
+            position: absolute;
+            top: 32px;
+            left: 0;
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            width: 65px;
+            padding: 5px 8px
+        }
+
+            .numcard a {
+                display: block;
+                padding: 5px 0;
+                font-size: 14px;
+                color: #333;
+                border-bottom: 1px solid #eee;
+                text-align: left
+            }
+
+                .numcard a:hover {
+                    color: #288ad6
+                }
+
+                .numcard a:last-child {
+                    border: 0
+                }
+
+            .numcard:before, .numcard:after {
+                content: '';
+                width: 0;
+                height: 0;
+                position: absolute;
+                bottom: 100%;
+                left: 24px;
+                border-bottom: 6px solid #eee;
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent
+            }
+
+            .numcard:after {
+                border-bottom-color: #fff;
+                border-width: 5px;
+                position: absolute;
+                left: 25px
+            }
+
+        .wrapchoose .money {
+            float: left;
+            padding: 6px 10px;
+            overflow: hidden;
+            font-size: 14px;
+            color: #333
+        }
+
+            .wrapchoose .money span {
+                color: #c10017
+            }
+
+        .pay_installment {
+            *float: right;
+            display: table-cell;
+            background: #fff;
+            width: 49%
+        }
+
+            .pay_installment h3 {
+                display: block;
+                overflow: hidden;
+                line-height: 1.3em;
+                font-size: 14px;
+                color: #333;
+                padding: 10px 10px 0;
+                text-transform: uppercase
+            }
+
+        .row_comp {
+            float: left;
+            width: 150px;
+            position: relative
+        }
+
+            .row_comp .error {
+                margin: 0
+            }
+
+        .choosecomp {
+            display: block;
+            position: relative;
+            padding: 10px 0 10px 10px;
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 3px;
+            cursor: pointer
+        }
+
+            .choosecomp:after {
+                content: '';
+                width: 0;
+                height: 0;
+                border-top: 5px solid #999;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                display: inline-block;
+                vertical-align: middle;
+                margin: 6px 5px;
+                position: relative;
+                float: right
+            }
+
+        .row_input {
+            float: left;
+            width: 51%;
+            margin: 0 10px
+        }
+
+        .content .code {
+            display: block;
+            margin: 0 0 6px;
+            width: 100%
+        }
+
+        .listcomp {
+            display: none;
+            overflow: visible;
+            position: absolute;
+            top: 42px;
+            left: 0;
+            z-index: 9;
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            width: 135px;
+            padding: 5px 8px
+        }
+
+            .listcomp a {
+                display: block;
+                padding: 8px;
+                font-size: 14px;
+                color: #333;
+                text-align: left;
+                border-bottom: 1px solid #eee;
+                cursor: pointer
+            }
+
+                .listcomp a:hover {
+                    color: #288ad6
+                }
+
+                .listcomp a:last-child {
+                    border: 0
+                }
+
+            .listcomp:before, .listcomp:after {
+                content: '';
+                width: 0;
+                height: 0;
+                position: absolute;
+                bottom: 100%;
+                left: 44px;
+                border-bottom: 8px solid #eee;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent
+            }
+
+            .listcomp:after {
+                border-bottom-color: #fff;
+                border-width: 7px;
+                position: absolute;
+                left: 45px
+            }
+
+        .btncheck {
+            float: right;
+            overflow: hidden;
+            background: #288ad6;
+            position: relative;
+            line-height: 38px;
+            font-size: 14px;
+            color: #fff;
+            border: 1px solid #288ad6;
+            border-radius: 4px;
+            margin-right: 5px;
+            padding: 0 3.3%;
+            text-align: center;
+            text-transform: uppercase;
+            cursor: pointer
+        }
+
+        .helplink {
+            display: block;
+            overflow: hidden;
+            padding: 10px;
+            clear: both
+        }
+
+            .helplink span {
+                display: inline-block;
+                vertical-align: middle;
+                color: #333
+            }
+
+            .helplink a {
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 13px;
+                color: #288ad6;
+                padding: 0 5px
+            }
+
+                .helplink a:hover {
+                    color: #333
+                }
+
+        .content .input_error {
+            border-color: #dd4b39
+        }
+
+        .error {
+            display: block;
+            font-size: 12px;
+            color: #dd4b39;
+            padding-bottom: 5px;
+            margin-top: -5px
+        }
+
+        .moreproduct {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            max-width: 1200px;
+            margin: 10px auto 0;
+            text-align: center
+        }
+
+            .moreproduct a {
+                padding: 5px 10px;
+                font-size: 14px;
+                color: #288ad6;
+                display: inline-block;
+                *float: left;
+                margin-right: 10px;
+                border: 1px solid #288ad6;
+                border-radius: 4px;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px
+            }
+
+                .moreproduct a:hover {
+                    color: #fff;
+                    background: #288ad6
+                }
+
+        .keyword {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            margin: 10px auto 0;
+            background: #e8e8e8;
+            text-align: center
+        }
+
+            .keyword span {
+                display: inline-block;
+                font-size: 13px;
+                color: #a9a9a9;
+                padding: 10px 5px 10px 10px;
+                vertical-align: middle
+            }
+
+            .keyword a {
+                padding: 10px 5px 10px 10px;
+                font-size: 13px;
+                color: #999;
+                display: inline-block;
+                vertical-align: middle
+            }
+
+                .keyword a:hover {
+                    color: #666
+                }
+
+        #sync1 > .item {
+            display: none
+        }
+
+            #sync1 > .item:first-child {
+                display: block
+            }
+
+        .liveevent {
+            position: relative;
+            float: right;
+            display: block;
+            padding: 10px;
+            padding-left: 29px;
+            color: #f33;
+            font-size: 12px;
+            border-radius: 3px 3px 0 0;
+            max-width: 50%
+        }
+
+            .liveevent .text {
+                white-space: nowrap;
+                overflow: hidden;
+                -ms-text-overflow: ellipsis;
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+                display: block
+            }
+
+            .liveevent.card {
+                padding: 0;
+                padding-left: 29px
+            }
+
+                .liveevent.card .text {
+                    white-space: normal;
+                    overflow: auto;
+                    -ms-text-overflow: inherit;
+                    -o-text-overflow: inherit;
+                    text-overflow: inherit;
+                    display: block
+                }
+
+        #dot {
+            width: 10px;
+            height: 10px;
+            background-color: #f33;
+            border-radius: 100%;
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            margin-top: -5px;
+            display: block
+        }
+
+            #dot .ping {
+                border: 1px solid #f33;
+                width: 10px;
+                height: 10px;
+                opacity: 1;
+                background-color: rgba(238,46,36,.2);
+                border-radius: 100%;
+                -webkit-animation-duration: 1.25s;
+                animation-duration: 1.25s;
+                -webkit-animation-name: sonar;
+                animation-name: sonar;
+                -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+                -webkit-animation-timing-function: linear;
+                animation-timing-function: linear;
+                display: block;
+                margin: -1px 0 0 -1px
+            }
+
+        .nm {
+            display: inline;
+            padding-top: 10px
+        }
+
+            .nm b {
+                color: #d0021b
+            }
+
+            .nm img {
+                margin-bottom: -2px
+            }
+
+        @media screen and (max-width:1200px) {
+            .homebanner img {
+                width: 100%
+            }
+
+            .homeproduct li {
+                height: 220px
+            }
+
+                .homeproduct li img {
+                    width: 100%;
+                    margin-left: 0
+                }
+
+            .naviacc a {
+                padding: 10px 5px
+            }
+
+            .row_input {
+                width: 44%
+            }
+
+            .helplink a {
+                font-size: 12px;
+                padding: 0 0 0 5px
+            }
+
+            .helplink span {
+                font-size: 12px
+            }
+
+            .liveevent {
+                max-width: 43%
+            }
+        }
+
+        @-webkit-keyframes travel {
+            0% {
+                -webkit-transform: translateX(-900px);
+                transform: translateX(-900px)
+            }
+
+            100% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0)
+            }
+        }
+
+        @keyframes travel {
+            0% {
+                -webkit-transform: translateX(-900px);
+                transform: translateX(-900px)
+            }
+
+            100% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0)
+            }
+        }
+
+        @-webkit-keyframes sonar {
+            0% {
+                opacity: 1;
+                -webkit-transform: scale(1);
+                transform: scale(1)
+            }
+
+            100% {
+                -webkit-transform: scale(4);
+                transform: scale(4);
+                opacity: 0
+            }
+        }
+
+        @keyframes sonar {
+            0% {
+                opacity: 1;
+                -webkit-transform: scale(1);
+                transform: scale(1)
+            }
+
+            100% {
+                -webkit-transform: scale(4);
+                transform: scale(4);
+                opacity: 0
+            }
+        }
+
+        .homeproduct li label.saleonline {
+            background: #3fb846;
+            margin-right: -85px
+        }
+
+            .homeproduct li label.saleonline:before {
+                content: '';
+                width: 0;
+                height: 0;
+                border-top: 9px solid transparent;
+                border-bottom: 9px solid transparent;
+                border-right: 7px solid #3fb846;
+                position: absolute;
+                top: 0;
+                left: -6px
+            }
+
+            .homeproduct li label.saleonline:after {
+                content: '•';
+                color: #fff;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 5px;
+                font-size: 16px;
+                position: absolute;
+                top: 1px;
+                right: 85%
+            }
+        /* 11:05:52 09/12/2015 */ .stickcompare {
+            display: block;
+            background: #fff;
+            position: fixed;
+            bottom: 0;
+            z-index: 99;
+            width: 100%;
+            max-height: 180px;
+            box-shadow: 0 0 1px 0 rgba(0,0,0,.25)
+        }
+
+            .stickcompare .small {
+                position: absolute;
+                right: 0;
+                top: -39px
+            }
+
+                .stickcompare .small ul {
+                    float: right;
+                    width: 200px;
+                    background: #fff;
+                    border-radius: 10px 10px 0 0;
+                    border: 1px solid #ddd;
+                    border-bottom: 0
+                }
+
+                .stickcompare .small li {
+                    float: left;
+                    padding: 10px 6px;
+                    font-size: 14px;
+                    color: #666;
+                    font-weight: 600;
+                    cursor: pointer
+                }
+
+                    .stickcompare .small li i {
+                        width: 0;
+                        height: 0;
+                        border-top: 6px solid #288ad6;
+                        border-left: 6px solid transparent;
+                        border-right: 6px solid transparent;
+                        position: relative;
+                        top: 6px;
+                        margin-left: 5px;
+                        float: right
+                    }
+
+                        .stickcompare .small li i.v2 {
+                            border-bottom: 6px solid #288ad6;
+                            border-top: none
+                        }
+
+                    .stickcompare .small li:first-child {
+                        color: #288ad6
+                    }
+
+                    .stickcompare .small li:last-child {
+                        color: red
+                    }
+
+                    .stickcompare .small li span {
+                        float: left;
+                        font-size: 12px;
+                        color: #999;
+                        margin: 0
+                    }
+
+            .stickcompare .comlist {
+                *display: block;
+                display: table;
+                max-width: 1198px;
+                width: 100%;
+                margin: 0 auto;
+                border-left: 1px solid #ddd
+            }
+
+                .stickcompare .comlist li {
+                    *float: left;
+                    display: table-cell;
+                    vertical-align: middle;
+                    padding: 20px 1% 20px 1%;
+                    border-right: 1px solid #ddd;
+                    position: relative
+                }
+
+                    .stickcompare .comlist li:last-child {
+                        border: 0
+                    }
+
+                    .stickcompare .comlist li img {
+                        float: left;
+                        width: 80px;
+                        height: 80px;
+                        margin-right: 10px
+                    }
+
+                    .stickcompare .comlist li figure {
+                        overflow: hidden;
+                        max-width: 220px;
+                        max-height: 150px
+                    }
+
+                    .stickcompare .comlist li h3 {
+                        display: block;
+                        line-height: 1.3em;
+                        font-size: 14px;
+                        color: #444;
+                        margin-bottom: 3px;
+                        font-weight: 600;
+                        width: 200px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis
+                    }
+
+                    .stickcompare .comlist li strong {
+                        float: left;
+                        font-size: 13px;
+                        color: #d0021b
+                    }
+
+                    .stickcompare .comlist li label {
+                        color: #888;
+                        font-size: 12px;
+                        text-decoration: line-through;
+                        margin-left: 5px
+                    }
+
+                    .stickcompare .comlist li div {
+                        display: block;
+                        font-size: 12px;
+                        color: #666;
+                        clear: both
+                    }
+
+                    .stickcompare .comlist li p {
+                        clear: both
+                    }
+
+                    .stickcompare .comlist li figure span {
+                        text-decoration: none;
+                        font-size: 12px;
+                        color: #333;
+                        float: none;
+                        display: block;
+                        line-height: 18px
+                    }
+
+                    .stickcompare .comlist li button {
+                        position: absolute;
+                        top: 4px;
+                        right: 5px;
+                        cursor: pointer;
+                        background: #fff;
+                        border: 1px solid #ddd;
+                        border-radius: 20px;
+                        width: 20px;
+                        height: 20px
+                    }
+
+                        .stickcompare .comlist li button sub {
+                            position: absolute;
+                            left: -1px;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            width: 14px;
+                            height: 14px;
+                            margin: auto;
+                            font-size: 14px;
+                            color: #999;
+                            line-height: 1
+                        }
+
+                    .stickcompare .comlist li form {
+                        position: relative;
+                        display: block
+                    }
+
+                        .stickcompare .comlist li form button {
+                            width: 35px;
+                            height: 34px;
+                            border: 0;
+                            border-radius: 0;
+                            position: absolute;
+                            top: 1px;
+                            right: 1px
+                        }
+
+                    .stickcompare .comlist li input[type="search"] {
+                        display: block;
+                        width: 100%;
+                        padding: 8px;
+                        border: 1px solid #ddd;
+                        font-size: 14px;
+                        color: #666
+                    }
+
+                    .stickcompare .comlist li .viewdisable {
+                        display: block;
+                        padding: 10px;
+                        background: #d5d6d7;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        color: #9e9e9e;
+                        text-align: center;
+                        width: 60%;
+                        margin: auto
+                    }
+
+                    .stickcompare .comlist li .viewfullcomp {
+                        display: block;
+                        padding: 10px;
+                        background: #288ad6;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        color: #fff;
+                        text-align: center;
+                        width: 80%;
+                        margin: auto
+                    }
+
+                    .stickcompare .comlist li .textmin {
+                        font-size: 12px;
+                        color: #888;
+                        display: block;
+                        line-height: 18px;
+                        text-align: center;
+                        margin-top: 5px
+                    }
+
+            .stickcompare .search-suggestion-wrapper {
+                position: absolute;
+                margin-left: 60px;
+                margin-top: 2px
+            }
+
+                .stickcompare .search-suggestion-wrapper .search-suggestion-list {
+                    background: #fff;
+                    border: 1px solid #ccc;
+                    font-size: 12px;
+                    line-height: 18px;
+                    position: absolute;
+                    bottom: 40px;
+                    left: -59px;
+                    width: 263px;
+                    z-index: 1000
+                }
+
+                    .stickcompare .search-suggestion-wrapper .search-suggestion-list li {
+                        height: 30px;
+                        margin: 0 !important;
+                        padding: 0 !important;
+                        text-align: left;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        max-width: 355px;
+                        display: inline-block !important;
+                        width: 100%
+                    }
+
+                    .stickcompare .search-suggestion-wrapper .search-suggestion-list a {
+                        color: #333
+                    }
+
+                    .stickcompare .search-suggestion-wrapper .search-suggestion-list li.selected, .stickcompare .search-suggestion-wrapper .search-suggestion-list li:hover {
+                        background-color: #2889d6;
+                        color: #fff
+                    }
+
+                    .stickcompare .search-suggestion-wrapper .search-suggestion-list li a {
+                        display: inline-block;
+                        width: 100%;
+                        padding-left: 5px;
+                        vertical-align: -webkit-baseline-middle
+                    }
+
+                    .stickcompare .search-suggestion-wrapper .search-suggestion-list li:hover a, .stickcompare .search-suggestion-wrapper .search-suggestion-list li.selected a {
+                        color: #fff;
+                        vertical-align: -webkit-baseline-middle
+                    }
+
+        .icontgdd-scomp {
+            background-position: -175px -85px;
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            top: 8px;
+            right: 10px
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+
+        <aside class="homebanner">
+            <div id="sync1">
+                <div class="item">
+                    <a href='https://www.thegioididong.com/man-hinh-tran' onclick="jQuery.ajax({ url: '//www.thegioididong.com/bannertracking?bid=17192&r='+ (new Date).getTime(),   async: true, cache: false });"><img src='//cdn2.tgdd.vn/qcao/02_12_2017_12_02_01_big-ky-nguyen-800-300.jpg' alt='2017 - T12 - Big Campaign' /></a>
+                </div>
+                <div class="item">
+                    <a href='https://www.thegioididong.com/dtdd/oppo-f5' onclick="jQuery.ajax({ url: '//www.thegioididong.com/bannertracking?bid=17215&r='+ (new Date).getTime(),   async: true, cache: false });"><img class='lazyOwl' data-src='//cdn.tgdd.vn/qcao/01_12_2017_09_26_16_big-oppo-800-300.png' alt='2017 - T12 - Oppo F5' /></a>
+                </div>
+                <div class="item">
+                    <a href='https://www.thegioididong.com/dtdd/samsung-galaxy-note8' onclick="jQuery.ajax({ url: '//www.thegioididong.com/bannertracking?bid=16928&r='+ (new Date).getTime(),   async: true, cache: false });"><img class='lazyOwl' data-src='//cdn3.tgdd.vn/qcao/01_12_2017_10_25_40_Samsung-Big-Note-8-800-300-GIF-1.gif' alt='2017 - T12 - Big Samsung - Note 8' /></a>
+                </div>
+                <div class="item">
+                    <a href='https://www.thegioididong.com/dtdd-sony' onclick="jQuery.ajax({ url: '//www.thegioididong.com/bannertracking?bid=17449&r='+ (new Date).getTime(),   async: true, cache: false });"><img class='lazyOwl' data-src='//cdn4.tgdd.vn/qcao/08_12_2017_10_02_12_Sony-Big-800-300.png' alt='2017 - T12 - Big Sony' /></a>
+                </div>
+                <div class="item">
+                    <a href='https://www.thegioididong.com/tra-gop/home-credit' onclick="jQuery.ajax({ url: '//www.thegioididong.com/bannertracking?bid=15964&r='+ (new Date).getTime(),   async: true, cache: false });"><img class='lazyOwl' data-src='//cdn4.tgdd.vn/qcao/30_10_2017_10_00_40_HC-Tra-Gop-800-300.png' alt='2017 - T11 - Tra Gop HC' /></a>
+                </div>
+                <div class="item">
+                    <a href='https://www.thegioididong.com/phu-kien-gia-soc' onclick="jQuery.ajax({ url: '//www.thegioididong.com/bannertracking?bid=17172&r='+ (new Date).getTime(),   async: true, cache: false });"><img class='lazyOwl' data-src='//cdn2.tgdd.vn/qcao/30_11_2017_18_48_15_Le-hoi-phu-kien-800-300.png' alt='2017 - T12 - PK Chung' /></a>
+                </div>
+
+            </div>
+
+            <div id="sync2">
+                <div class="item">
+                    <h3>Kỷ Nguyên Màn Hình Tràn<br />Quà Ngập Tràn</h3>
+                    <i class="arrowbar"></i>
+                </div>
+                <div class="item">
+                    <i class="arrowbarleft"></i>
+                    <h3>Oppo F5 | 6.990.000đ<br /> Trả Góp 0%</h3>
+                    <i class="arrowbar"></i>
+                </div>
+                <div class="item">
+                    <i class="arrowbarleft"></i>
+                    <h3>Galaxy Note 8 Trả Góp 0%<br />Tặng Gear VR</h3>
+                    <i class="arrowbar"></i>
+                </div>
+                <div class="item">
+                    <i class="arrowbarleft"></i>
+                    <h3>Sony Xperia Trả Góp 0%<br />Voucher Đến 1 Triệu</h3>
+                    <i class="arrowbar"></i>
+                </div>
+                <div class="item">
+                    <i class="arrowbarleft"></i>
+                    <h3>Lễ Hội Trả Góp 0%<br />Duyệt Nhanh 10 Phút</h3>
+                    <i class="arrowbar"></i>
+                </div>
+                <div class="item">
+                    <i class="arrowbarleft"></i>
+                    <h3>Lễ Hội Phụ Kiện<br />Giảm Đến 49%</h3>
+                </div>
+            </div>
+        </aside>
+        <aside class="homenews">
+            <figure>
+                <h2><a href="/tin-tuc">Tin công nghệ</a></h2>
+                <b></b>
+                <a href="/tin-tuc" class="readmore">Đọc thêm</a>
+            </figure>
+            <ul>
+                <li>
+                    <a href="/tin-tuc/doanh-so-iphone-x-da-vuot-qua-iphone-8-lan-iphone-8-plus-1050183">
+                        <img width="100" height="70" src="https://cdn3.tgdd.vn/Files/2017/12/13/1050183/iphonexvsiphone8vsiphone8plus_800x450-100x100.jpg">
+                        <h3>
+                            Doanh số iPhone X đ&#227; vượt qua iPhone 8 lẫn iPhone 8 Plus
+                        </h3>
+                        <span>1 giờ trước</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/tin-tuc/samsung-co-the-se-gioi-thieu-smartphone-man-hinh-o-2-mat-1050190">
+                        <img width="100" height="70" src="https://cdn.tgdd.vn/Files/2017/12/14/1050190/smartphonesamsung_800x450-100x100.jpg">
+                        <h3>
+                            Bằng s&#225;ng chế mới cho thấy Samsung sẽ giới thiệu smartphone 2 mặt
+                        </h3>
+                        <span>1 giờ trước</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/tin-tuc/apple-dau-tu-390-trieu-usd-vao-nha-san-xuat-laser-cua-my-1050170">
+                        <img width="100" height="70" src="https://cdn.tgdd.vn/Files/2017/12/13/1050170/faceid_800x450-100x100.jpg">
+                        <h3>
+                            Apple đầu tư 390 triệu USD v&#224;o nh&#224; sản xuất laser của Mỹ
+                        </h3>
+                        <span>1 giờ trước</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="twobanner">
+                <a href='https://www.thegioididong.com/samsung' onclick="jQuery.ajax({ url: '//www.thegioididong.com/bannertracking?bid=16926&r='+ (new Date).getTime(),   async: true, cache: false });"><img src='//cdn1.tgdd.vn/qcao/28_11_2017_15_44_51_195-75.png' alt='2017 - T12 - Big Samsung' /></a>
+                <a href='https://www.thegioididong.com/dtdd/iphone-x-64gb' onclick="jQuery.ajax({ url: '//www.thegioididong.com/bannertracking?bid=17494&r='+ (new Date).getTime(),   async: true, cache: false });"><img src='//cdn4.tgdd.vn/qcao/09_12_2017_10_06_14_iphoneX-195-75.png' alt='2017 - T12 - iPhone X - Sale' /></a>
+            </div>
+
+        </aside>
+
+    </section>
+
+    <div class="clr"></div>
+    <ul class="homeproduct">
+        <li>
+            <a href="/dtdd/samsung-galaxy-j7-pro">
+                <img width="388" height="180" src="https://cdn4.tgdd.vn/Products/Images/42/103404/Feature/samsung-galaxy-j7-pro-ft-4-12-400x400.jpg">
+                <h3>Samsung Galaxy J7 Pro</h3>
+                <label class="installment">Trả góp 0%</label>
+                <strong>6.990.000₫</strong>
+            </a>
+            <figure class="bginfo">
+                <span class="name">Samsung Galaxy J7 Pro</span>
+                <strong>6.990.000₫</strong>
+
+
+                <div class="promotion">
+                    <span> Phiếu mua h&#224;ng Samsung trị gi&#225; 500.000đ</span>
+                    <span> Cơ hội tr&#250;ng xe SH 150i (&#225;p dụng H&#224; Nội v&#224; một số tỉnh miền Bắc).</span>
+                </div>
+                <span>M&#224;n h&#236;nh: 5.5&quot;, Full HD</span>
+                <span>HĐH: Android 7.0</span>
+                <span>CPU: Exynos, 8 nh&#226;n</span>
+                <span>RAM: 3 GB, ROM: 32 GB</span>
+                <span>Camera: 13 MP, Selfie: 13 MP</span>
+                <span>PIN: 3600mAh</span>
+                <label class="compr" onclick="qcp_addProdQcp('103404','42','Samsung Galaxy J7 Pro')">So sánh với</label>
+            </figure>
+        </li>
+        <li>
+            <a href="/dtdd/iphone-x-64gb">
+                <img width="388" height="180" src="https://cdn.tgdd.vn/Products/Images/42/114115/Feature/iphone-x-64gb-1-1-400x400.jpg">
+                <h3>iPhone X 64GB</h3>
+                <label class="new">Mới ra mắt</label>
+                <strong>29.990.000₫</strong>
+            </a>
+            <figure class="bginfo">
+                <span class="name">iPhone X 64GB</span>
+                <strong>29.990.000₫</strong>
+
+
+                <div class="promotion">
+                    <span> Cơ hội tr&#250;ng xe SH 150i (&#225;p dụng khu vực H&#224; Nội).</span>
+                    <span> Trả g&#243;p 0% khi thanh to&#225;n trực tuyến bằng thẻ T&#237;n Dụng</span>
+                </div>
+                <span>M&#224;n h&#236;nh: 5.8&quot;, Super Retina</span>
+                <span>HĐH: iOS 11</span>
+                <span>CPU: Apple A11 Bionic 6 nh&#226;n</span>
+                <span>RAM: 3 GB, ROM: 64 GB</span>
+                <span>Camera: 2 camera 12 MP, Selfie: 7 MP</span>
+                <span>PIN: 2716 mAh</span>
+                <label class="compr" onclick="qcp_addProdQcp('114115','42','iPhone X 64GB')">So sánh với</label>
+            </figure>
+        </li>
+        <li>
+            <a href="/dtdd/oppo-f5">
+                <img width="388" height="180" src="https://cdn.tgdd.vn/Products/Images/42/131915/Feature/oppo-f5-ft-1-1-400x400.jpg">
+                <h3>Oppo F5</h3>
+                <label class="installment">Trả góp 0%</label>
+                <strong>6.990.000₫</strong>
+            </a>
+            <figure class="bginfo">
+                <span class="name">Oppo F5</span>
+                <strong>6.990.000₫</strong>
+
+
+                <div class="promotion">
+                    <span> Ốp lưng (Nếu kh&#244;ng c&#243; qu&#224; sẽ ho&#224;n 50.000đ)</span>
+                </div>
+                <span>M&#224;n h&#236;nh: 6&quot;, FullHD+</span>
+                <span>HĐH: ColorOS 3.2 (Android 7.1)</span>
+                <span>CPU: Helio P23 8 nh&#226;n</span>
+                <span>RAM: 4 GB, ROM: 32 GB</span>
+                <span>Camera: 16 MP, Selfie: 20 MP</span>
+                <span>PIN: 3200 mAh</span>
+                <label class="compr" onclick="qcp_addProdQcp('131915','42','Oppo F5')">So sánh với</label>
+            </figure>
+        </li>
+        <li>
+            <a href="/dtdd/vivo-v7">
+                <img width="388" height="180" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" data-original="https://cdn4.tgdd.vn/Products/Images/42/138399/Feature/vivo-v7-ft-1-1-400x400.jpg" class="lazy">
+                <h3>Vivo V7</h3>
+                <label class="installment">Trả góp 0%</label>
+                <strong>6.990.000₫</strong>
+            </a>
+            <figure class="bginfo">
+                <span class="name">Vivo V7</span>
+                <strong>6.990.000₫</strong>
+
+
+                <div class="promotion">
+                    <span> Cơ hội tr&#250;ng Tivi Sony 4K 55 inch.</span>
+                    <span> Phiếu mua h&#224;ng trị gi&#225; 1 triệu</span>
+                </div>
+                <span>M&#224;n h&#236;nh: 5.7&quot;, HD+</span>
+                <span>HĐH: Android 7.1 </span>
+                <span>CPU:  Snapdragon 450</span>
+                <span>RAM: 4 GB, ROM: 32 GB</span>
+                <span>Camera: 16 MP, Selfie: 24 MP</span>
+                <span>PIN: 3000 mAh</span>
+                <label class="compr" onclick="qcp_addProdQcp('138399','42','Vivo V7')">So sánh với</label>
+            </figure>
+        </li>
+        <li>
+            <a href="/dtdd/huawei-nova-2i">
+                <img width="388" height="180" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" data-original="https://cdn3.tgdd.vn/Products/Images/42/118143/Feature/huawei-nova-2i-12-400x400.jpg" class="lazy">
+                <h3>Huawei Nova 2i</h3>
+                <label class="installment">Trả góp 0%</label>
+                <strong>5.990.000₫</strong>
+            </a>
+            <figure class="bginfo">
+                <span class="name">Huawei Nova 2i</span>
+                <strong>5.990.000₫</strong>
+
+
+                <div class="promotion">
+                    <span> Hai b&#236;nh giữ nhiệt inox DMX-002 500ml (Nếu kh&#244;ng c&#243; qu&#224; sẽ ho&#224;n 100.000đ)</span>
+                </div>
+                <span>M&#224;n h&#236;nh: 5.9&quot;, FullHD+</span>
+                <span>HĐH: Android 7.0</span>
+                <span>CPU: HiSilicon Kirin 659 8 nh&#226;n</span>
+                <span>RAM: 4 GB, ROM: 64 GB</span>
+                <span>Camera: 16 MP v&#224; 2 MP ,Selfie: 13 MP v&#224; 2 MP</span>
+                <span>PIN: 3340 mAh</span>
+                <label class="compr" onclick="qcp_addProdQcp('118143','42','Huawei Nova 2i')">So sánh với</label>
+            </figure>
+        </li>
+        <li>
+            <a href="/dtdd/samsung-galaxy-j7-plus">
+                <img width="388" height="180" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" data-original="https://cdn.tgdd.vn/Products/Images/42/112970/Feature/samsung-galaxy-j7-plus-ft-5-12-400x400.jpg" class="lazy">
+                <h3>Samsung Galaxy J7+</h3>
+                <label class="installment">Trả góp 0%</label>
+                <strong>8.690.000₫</strong>
+            </a>
+            <figure class="bginfo">
+                <span class="name">Samsung Galaxy J7+</span>
+                <strong>8.690.000₫</strong>
+
+
+                <div class="promotion">
+                    <span> Cơ hội tr&#250;ng xe SH 150i (&#225;p dụng H&#224; Nội v&#224; một số tỉnh miền Bắc).</span>
+                    <span> Phiếu mua h&#224;ng Samsung trị gi&#225; 400.000đ</span>
+                </div>
+                <span>M&#224;n h&#236;nh: 5.5&quot;, Full HD</span>
+                <span>HĐH: Android 7.0</span>
+                <span>CPU: MediaTek Helio P25 8 nh&#226;n</span>
+                <span>RAM: 4 GB, ROM: 32 GB</span>
+                <span>Camera: 13 MP v&#224; 5 MP (2 camera), Selfie: 16 MP</span>
+                <span>PIN: 3000 mAh</span>
+                <label class="compr" onclick="qcp_addProdQcp('112970','42','Samsung Galaxy J7+')">So sánh với</label>
+            </figure>
+        </li>
+        <li>
+            <a href="/dtdd/sony-xperia-l1">
+                <img width="388" height="180" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" data-original="https://cdn3.tgdd.vn/Products/Images/42/106538/Feature/sony-xperia-l1-dual-g3312-ft-400x400.jpg" class="lazy">
+                <h3>Sony Xperia L1</h3>
+                <label class="installment">Trả góp 0%</label>
+                <strong>3.990.000₫</strong>
+            </a>
+            <figure class="bginfo">
+                <span class="name">Sony Xperia L1</span>
+                <strong>3.990.000₫</strong>
+
+
+                <span>M&#224;n h&#236;nh: 5.5&quot;, HD</span>
+                <span>HĐH: Android 7.0</span>
+                <span>CPU: MT6737T, 4 nh&#226;n</span>
+                <span>RAM: 2 GB, ROM: 16 GB</span>
+                <span>Camera: 13 MP, Selfie: 5 MP</span>
+                <span>PIN: 2620 mAh</span>
+                <label class="compr" onclick="qcp_addProdQcp('106538','42','Sony Xperia L1')">So sánh với</label>
+            </figure>
+        </li>
+        <li>
+            <a href="/dtdd/samsung-galaxy-note-fe">
+                <img width="388" height="180" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" data-original="https://cdn4.tgdd.vn/Products/Images/42/103244/Feature/samsung-galaxy-note-fe-ft-400x400.jpg" class="lazy">
+                <h3>Samsung Galaxy Note FE</h3>
+                <label class="installment">Trả góp 0%</label>
+                <strong>13.990.000₫</strong>
+            </a>
+            <figure class="bginfo">
+                <span class="name">Samsung Galaxy Note FE</span>
+                <strong>13.990.000₫</strong>
+
+
+                <div class="promotion">
+                    <span> Cơ hội tr&#250;ng xe SH 150i (&#225;p dụng H&#224; Nội v&#224; một số tỉnh miền Bắc).</span>
+                    <span> Phiếu mua h&#224;ng Samsung trị gi&#225; 400.000đ</span>
+                </div>
+                <span>M&#224;n h&#236;nh: 5.7&quot;, Quad HD (2K)</span>
+                <span>HĐH: Android 7.0</span>
+                <span>CPU: Exynos 8890 8 nh&#226;n 64-bit</span>
+                <span>RAM: 4 GB, ROM: 64 GB</span>
+                <span>Camera: 12 MP, Selfie: 5 MP</span>
+                <span>PIN: 3200 mAh</span>
+                <label class="compr" onclick="qcp_addProdQcp('103244','42','Samsung Galaxy Note FE')">So sánh với</label>
+            </figure>
+        </li>
+        <li>
+            <a href="/may-tinh-bang/ipad-mini-4-wifi-128gb">
+                <img width="388" height="180" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" data-original="https://cdn3.tgdd.vn/Products/Images/522/101993/Feature/ipad-mini-4-wifi-128gb-400x400.png" class="lazy">
+                <h3>iPad Mini 4 Wifi 128GB</h3>
+                <label class="shockprice">Giá rẻ Online</label>
+                <strong>9.990.000₫</strong>
+                <strong class="hisprice">10.990.000₫</strong>
+                <label class="saleonline">Giá rẻ online</label>
+            </a>
+            <figure class="bginfo">
+                <span class="name">iPad Mini 4 Wifi 128GB</span>
+                <strong>9.990.000₫</strong>
+
+
+                <div class="promotion">
+                    <span> Giảm ngay 1 triệu HOẶC Phiếu mua h&#224;ng trị gi&#225; 1 triệu</span>
+                    <span> Cơ hội tr&#250;ng xe SH 150i (&#225;p dụng khu vực H&#224; Nội).</span>
+                </div>
+                <span>M&#224;n h&#236;nh: 7.9&quot;, LED backlit LCD</span>
+                <span>CPU: Apple A8, iOS 10</span>
+                <span>RAM: 2 GB, Bộ nhớ: 128 GB</span>
+                <span>Camera: 8 MP, Selfie 1.2 MP</span>
+                <span>Kết nối: Wifi</span>
+                <span>PIN: 19.1 Wh, SIM: Kh&#244;ng</span>
+                <label class="compr" onclick="qcp_addProdQcp('101993','522','iPad Mini 4 Wifi 128GB')">So sánh với</label>
+            </figure>
+        </li>
+        <li>
+            <a href="/may-tinh-bang/samsung-galaxy-tab-e-96-sm-t561">
+                <img width="388" height="180" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" data-original="https://cdn.tgdd.vn/Products/Images/522/73280/Feature/samsung-galaxy-tab-e-96-sm-t561-4-1-400x400.png" class="lazy">
+                <h3>Samsung Galaxy Tab E 9.6 (SM-T561)</h3>
+
+                <strong>4.990.000₫</strong>
+            </a>
+            <figure class="bginfo">
+                <span class="name">Samsung Galaxy Tab E 9.6 (SM-T561)</span>
+                <strong>4.990.000₫</strong>
+
+
+                <div class="promotion">
+                    <span> Phiếu mua h&#224;ng Samsung trị gi&#225; 100.000đ</span>
+                    <span> Cơ hội tr&#250;ng xe SH 150i (&#225;p dụng H&#224; Nội v&#224; một số tỉnh miền Bắc).</span>
+                </div>
+                <span>M&#224;n h&#236;nh: 9.6&quot;, WXGA TFT</span>
+                <span>CPU: Spreadtrum, Android 4.4</span>
+                <span>RAM: 1.5 GB, Bộ nhớ: 8 GB</span>
+                <span>Camera: 5 MP, Selfie 2 MP</span>
+                <span>Kết nối: 3G, nghe gọi </span>
+                <span>PIN: 5000 mAh, SIM: 1 SIM</span>
+                <label class="compr" onclick="qcp_addProdQcp('73280','522','Samsung Galaxy Tab E 9.6 (SM-T561)')">So sánh với</label>
+            </figure>
+        </li>
+        <li>
+            <a href="/laptop/dell-inspiron-7567-i7-7700hq-n7567b">
+                <img width="388" height="180" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" data-original="https://cdn1.tgdd.vn/Products/Images/44/112436/Feature/dell-inspiron-7567-i7-7700hq-n7567b-600-277-400x400.jpg" class="lazy">
+                <h3>Dell Inspiron 7567B i7 7700HQ/8GB/1TB+128GB/4GB GTX1050Ti/Win10/(P65F001)</h3>
+
+                <strong>31.990.000₫</strong>
+            </a>
+            <figure class="bginfo">
+                <span class="name">Dell Inspiron 7567B i7 7700HQ/8GB/1TB+128GB/4GB GTX1050Ti/Win10/(P65F001)</span>
+                <strong>31.990.000₫</strong>
+
+
+                <div class="promotion">
+                    <span> Balo Laptop Dell ( Nếu kh&#244;ng c&#243; qu&#224; sẽ ho&#224;n 100.000đ)</span>
+                    <span> Chuột kh&#244;ng d&#226;y (Nếu kh&#244;ng c&#243; qu&#224; sẽ ho&#224;n 160.000đ)</span>
+                </div>
+                <span>M&#224;n h&#236;nh: 15.6 inch, 4K UHD</span>
+                <span>CPU: Core i7 Kabylake, 2.8GHz</span>
+                <span>RAM: 8GB, HDD 1TB + SSD 128GB</span>
+                <span>Đồ họa: NVIDIA GTX1050Ti, 4GB</span>
+                <span>HĐH: Windows 10, DVD: Kh&#244;ng</span>
+                <span>Nặng 2.62 kg, PIN 6 cell</span>
+                <label class="compr" onclick="qcp_addProdQcp('112436','44','Dell Inspiron 7567B i7 7700HQ/8GB/1TB+128GB/4GB GTX1050Ti/Win10/(P65F001)')">So sánh với</label>
+            </figure>
+        </li>
+        <li>
+            <a href="/laptop/lenovo-ideapad-110-15isk-i3-6006u-80ud019bvn">
+                <img width="388" height="180" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" data-original="https://cdn1.tgdd.vn/Products/Images/44/113186/Feature/lenovo-ideapad-110-15isk-i3-6006u-80ud019bvn-400x400.jpg" class="lazy">
+                <h3>Lenovo IdeaPad 110 15ISK i3 6006U/4GB/1TB/Win10/(80UD019BVN)</h3>
+                <label class="installment">Trả góp 0%</label>
+                <strong>9.490.000₫</strong>
+            </a>
+            <figure class="bginfo">
+                <span class="name">Lenovo IdeaPad 110 15ISK i3 6006U/4GB/1TB/Win10/(80UD019BVN)</span>
+                <strong>9.490.000₫</strong>
+
+
+                <div class="promotion">
+                    <span> Balo Laptop Lenovo ( Nếu kh&#244;ng c&#243; qu&#224; sẽ ho&#224;n 100.000đ)</span>
+                    <span> Phiếu mua h&#224;ng trị gi&#225; 100.000đ khi mua online (&#225;p dụng từ ng&#224;y 08/12)</span>
+                </div>
+                <span>M&#224;n h&#236;nh: 15.6 inch, Full HD</span>
+                <span>CPU: Core i3 Skylake, 2.00 GHz</span>
+                <span>RAM: 4 GB, Ổ cứng HDD: 1 TB</span>
+                <span>Đồ họa: Intel&#174; Iris™ Plus Graphics 650</span>
+                <span>HĐH: Windows 10, Kh&#244;ng DVD</span>
+                <span>Nặng 2.3 kg, PIN 4 cell</span>
+                <label class="compr" onclick="qcp_addProdQcp('113186','44','Lenovo IdeaPad 110 15ISK i3 6006U/4GB/1TB/Win10/(80UD019BVN)')">So sánh với</label>
+            </figure>
+        </li>
+    </ul>
+    <div class="acchome">
+        <div class="naviacc">
+            <h2>Phụ kiện giá rẻ</h2>
+            <a href="/op-lung-dien-thoai">Ốp lưng, bao da</a>
+            <a href="/sac-dtdd">Pin sạc dự phòng</a>
+            <a href="/cap-dien-thoai">Cáp sạc</a>
+            <a href="/the-nho">Thẻ nhớ</a>
+            <a href="/tai-nghe">Tai nghe</a>
+            <a href="/gay-tu-suong">Gậy tự sướng</a>
+            <a href="/usb">USB</a>
+            <a href="/chuot-may-tinh">Chuột, bàn phím</a>
+            <a href="/loa-laptop">Loa</a>
+            <a href="/phu-kien-khac">Phụ kiện khác</a>
+        </div>
+        <ul>
+            <li>
+                <a href="/sac-dtdd/combo-sac-du-phong-10000-mah-cap-micro-usb-20-cm-a">
+                    <img width="120" height="120" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" data-original="https://cdn.tgdd.vn/Products/Images/57/134185/combo-sac-du-phong-10000-mah-cap-micro-usb-20-cm-a-18-200x200.jpg" class="lazy" alt="Combo Sạc dự ph&#242;ng 10.000 mAh - C&#225;p Micro USB 20 cm - Adapter sạc 1 cổng">
+                    <h3>Combo Sạc dự ph&#242;ng 10.000 mAh - C&#225;p Micro USB 20 cm - Adapter sạc 1 cổng</h3>
+                    <strong>396.000₫</strong>
+                    <span>440.000₫</span>
+                </a>
+            </li>
+            <li>
+                <a href="/sac-dtdd/pin-sac-du-phong-5000mah-evalu-roller-2">
+                    <img width="120" height="120" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" data-original="https://cdn2.tgdd.vn/Products/Images/57/86937/pin-sac-du-phong-5000mah-evalu-roller-2-200x200.jpg" class="lazy" alt="Pin sạc dự ph&#242;ng 5.000 mAh eValu Roller 2">
+                    <h3>Pin sạc dự ph&#242;ng 5.000 mAh eValu Roller 2</h3>
+                    <strong>130.000₫</strong>
+                    <span>200.000₫</span>
+                </a>
+            </li>
+            <li>
+                <a href="/loa-laptop/loa-bluetooth-cloud-fox-bs7">
+                    <img width="120" height="120" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" data-original="https://cdn3.tgdd.vn/Products/Images/382/81183/loa-bluetooth-cloud-fox-bs7-7-1-200x200.jpg" class="lazy" alt="Loa Bluetooth Cloud Fox BS7">
+                    <h3>Loa Bluetooth Cloud Fox BS7</h3>
+                    <strong>510.000₫</strong>
+                    <span>850.000₫</span>
+                </a>
+            </li>
+            <li>
+                <a href="/loa-laptop/fenda-u213a">
+                    <img width="120" height="120" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" data-original="https://cdn4.tgdd.vn/Products/Images/382/57859/fenda-u213a-anhava-200x200.jpg" class="lazy" alt="Loa vi t&#237;nh Fenda U213A - 2.0">
+                    <h3>Loa vi t&#237;nh Fenda U213A - 2.0</h3>
+                    <strong>150.000₫</strong>
+                    <span>220.000₫</span>
+                </a>
+            </li>
+            <li>
+                <a href="/the-nho-dien-thoai/the-nho-microsd-16gb-class-10">
+                    <img width="120" height="120" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" data-original="https://cdn3.tgdd.vn/Products/Images/55/69973/the-nho-microsd-16gb-class-10-7-200x200.jpg" class="lazy" alt="Thẻ nhớ Micro SD 16 GB Class 10">
+                    <h3>Thẻ nhớ Micro SD 16 GB Class 10</h3>
+                    <strong>165.000₫</strong>
+                    <span>280.000₫</span>
+                </a>
+            </li>
+            <li>
+                <a href="/tai-nghe/tai-nghe-ep-awei-q7vi">
+                    <img width="120" height="120" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" data-original="https://cdn2.tgdd.vn/Products/Images/54/82697/tai-nghe-ep-awei-q7vi-11-200x200.jpg" class="lazy" alt="Tai nghe nh&#233;t trong Awei Q7Vi">
+                    <h3>Tai nghe nh&#233;t trong Awei Q7Vi</h3>
+                    <strong>75.000₫</strong>
+                    <span>150.000₫</span>
+                </a>
+            </li>
+            <li>
+                <a href="/tai-nghe/tai-nghe-day-ep-the-thao-kanen-s40">
+                    <img width="120" height="120" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" data-original="https://cdn3.tgdd.vn/Products/Images/54/74183/tai-nghe-day-ep-the-thao-kanen-s40-11-1-200x200.jpg" class="lazy" alt="Tai nghe nh&#233;t trong Kanen S40">
+                    <h3>Tai nghe nh&#233;t trong Kanen S40</h3>
+                    <strong>120.000₫</strong>
+                    <span>200.000₫</span>
+                </a>
+            </li>
+            <li>
+                <a href="/cap-dien-thoai/cap-cao-cap-iwalk-iphone-5">
+                    <img width="120" height="120" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" data-original="https://cdn3.tgdd.vn/Products/Images/58/61258/cap-cao-cap-iwalk-iphone-5-1-1-200x200.jpg" class="lazy" alt="D&#226;y c&#225;p Lightning MFI 1 m iWalk">
+                    <h3>D&#226;y c&#225;p Lightning MFI 1 m iWalk</h3>
+                    <strong>150.000₫</strong>
+                    <span>250.000₫</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="wrap_card">
+        <aside class="mobile_card">
+            <h3>Mua mã thẻ cào điện thoại</h3>
+            <div class="clr"></div>
+            <div id="content_1" class="content">
+                <form>
+                    <label onclick="ChangePrice(this)" data-max="5" data-value="50000" data-price="50000"><i class="icontgdd-opt"></i>&nbsp;50.000</label>
+                    <label onclick="ChangePrice(this)" data-max="5" data-value="100000" data-price="98000" class="check"><i class="icontgdd-opt"></i>&nbsp;100.000</label>
+                    <label onclick="ChangePrice(this)" data-max="2" data-value="200000" data-price="196000"><i class="icontgdd-opt"></i>&nbsp;200.000</label>
+                    <label onclick="ChangePrice(this)" data-max="1" data-value="500000" data-price="490000"><i class="icontgdd-opt"></i>&nbsp;500.000</label>
+                    <div class="wrapchoose">
+                        <div class="choosenum">1 thẻ </div>
+                        <div class="numcard">
+                            <a href="javascript:void(0)" data-value="1">1 thẻ</a>
+                            <a href="javascript:void(0)" data-value="2">2 thẻ</a>
+                            <a href="javascript:void(0)" data-value="3">3 thẻ</a>
+                            <a href="javascript:void(0)" data-value="4">4 thẻ</a>
+                            <a href="javascript:void(0)" data-value="5">5 thẻ</a>
+                        </div>
+                        <div class="money">Thành tiền: <span>98.000đ</span></div>
+                        <span id="warningprice" class="warning error"></span>
+                    </div>
+                    <div class="area_input">
+                        <input type="tel" class="numberphone" id="txtPhone" name="txtPhone" placeholder="Nhập số ĐT nhận mã thẻ" maxlength="11" onkeyup="checkAllCaseCard();">
+                        <input type="email" class="emailcustom" placeholder="Nhập email nhận mã thẻ" id="txtEmail" name="txtEmail" maxlength="100" style="display: none;">
+                        <input type="hidden" name="iQuantity" id="iQuantity" value="1" />
+                    </div>
+                    <div class="area_btn">
+                        <button type="button" class="btndis" id="btnCardATM" data-value="4">
+                            DÙNG THẺ ATM<br />
+                            Có internet Banking
+                        </button>
+                        <button type="button" class="btndis" id="btnCardVISA" data-value="5">
+                            DÙNG THẺ VISA<br />
+                            MASTER
+                        </button>
+                    </div>
+                    <span id="warningphone" class="warning error"></span>
+                </form>
+            </div>
+        </aside>
+        <aside class="pay_installment">
+            <h3>Đóng tiền trả góp</h3>
+            <div id="content_2" class="content">
+                <form>
+                    <div class="row_comp">
+                        <div class="choosecomp">
+                            <text>Chọn công ty</text>
+                        </div>
+                        <div class="listcomp">
+                            <a data-value="ACS">ACS</a>
+                            <a data-value="PPF">HOMECREDIT</a>
+                            <a data-value="VPBank">FECREDIT</a>
+                            <a data-value="HDSAISON">HDSAISON</a>
+                        </div>
+                    </div>
+                    <div class="row_input">
+                        <input name="ddlInstallment" id="ddlInstallment" type="hidden" value="" />
+                        <input autocomplete="off" type="text" id="txtHDCode" name="txtHDCode" class="code" placeholder="Nhập mã hợp đồng">
+                        <div id="idWarningTraGop" class="hdtragop warning error"></div>
+                    </div>
+                    <button type="button" class="btncheck">Kiểm tra</button>
+                </form>
+            </div>
+
+            <div class="helplink">
+                <span>Hướng dẫn xem mã khách hàng:</span>
+                <a href="/tien-ich/thanh-toan-tra-gop?n=ppf">Home Credit</a>
+                <a href="/tien-ich/thanh-toan-tra-gop?n=vpbank">• FE Credit/VPBank</a>
+                <a href="/tien-ich/thanh-toan-tra-gop?n=acs">• ACS</a>
+                <a href="/tien-ich/thanh-toan-tra-gop?n=hdsaison">• HD SaiSon</a>
+            </div>
+        </aside>
+    </div>
+    <div class="moreproduct">
+        <a href="/khuyen-mai">Khuyến mãi tháng 12</a>
+        <a href="/dtdd">
+            <span></span>
+            điện thoại
+        </a>
+        <a href="/may-tinh-bang">
+            <span></span>
+            máy tính bảng
+        </a>
+        <a href="/laptop">
+            <span></span>
+            laptop
+        </a>
+        <a href="/phu-kien">
+            <span></span>
+            phụ kiện
+        </a>
+        <a href="/may-doi-tra">
+            <span></span>
+            máy đã sử dụng
+        </a>
+    </div>
+    <div class="clr"></div>
+    <div class="keyword">
+        <span>Tìm kiếm nhiều: </span>
+        <a href="https://www.thegioididong.com/dtdd/samsung-galaxy-j7-plus">• Samsung Galaxy J7+</a>
+        <a href="https://www.thegioididong.com/dtdd?f=pin-khung-3000-mah">• Điện thoại pin khủng</a>
+        <a href="https://www.thegioididong.com/dtdd/iphone-8-64gb">• iPhone 8</a>
+        <a href="https://www.thegioididong.com/dtdd/samsung-galaxy-note-fe">• Samsung Note FE</a>
+        <a href="https://www.thegioididong.com/dtdd/oppo-f5">• OPPO F5</a>
+        <a href="https://www.thegioididong.com/dtdd/huawei-nova-2i">• Huawei Nova 2i</a>
+        <a href="https://www.thegioididong.com/dtdd/iphone-8-plus">• iPhone 8 Plus</a>
+        <a href="https://www.thegioididong.com/dtdd/iphone-x-64gb">• iPhone X</a>
+
+    </div>
+    <header>
+        <div class="wrap-main">
+            <a class="logo" title="Về trang chủ Thegioididong.com" href="/">
+                <img src="/Content/desktop/images/desk-hat-2x.png" width="25" height="20" style="position: absolute; top: 8px;left: 1px;" />
+                <i class="icontgdd-logo"></i>
+            </a>
+            <form id="search-site" action="/tim-kiem" method="get" onsubmit="return submitSearchForm();" autocomplete="off">
+                <input class="topinput" id="search-keyword" name="key" type="text" placeholder="Bạn tìm gì..." autocomplete="off" onkeyup="SuggestSearch(event,this, 0);" maxlength="50" />
+                <button class="btntop" type="submit"><i class="icontgdd-topsearch"></i></button>
+            </form>
+            <nav>
+                <a href="/dtdd" class="mobile" title="Điện thoại di động, smartphone">
+                    <i class="icontgdd-mobile"></i>Điện thoại
+                </a>
+                <a href="/may-tinh-bang" class="tablet" title="Máy tính bảng, tablet">
+                    <i class="icontgdd-tablet"></i>Tablet
+                </a>
+                <a href="/laptop" class="laptop" title="Máy tính xách tay, Laptop">
+                    <i class="icontgdd-laptop"></i>Laptop
+                </a>
+                <a href="/phu-kien" class="phukien" title="Phụ kiện điện thoại di động, phụ kiện tablet, phụ kiện lapto">
+                    <i class="icontgdd-phukien"></i>Phụ kiện
+                </a>
+                <a href="/may-doi-tra" class="maydoitra" title="Máy cũ giá rẻ, máy đổi trả thegioididong">
+                    <i class="icontgdd-maydoitra"></i><span>Máy</span>Cũ giá rẻ
+                </a>
+                <a href="/khuyen-mai" class="promo" title="Các chương trình khuyến mãi tại Thegioididong">
+                    <i class="icontgdd-promo"></i>Khuyến mãi
+                </a>
+                <a href="/tin-tuc" class="news" title="Tin công nghệ">
+                    <i class="icontgdd-news"></i><span>Tin</span>Công Nghệ
+                </a>
+                <a href="/hoi-dap" class="ask" title="Hỏi đáp">
+                    <i class="icontgdd-ask"></i>Hỏi đáp
+                </a>
+                <a href="/sim-so-dep" class="cardsim">
+                    Thẻ cào<br />
+                    Sim 3G, 4G
+                </a>
+                <a href="/tien-ich/thanh-toan-tra-gop?" class="utility">
+                    Đóng tiền điện,<br />
+                    nước, trả góp
+                </a>
+            </nav>
+        </div>
+        <div class="clr"></div>
+    </header>
+    <footer>
+        <div class="rowfoot1">
+            <ul class="colfoot">
+                <li><a href="/tra-gop" title="Hướng dẫn mua trả góp">Tìm hiểu về mua trả góp</a></li>
+                <li><a href="/bao-hanh" title="Tìm trung tâm bảo hành">Chính sách bảo hành</a></li>
+                <li><a href="/chinh-sach-bao-hanh-san-pham" title="Chính sách đổi trả">Chính sách đổi trả</a></li>
+                <li><a href="/giao-hang" title="Giao hàng & Thanh toán">Giao hàng & Thanh toán</a></li>
+                <li class="showmore"><a href="javascript:ShowMoreFooterSupportLink()" title="Xem thêm">Xem thêm</a></li>
+                <li class="hidden"><a href="/huong-dan-mua-hang" title="Hướng dẫn mua online">Hướng dẫn mua online</a></li>
+                <li class="hidden"><a href="/b2b" title="Mua hàng doanh nghiệp">Bán hàng doanh nghiệp</a></li>
+                <li class="hidden"><a href="/phieu-mua-hang" title="Phiếu mua hàng">Phiếu mua hàng</a></li>
+                <li class="hidden"><a href="//hddt.thegioididong.com" target="_blank" title="In hóa đơn điện tử" rel="nofollow">In hóa đơn điện tử</a></li>
+                <li class="hidden"><a href="/tos" title="Quy chế hoạt động">Quy chế hoạt động</a></li>
+                <li class="hidden"><a href="/noi-quy-cua-hang" title="Nội quy cửa hàng">Nội quy cửa hàng</a></li>
+                <li class="hidden"><a href="/chat-luong-phuc-vu" title="Chất lượng phục vụ">Chất lượng phục vụ</a></li>
+                <li class="hidden"><a href="/trao-thuong" title="Thông tin trao thưởng">Thông tin trao thưởng</a></li>
+            </ul>
+            <ul class="colfoot">
+                <li><a href="http://mwg.vn" target="_blank" title="Giới thiệu công ty (mwg.vn)">Giới thiệu công ty <span>(mwg.vn)</span></a></li>
+                <li><a href="//vieclam.thegioididong.com" target="_blank" title="Tuyển dụng">Tuyển dụng</a></li>
+                <li><a href="/lien-he" title="Gửi góp ý, khiếu nại">Gửi góp ý, khiếu nại</a></li>
+                <li><a href="/he-thong-sieu-thi-the-gioi-di-dong" title="Tìm siêu thị (1716  shop)">Tìm siêu thị <span>(1716 shop)</span></a></li>
+                <li>
+                    <a class="viewmb" rel="nofollow" href="javascript:window.location.href='/?sclient=mobile'" title="Xem bản mobile">Xem bản mobile</a>
+                </li>
+            </ul>
+            <ul class="colfoot">
+                <li>
+                    <p>Gọi mua hàng <a href="tel:18001060">1800.1060</a> (7:30 - 22:00)</p>
+                    <p>Gọi khiếu nại <a href="tel:18001062">1800.1062</a> (8:00 - 21:30)</p>
+                    <p>Gọi bảo hành <a href="tel:18001064">1800.1064</a> (8:00 - 21:00)</p>
+                    <p>Hỗ trợ kỹ thuật <a href="tel:18001763">1800.1763</a> (7:30 - 22:00)</p>
+                    <a target="_blank" rel="nofollow" class="bct" href="http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=20098"><i class="icontgdd-bct"></i></a>
+                </li>
+            </ul>
+            <ul class="colfoot collast">
+                <li>
+                    <a target="_blank" href="https://facebook.com/thegioididongcom" class="linkfb">
+                        <i class="icontgdd-share1"></i>3tr
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/user/TGDDVideoReviews?sub_confirmation=1" class="linkyt">
+                        <i class="icontgdd-share3"></i>276.6k
+                    </a>
+                    <div class="group">
+                        <label>Website cùng tập đoàn:</label>
+                        <a href="//www.dienmayxanh.com" target="_blank" rel="noopener" class="dm"><i class="iconlogo-dmx"></i></a>
+                        <a href="//www.bachhoaxanh.com" target="_blank" rel="noopener" class="bhx"><i class="iconlogo-bhx"></i></a>
+                        <a href="//www.vuivui.com" target="_blank" rel="noopener" class="vv"><i class="iconlogo-vv"></i></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="rowfoot2">
+            <p>
+                © 2017. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH & ĐT TP.HCM cấp ngày 02/01/2007. GP số 22/GP-ICP-STTTT do Sở TTTT TP HCM cấp ngày 20/03/2012.
+                Địa chỉ: 128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh. Điện thoại: 18001060. Email: cskh@thegioididong.com. Chịu trách nhiệm nội dung: Huỳnh Văn Tốt. <a href="/tos">Xem chính sách sử dụng web</a>
+            </p>
+        </div>
+    </footer>
+    <p id="back-top">
+        <a href="#top" title="Về Đầu Trang"><span></span></a>
+    </p>
+
+    <script defer="defer" async="async" src="https://cdn4.tgdd.vn/v2015/Scripts/desktop/V4/home.min.v201711060430.js"></script>
+    <script>
+        //<!--#region GA -->
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://cdn3.tgdd.vn/v2015/Scripts/analytics.js', 'ga');
+        ga('create', 'UA-918185-25', 'auto', { 'siteSpeedSampleRate': 10 });
+        //<!--#endregion -->
+
+
+        window.onload = function () {
+            ga('send', 'pageview');
+            //<!-- #regionGoogle Tag Manager -->
+            setTimeout(
+                function () {
+                    (function (w, d, s, l, i) {
+                        w[l] = w[l] || []; w[l].push({
+                            'gtm.start':
+                            new Date().getTime(), event: 'gtm.js'
+                        }); var f = d.getElementsByTagName(s)[0],
+                            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                                '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+                    })(window, document, 'script', 'dataLayer', 'GTM-WKQZL8');
+                }
+                , 3000);
+            //<!--#endregion -->
+        };
+
+        //<!--#region TGDD TRACKING -->
+        var mysessionid = 'cpr43udcogx14sugbsnhdtxs';
+        var g_version = '201712130458';
+        var tgddctr_urlroot = '//www.thegioididong.com/tracking';
+        //<!--#endregion -->
+        var rooturl = '.thegioididong.com';
+        var isMobile = false;
+    </script>
+
+    <!--#region CrazyEgg -->
+    <!--#endregion -->
+    <!--#region Hotjar -->
+    <!--#endregion -->
+
+</body>
+</html>

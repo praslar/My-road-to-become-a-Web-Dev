@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Login</title>
+    <link href="style.css" rel="stylesheet" />
+    <script>
+        function setMonth() {
+            var str = "<option>Month</option>";
+            for (var i = 1; i <= 12; i++) {
+                str += "<option>"+i+"</option>"
+            }
+            document.getElementById("month").innerHTML = str;
+        }
+        function setDay() {
+            var i = document.getElementById("month").selectedIndex;
+            var str = "<option>Day</option>";
+            var day = 30;
+            if (i != 0) {
+                if (i == 2) day = 28;
+                else if (i == 1 || i == 3 || i == 5 || i == 7 || i == 8 || i == 10 || i == 12)
+                    day = 31;
+                else day = 30;
+
+                for (var j = 1; j <= day; j++) {
+                    str += "<option>"+j+"</option>";
+                }
+                document.getElementById("day").innerHTML = str;
+            }
+            
+        }
+    </script>
+</head>
+<body onload="setMonth();">
+    <div>
+    <p class="text_Header">Create an acccount</p>
+    <form action="#">
+        <ul>
+            <li><span>First Name : </span><br/><input type="text" size="30"/></li>
+            <li><span>Last Name : </span><br/><input type="text" size="30"/></li>
+            <li><span>User name : </span><br/><input type="text" size="66" placeholder="someone@example.com"/></li>
+            <li><span class="new_email">Get a new email adress</span></li>
+            <li><span>Country/region : </span><br/>
+                <select style="width:495px">
+                    <option>United Stages</option>
+                    <option>Chinese</option>
+                    <option>Japanese</option>
+                    <option>VietNamese</option>
+                </select>
+            </li>
+            <li><span>Birthday</span><br/>
+                <select id="month" style="width:162px" onchange="setDay();">
+                </select>
+                <select id="day" style="width:162px">
+                </select>
+                <select style="width:162px">
+                    <option>Year</option>
+                </select>
+            </li>
+        </ul>
+    </form>
+    </div>
+</body>
+</html>

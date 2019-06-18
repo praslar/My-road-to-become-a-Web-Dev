@@ -1,0 +1,13 @@
+
+void Buble (int a[MAX], int n)
+{
+int tam, i;
+for (i = 0;i < n-1; i++)
+for (j = i + 1; j < n; j++)
+if(a[i] > a[j] )
+{
+tam = a[i];
+a[i] = a[j];
+a[j] = tam;
+}
+}

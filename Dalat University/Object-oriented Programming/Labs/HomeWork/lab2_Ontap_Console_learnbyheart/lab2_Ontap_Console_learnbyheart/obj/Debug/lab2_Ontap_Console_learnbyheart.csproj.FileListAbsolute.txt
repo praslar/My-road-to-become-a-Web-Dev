@@ -1,0 +1,18 @@
+c:\users\admin\Desktop\W-on\Project C#\lab2_Ontap_Console_learnbyheart\lab2_Ontap_Console_learnbyheart\bin\Debug\lab2_Ontap_Console_learnbyheart.exe.config
+c:\users\admin\Desktop\W-on\Project C#\lab2_Ontap_Console_learnbyheart\lab2_Ontap_Console_learnbyheart\bin\Debug\lab2_Ontap_Console_learnbyheart.exe
+c:\users\admin\Desktop\W-on\Project C#\lab2_Ontap_Console_learnbyheart\lab2_Ontap_Console_learnbyheart\bin\Debug\lab2_Ontap_Console_learnbyheart.pdb
+c:\users\admin\Desktop\W-on\Project C#\lab2_Ontap_Console_learnbyheart\lab2_Ontap_Console_learnbyheart\obj\Debug\lab2_Ontap_Console_learnbyheart.csprojResolveAssemblyReference.cache
+c:\users\admin\Desktop\W-on\Project C#\lab2_Ontap_Console_learnbyheart\lab2_Ontap_Console_learnbyheart\obj\Debug\lab2_Ontap_Console_learnbyheart.FormGiaoVien.resources
+c:\users\admin\Desktop\W-on\Project C#\lab2_Ontap_Console_learnbyheart\lab2_Ontap_Console_learnbyheart\obj\Debug\lab2_Ontap_Console_learnbyheart.Properties.Resources.resources
+c:\users\admin\Desktop\W-on\Project C#\lab2_Ontap_Console_learnbyheart\lab2_Ontap_Console_learnbyheart\obj\Debug\lab2_Ontap_Console_learnbyheart.csproj.GenerateResource.Cache
+c:\users\admin\Desktop\W-on\Project C#\lab2_Ontap_Console_learnbyheart\lab2_Ontap_Console_learnbyheart\obj\Debug\lab2_Ontap_Console_learnbyheart.exe
+c:\users\admin\Desktop\W-on\Project C#\lab2_Ontap_Console_learnbyheart\lab2_Ontap_Console_learnbyheart\obj\Debug\lab2_Ontap_Console_learnbyheart.pdb
+c:\users\admin\Desktop\W-on\Project C#\lab2_Ontap_Console_learnbyheart\lab2_Ontap_Console_learnbyheart\obj\Debug\lab2_Ontap_Console_learnbyheart.FormTTGV.resources
+C:\Users\Admin\Desktop\W-on\Project C#\lab2_Ontap_Console_learnbyheart\lab2_Ontap_Console_learnbyheart\obj\Debug\lab2_Ontap_Console_learnbyheart.FormTimGV.resources
+C:\Users\Admin\Desktop\W-on\Project C#\lab2_Ontap_Console_learnbyheart\lab2_Ontap_Console_learnbyheart\obj\Debug\lab2_Ontap_Console_learnbyheart.FormTimKiem.resources
+C:\Users\Administrator\Desktop\S-On\Project C#\lab2_Ontap_Console_learnbyheart\lab2_Ontap_Console_learnbyheart\bin\Debug\lab2_Ontap_Console_learnbyheart.exe.config
+C:\Users\Administrator\Desktop\S-On\Project C#\lab2_Ontap_Console_learnbyheart\lab2_Ontap_Console_learnbyheart\obj\Debug\lab2_Ontap_Console_learnbyheart.exe
+C:\Users\Administrator\Desktop\S-On\Project C#\lab2_Ontap_Console_learnbyheart\lab2_Ontap_Console_learnbyheart\obj\Debug\lab2_Ontap_Console_learnbyheart.pdb
+C:\Users\Administrator\Desktop\S-On\Lập trình hướng đối tượng\Project C#\lab2_Ontap_Console_learnbyheart\lab2_Ontap_Console_learnbyheart\bin\Debug\lab2_Ontap_Console_learnbyheart.exe.config
+C:\Users\Administrator\Desktop\S-On\Lập trình hướng đối tượng\Project C#\lab2_Ontap_Console_learnbyheart\lab2_Ontap_Console_learnbyheart\obj\Debug\lab2_Ontap_Console_learnbyheart.exe
+C:\Users\Administrator\Desktop\S-On\Lập trình hướng đối tượng\Project C#\lab2_Ontap_Console_learnbyheart\lab2_Ontap_Console_learnbyheart\obj\Debug\lab2_Ontap_Console_learnbyheart.pdb

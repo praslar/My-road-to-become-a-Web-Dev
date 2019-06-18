@@ -1,0 +1,33 @@
+C:\Users\Admin\Desktop\W-on\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\bin\Debug\Lab3_Relearn_abcxyz.exe.config
+C:\Users\Admin\Desktop\W-on\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\bin\Debug\Lab3_Relearn_abcxyz.exe
+C:\Users\Admin\Desktop\W-on\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\bin\Debug\Lab3_Relearn_abcxyz.pdb
+C:\Users\Admin\Desktop\W-on\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\obj\Debug\Lab3_Relearn_abcxyz.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\W-on\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\obj\Debug\Lab3_Relearn_abcxyz.FormTTSV.resources
+C:\Users\Admin\Desktop\W-on\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\obj\Debug\Lab3_Relearn_abcxyz.Properties.Resources.resources
+C:\Users\Admin\Desktop\W-on\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\obj\Debug\Lab3_Relearn_abcxyz.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\W-on\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\obj\Debug\Lab3_Relearn_abcxyz.exe
+C:\Users\Admin\Desktop\W-on\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\obj\Debug\Lab3_Relearn_abcxyz.pdb
+C:\Users\Admin\Desktop\W-on\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\obj\Debug\Lab3_Relearn_abcxyz.Form2.resources
+C:\Users\Administrator\Desktop\Thang_W-On\Thang_W-On\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\bin\Debug\Lab3_Relearn_abcxyz.exe.config
+C:\Users\Administrator\Desktop\Thang_W-On\Thang_W-On\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\obj\Debug\Lab3_Relearn_abcxyz.exe
+C:\Users\Administrator\Desktop\Thang_W-On\Thang_W-On\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\obj\Debug\Lab3_Relearn_abcxyz.pdb
+C:\Users\Administrator\Desktop\Thang_W-On\Thang_W-On\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\bin\Debug\Lab3_Relearn_abcxyz.exe
+C:\Users\Administrator\Desktop\Thang_W-On\Thang_W-On\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\bin\Debug\Lab3_Relearn_abcxyz.pdb
+C:\Users\Administrator\Desktop\Thang_W-On\Thang_W-On\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\obj\Debug\Lab3_Relearn_abcxyz.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Thang_W-On\Thang_W-On\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\obj\Debug\Lab3_Relearn_abcxyz.Form2.resources
+C:\Users\Administrator\Desktop\Thang_W-On\Thang_W-On\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\obj\Debug\Lab3_Relearn_abcxyz.FormTTSV.resources
+C:\Users\Administrator\Desktop\Thang_W-On\Thang_W-On\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\obj\Debug\Lab3_Relearn_abcxyz.Properties.Resources.resources
+C:\Users\Administrator\Desktop\Thang_W-On\Thang_W-On\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\obj\Debug\Lab3_Relearn_abcxyz.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\S-On\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\bin\Debug\Lab3_Relearn_abcxyz.exe.config
+C:\Users\Administrator\Desktop\S-On\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\obj\Debug\Lab3_Relearn_abcxyz.exe
+C:\Users\Administrator\Desktop\S-On\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\obj\Debug\Lab3_Relearn_abcxyz.pdb
+C:\Users\Administrator\Desktop\S-On\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\bin\Debug\Lab3_Relearn_abcxyz.exe
+C:\Users\Administrator\Desktop\S-On\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\bin\Debug\Lab3_Relearn_abcxyz.pdb
+C:\Users\Administrator\Desktop\S-On\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\obj\Debug\Lab3_Relearn_abcxyz.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\S-On\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\obj\Debug\Lab3_Relearn_abcxyz.Form2.resources
+C:\Users\Administrator\Desktop\S-On\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\obj\Debug\Lab3_Relearn_abcxyz.FormTTSV.resources
+C:\Users\Administrator\Desktop\S-On\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\obj\Debug\Lab3_Relearn_abcxyz.Properties.Resources.resources
+C:\Users\Administrator\Desktop\S-On\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\obj\Debug\Lab3_Relearn_abcxyz.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\S-On\Lập trình hướng đối tượng\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\bin\Debug\Lab3_Relearn_abcxyz.exe.config
+C:\Users\Administrator\Desktop\S-On\Lập trình hướng đối tượng\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\obj\Debug\Lab3_Relearn_abcxyz.exe
+C:\Users\Administrator\Desktop\S-On\Lập trình hướng đối tượng\Project C#\Lab3_Relearn_abcxyz\Lab3_Relearn_abcxyz\obj\Debug\Lab3_Relearn_abcxyz.pdb

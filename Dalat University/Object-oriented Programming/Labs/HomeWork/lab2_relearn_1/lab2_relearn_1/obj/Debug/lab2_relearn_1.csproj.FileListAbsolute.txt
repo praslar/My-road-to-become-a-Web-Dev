@@ -1,0 +1,9 @@
+c:\users\admin\Desktop\W-on\Project C#\lab2_relearn_1\lab2_relearn_1\bin\Debug\lab2_relearn_1.exe.config
+c:\users\admin\Desktop\W-on\Project C#\lab2_relearn_1\lab2_relearn_1\bin\Debug\lab2_relearn_1.exe
+c:\users\admin\Desktop\W-on\Project C#\lab2_relearn_1\lab2_relearn_1\bin\Debug\lab2_relearn_1.pdb
+c:\users\admin\Desktop\W-on\Project C#\lab2_relearn_1\lab2_relearn_1\obj\Debug\lab2_relearn_1.csprojResolveAssemblyReference.cache
+c:\users\admin\Desktop\W-on\Project C#\lab2_relearn_1\lab2_relearn_1\obj\Debug\lab2_relearn_1.Form1.resources
+c:\users\admin\Desktop\W-on\Project C#\lab2_relearn_1\lab2_relearn_1\obj\Debug\lab2_relearn_1.Properties.Resources.resources
+c:\users\admin\Desktop\W-on\Project C#\lab2_relearn_1\lab2_relearn_1\obj\Debug\lab2_relearn_1.csproj.GenerateResource.Cache
+c:\users\admin\Desktop\W-on\Project C#\lab2_relearn_1\lab2_relearn_1\obj\Debug\lab2_relearn_1.exe
+c:\users\admin\Desktop\W-on\Project C#\lab2_relearn_1\lab2_relearn_1\obj\Debug\lab2_relearn_1.pdb

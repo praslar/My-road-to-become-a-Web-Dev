@@ -1,0 +1,10 @@
+c:\users\admin\Desktop\W-on\Project C#\Final_exam_lab2.2\Final_exam_lab2.2\bin\Debug\Final_exam_lab2.2.exe.config
+c:\users\admin\Desktop\W-on\Project C#\Final_exam_lab2.2\Final_exam_lab2.2\bin\Debug\Final_exam_lab2.2.exe
+c:\users\admin\Desktop\W-on\Project C#\Final_exam_lab2.2\Final_exam_lab2.2\bin\Debug\Final_exam_lab2.2.pdb
+c:\users\admin\Desktop\W-on\Project C#\Final_exam_lab2.2\Final_exam_lab2.2\obj\Debug\Final_exam_lab2.2.csprojResolveAssemblyReference.cache
+c:\users\admin\Desktop\W-on\Project C#\Final_exam_lab2.2\Final_exam_lab2.2\obj\Debug\Final_exam_lab2._2.FormGiaoVien.resources
+c:\users\admin\Desktop\W-on\Project C#\Final_exam_lab2.2\Final_exam_lab2.2\obj\Debug\Final_exam_lab2._2.Properties.Resources.resources
+c:\users\admin\Desktop\W-on\Project C#\Final_exam_lab2.2\Final_exam_lab2.2\obj\Debug\Final_exam_lab2.2.csproj.GenerateResource.Cache
+c:\users\admin\Desktop\W-on\Project C#\Final_exam_lab2.2\Final_exam_lab2.2\obj\Debug\Final_exam_lab2.2.exe
+c:\users\admin\Desktop\W-on\Project C#\Final_exam_lab2.2\Final_exam_lab2.2\obj\Debug\Final_exam_lab2.2.pdb
+C:\Users\Admin\Desktop\W-on\Project C#\Final_exam_lab2.2\Final_exam_lab2.2\obj\Debug\Final_exam_lab2._2.FormTimKiem.resources

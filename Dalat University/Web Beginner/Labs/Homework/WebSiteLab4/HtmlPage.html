@@ -1,0 +1,148 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="vi-VN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Suggestion</title>
+    <style>
+        body {
+            margin: 0 auto;
+            padding: 0;
+            font-family: "Segoe UI Webfont","Ebrima","Nirmala UI";
+            font-size: 15px;
+        }
+
+        div.main {
+            width: 700px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        div.main1 {
+            width: 325px;
+            float: left;
+        }
+
+        div.main2 {
+            width: 200px;
+        }
+
+        .text_header {
+            font-size: 34px;
+            line-height: 40px;
+            font-weight: 200;
+        }
+
+        form.form_control {
+            border-style: solid;
+            border-width: 2px;
+            border-color: rgba(0,0,0,0.4);
+        }
+
+        .new_email {
+            color: #0078d7;
+            font-size: 12px;
+            text-decoration: none;
+        }
+
+        .form_button {
+            background-color: #0078d7;
+            border-color: #0078d7;
+            color: #fff;
+        }
+        .tips{
+            font-size:10px;
+        }
+        #form_name {
+            width: 320px;
+        }
+
+        #form_main {
+            width: 645px;
+        }
+
+        #form_time {
+            width: 213px;
+        }
+
+        #form_cac {
+            width: 647px;
+        }
+
+        fieldset {
+            border: none;
+        }
+
+        label {
+            font-family: Tahoma;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form action="#" method="post">
+            <p class="text_header">Create an account</p>
+            <div class="main1">
+                <fieldset>
+                    <label>First name</label><br />
+                    <input class="form_control" id="form_name" type="text" name="Firstname" />
+                </fieldset>
+            </div>
+            <div class="main1">
+                <fieldset>
+                    <label>Last name</label><br />
+                    <input class="form_control" id="form_name" type="text" name="Lastname" />
+                </fieldset>
+            </div>
+            <fieldset>
+                <label>User name</label><br />
+                <input class="form_control" id="form_main" type="text" name="Username" placeholder="someone@example.com" /><br />
+                <a href="#" class="new_email">Get a new email address</a><br />
+            </fieldset>
+            <fieldset>
+                <label>Country/region</label><br />
+                <select class="form_control" id="form_cac">
+                    <option value="US">United States</option>
+                    <option value="US">United States</option>
+                    <option value="VietNam">VietNam</option>
+                    <option value="Canada">Canada</option>
+                    <option value="China">China</option>
+                </select><br />
+            </fieldset>
+            <fieldset>
+                <label>Birthdate</label><br />
+                <select class="form_control" id="form_time">
+                    <option value="months">Month</option>
+                    <option value="months">Jan</option>
+                    <option value="months">Feb</option>
+                    <option value="months">Mar</option>
+                    <option value="months">Apr</option>
+                    <option value="months">May</option>
+                    <option value="months">Jun</option>
+                </select>
+                <select class="form_control" id="form_time">
+                    <option value="days">Day</option>
+                    <option value="days">1</option>
+                    <option value="days">2</option>
+                    <option value="days">3</option>
+                    <option value="days">4</option>
+                    <option value="days">5</option>
+                    <option value="days">6</option>
+                </select>
+                <select class="form_control" id="form_time">
+                    <option value="days">Year</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label>Password</label><br />
+                <input type="password" name="password" value="" id="form_main" />
+                <p class="tips">8-characters minumun; case sensitive</p>
+                <p><input type="checkbox" name="name" value=""/>Send me promotional offers from Microsoft. You can unsubscribe at any time.</p>
+                <p>Click Create account to agree to the <a href="#" class="new_email">Microsoft Services Agreement</a> and <a class="new_email" href="#">privacy and cookies statement.</a></p>
+                <input class="form_button" type="submit" name="submit" value="Create account" id="form_main"/>
+            </fieldset>
+
+        </form>
+    </div>
+</body>
+</html>

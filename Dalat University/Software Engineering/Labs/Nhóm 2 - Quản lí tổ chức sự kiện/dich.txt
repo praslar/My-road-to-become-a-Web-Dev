@@ -1,0 +1,20 @@
+﻿Tài liệu này là bản ghi rõ chi tiết cho Hệ thống tổ chức sự kiện.
+HTTCSK bao gồm nhiều chức năng dựa trên các trường hợp và
+bối cảnh có thể xảy ra trong sự kiện.
+Xét theo mặt kĩ thuật, TCSK có thể xem là một chức năng cơ bản làm
+việc dựa trên sự việc xảy ra trong một khung thời gian.
+Về phía người dùng, sự kiện có thể là bất kì việc gì ví dụ như là một mục làm
+việc trong lịch hay thời gian biểu, một cuộc họp mặt trang trọng hoặc thân 
+thiết với các thành viên, thậm chí là sự kiện với các chỗ ngồi được đặt
+từ trước.
+
+Có vô số định nghĩa cho "HTTCSK", và có thể có thêm các tính năng, đặc
+điểm được bổ sung sau này. Cụ thể như ngoài các hoạt động cơ bản để
+lên lịch cho một sự kiện (căn cứ vào thời gian và nội dung cụ thể) còn 
+có yêu cầu về các chức năng như là đăng kí (tự động, theo vai trò cụ thể,
+và được giới thiệu hay được phép), email thông báo về việc thay đổi sự kiện, 
+nhiều quản lý (nhiều cấp độ quản lý công việc khác nhau), sự kiện "riêng tư, 
+riêng biệt, cá nhân", sự kiện định kì. Có thể làm cho vấn để phức tạp hơn 
+bằng cách đưa ra nhiều "giai đoạn" mà có thể cân nhắc đưa vào bối cảnh
+của sự kiện ví dụ như ta có "đăng kí chờ giải quyết", "hủy sự kiện",
+"đăng kí chờ xét duyệt".   

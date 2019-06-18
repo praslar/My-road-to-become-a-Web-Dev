@@ -1,0 +1,6 @@
+﻿  program.cpp
+c:\users\admin\desktop\w-on\project c#\lab_ontap_xaukytu2\lab_ontap_xaukytu2\program.cpp(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\admin\desktop\w-on\project c#\lab_ontap_xaukytu2\lab_ontap_xaukytu2\thuvien.h(4): warning C4996: 'flushall': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _flushall. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(2457): note: see declaration of 'flushall'
+  LAb_Ontap_XauKyTu2.vcxproj -> C:\Users\Admin\Desktop\W-on\Project C#\LAb_Ontap_XauKyTu2\Debug\LAb_Ontap_XauKyTu2.exe
+  LAb_Ontap_XauKyTu2.vcxproj -> C:\Users\Admin\Desktop\W-on\Project C#\LAb_Ontap_XauKyTu2\Debug\LAb_Ontap_XauKyTu2.pdb (Partial PDB)

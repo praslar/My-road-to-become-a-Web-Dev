@@ -1,0 +1,9 @@
+C:\Users\Administrator\Desktop\S-On\Project C#\Final_Exam_Labthree\Final_Exam_Labthree\bin\Debug\Final_Exam_Labthree.exe.config
+C:\Users\Administrator\Desktop\S-On\Project C#\Final_Exam_Labthree\Final_Exam_Labthree\bin\Debug\Final_Exam_Labthree.exe
+C:\Users\Administrator\Desktop\S-On\Project C#\Final_Exam_Labthree\Final_Exam_Labthree\bin\Debug\Final_Exam_Labthree.pdb
+C:\Users\Administrator\Desktop\S-On\Project C#\Final_Exam_Labthree\Final_Exam_Labthree\obj\Debug\Final_Exam_Labthree.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\S-On\Project C#\Final_Exam_Labthree\Final_Exam_Labthree\obj\Debug\Final_Exam_Labthree.FormSinhVien.resources
+C:\Users\Administrator\Desktop\S-On\Project C#\Final_Exam_Labthree\Final_Exam_Labthree\obj\Debug\Final_Exam_Labthree.Properties.Resources.resources
+C:\Users\Administrator\Desktop\S-On\Project C#\Final_Exam_Labthree\Final_Exam_Labthree\obj\Debug\Final_Exam_Labthree.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\S-On\Project C#\Final_Exam_Labthree\Final_Exam_Labthree\obj\Debug\Final_Exam_Labthree.exe
+C:\Users\Administrator\Desktop\S-On\Project C#\Final_Exam_Labthree\Final_Exam_Labthree\obj\Debug\Final_Exam_Labthree.pdb

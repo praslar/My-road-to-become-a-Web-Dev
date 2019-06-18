@@ -1,0 +1,6 @@
+C:\Users\Admin\Desktop\Ontap_C\Ontap_C\bin\Debug\Ontap_C.exe.config
+C:\Users\Admin\Desktop\Ontap_C\Ontap_C\bin\Debug\Ontap_C.exe
+C:\Users\Admin\Desktop\Ontap_C\Ontap_C\bin\Debug\Ontap_C.pdb
+C:\Users\Admin\Desktop\Ontap_C\Ontap_C\obj\Debug\Ontap_C.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\Ontap_C\Ontap_C\obj\Debug\Ontap_C.exe
+C:\Users\Admin\Desktop\Ontap_C\Ontap_C\obj\Debug\Ontap_C.pdb

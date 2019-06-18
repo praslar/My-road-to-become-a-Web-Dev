@@ -1,0 +1,10 @@
+c:\users\admin\Desktop\W-on\Project C#\1510251_PhamXuanThang_Lab03\1510251_PhamXuanThang_Lab03\bin\Debug\1510251_PhamXuanThang_Lab03.exe.config
+c:\users\admin\Desktop\W-on\Project C#\1510251_PhamXuanThang_Lab03\1510251_PhamXuanThang_Lab03\bin\Debug\1510251_PhamXuanThang_Lab03.exe
+c:\users\admin\Desktop\W-on\Project C#\1510251_PhamXuanThang_Lab03\1510251_PhamXuanThang_Lab03\bin\Debug\1510251_PhamXuanThang_Lab03.pdb
+c:\users\admin\Desktop\W-on\Project C#\1510251_PhamXuanThang_Lab03\1510251_PhamXuanThang_Lab03\obj\Debug\1510251_PhamXuanThang_Lab03.csprojResolveAssemblyReference.cache
+c:\users\admin\Desktop\W-on\Project C#\1510251_PhamXuanThang_Lab03\1510251_PhamXuanThang_Lab03\obj\Debug\_1510251_PhamXuanThang_Lab03.Properties.Resources.resources
+c:\users\admin\Desktop\W-on\Project C#\1510251_PhamXuanThang_Lab03\1510251_PhamXuanThang_Lab03\obj\Debug\1510251_PhamXuanThang_Lab03.csproj.GenerateResource.Cache
+c:\users\admin\Desktop\W-on\Project C#\1510251_PhamXuanThang_Lab03\1510251_PhamXuanThang_Lab03\obj\Debug\1510251_PhamXuanThang_Lab03.exe
+c:\users\admin\Desktop\W-on\Project C#\1510251_PhamXuanThang_Lab03\1510251_PhamXuanThang_Lab03\obj\Debug\1510251_PhamXuanThang_Lab03.pdb
+c:\users\admin\Desktop\W-on\Project C#\1510251_PhamXuanThang_Lab03\1510251_PhamXuanThang_Lab03\obj\Debug\_1510251_PhamXuanThang_Lab03.FormSinhVien.resources
+C:\Users\Admin\Desktop\W-on\Project C#\1510251_PhamXuanThang_Lab03\1510251_PhamXuanThang_Lab03\obj\Debug\_1510251_PhamXuanThang_Lab03.FormTuyChon.resources

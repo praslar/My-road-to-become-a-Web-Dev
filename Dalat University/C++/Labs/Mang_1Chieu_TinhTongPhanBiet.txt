@@ -1,0 +1,19 @@
+int TinhTong_PhanBiet(DaySo a, int n)
+{
+	DaySo b;
+	int m = 0, dau= 0, sum = 0;
+	for (int i = 0; i < n; i++)
+	{
+		dau = 1;
+		for (int j= 0; j < m && dau; j++)
+		{
+			dau = dau && (a[i] != b[j]);
+		}
+		if (dau)
+		{
+			b[m++] = a[i];
+			sum += a[i];
+		}
+	}
+	return sum;
+}

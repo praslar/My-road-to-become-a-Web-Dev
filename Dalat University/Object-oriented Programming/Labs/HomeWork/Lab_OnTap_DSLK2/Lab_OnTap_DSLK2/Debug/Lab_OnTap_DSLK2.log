@@ -1,0 +1,4 @@
+﻿  Program.cpp
+c:\users\admin\desktop\w-on\project c#\lab_ontap_dslk2\lab_ontap_dslk2\thuvien.h(72): warning C4553: '==': operator has no effect; did you intend '='?
+  Lab_OnTap_DSLK2.vcxproj -> C:\Users\Admin\Desktop\W-on\Project C#\Lab_OnTap_DSLK2\Debug\Lab_OnTap_DSLK2.exe
+  Lab_OnTap_DSLK2.vcxproj -> C:\Users\Admin\Desktop\W-on\Project C#\Lab_OnTap_DSLK2\Debug\Lab_OnTap_DSLK2.pdb (Partial PDB)

@@ -1,0 +1,10 @@
+c:\users\admin\Desktop\W-on\Project C#\Lab4_ontap\Lab4_ontap\bin\Debug\Lab4_ontap.exe.config
+c:\users\admin\Desktop\W-on\Project C#\Lab4_ontap\Lab4_ontap\bin\Debug\Lab4_ontap.exe
+c:\users\admin\Desktop\W-on\Project C#\Lab4_ontap\Lab4_ontap\bin\Debug\Lab4_ontap.pdb
+c:\users\admin\Desktop\W-on\Project C#\Lab4_ontap\Lab4_ontap\obj\Debug\Lab4_ontap.csprojResolveAssemblyReference.cache
+c:\users\admin\Desktop\W-on\Project C#\Lab4_ontap\Lab4_ontap\obj\Debug\Lab4_ontap.Properties.Resources.resources
+c:\users\admin\Desktop\W-on\Project C#\Lab4_ontap\Lab4_ontap\obj\Debug\Lab4_ontap.csproj.GenerateResource.Cache
+c:\users\admin\Desktop\W-on\Project C#\Lab4_ontap\Lab4_ontap\obj\Debug\Lab4_ontap.exe
+c:\users\admin\Desktop\W-on\Project C#\Lab4_ontap\Lab4_ontap\obj\Debug\Lab4_ontap.pdb
+c:\users\admin\Desktop\W-on\Project C#\Lab4_ontap\Lab4_ontap\obj\Debug\Lab4_ontap.FormGame.resources
+C:\Users\Admin\Desktop\W-on\Project C#\Lab4_ontap\Lab4_ontap\obj\Debug\Lab4_ontap.FormGameLatHinh.resources

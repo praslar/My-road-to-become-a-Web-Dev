@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5285CC99-4A28-4470-B1C0-96E3AA78C616}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WalkThePlank</RootNamespace>
+    <AssemblyName>WalkThePlank</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGame.Designer.cs">
+      <DependentUpon>FormGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHintPictures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHintPictures.Designer.cs">
+      <DependentUpon>FormHintPictures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHintPictures1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHintPictures1.Designer.cs">
+      <DependentUpon>FormHintPictures1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHintPictures2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHintPictures2.Designer.cs">
+      <DependentUpon>FormHintPictures2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHintPictures3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHintPictures3.Designer.cs">
+      <DependentUpon>FormHintPictures3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHintPictures4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHintPictures4.Designer.cs">
+      <DependentUpon>FormHintPictures4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLose.Designer.cs">
+      <DependentUpon>FormLose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWin.Designer.cs">
+      <DependentUpon>FormWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReadFile.cs" />
+    <Compile Include="UserControlAlphabet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlAlphabet.Designer.cs">
+      <DependentUpon>UserControlAlphabet.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormGame.resx">
+      <DependentUpon>FormGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHintPictures.resx">
+      <DependentUpon>FormHintPictures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHintPictures1.resx">
+      <DependentUpon>FormHintPictures1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHintPictures2.resx">
+      <DependentUpon>FormHintPictures2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHintPictures3.resx">
+      <DependentUpon>FormHintPictures3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHintPictures4.resx">
+      <DependentUpon>FormHintPictures4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLose.resx">
+      <DependentUpon>FormLose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWin.resx">
+      <DependentUpon>FormWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlAlphabet.resx">
+      <DependentUpon>UserControlAlphabet.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\New Piskel %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\New Piskel2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Loading.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Theme.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\IMG_403761.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\unmute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9939beaf49524c4670d7c4768f88fe69.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_403746.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Bear.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Wolf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Tiger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Shark.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Leopard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\doctor-background-design_1270-62.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\chef-character_23-2147518941.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\background-of-children-learning-in-class-with-teacher_23-2147608736.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\stock-vector-vector-flat-style-illustration-of-afro-american-woman-star-celebrity-jazz-singer-in-yellow-dress-475704130.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\engineering-background-design_1300-87.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\7-seas.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\basketball-player-silhouettes_23-2147515649.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tennis-player-silhouettes_23-2147515650.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\voleyball-player-polygonal-drawing_23-2147496412.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\badminton-logo-design_1344-138.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\swimming-pool-background_1367-12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\set-of-silhouettes-and-basketball-players_23-2147610115.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\stock-vector-swimming-icon-vector-370449563.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\stock-vector-vector-abstract-triangle-polygon-style-male-badminton-player-doing-smash-shot-with-space-for-poster-234378025.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\stock-vector-badminton-players-silhouettes-set-men-silhouettes-play-badminton-vector-collection-of-sportsmen-391985773.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\stock-vector-illustration-of-abstract-volleyball-player-silhouette-471563342.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\7368f96933e5ac8ca383e237b58f446b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\6fdd413d9f102a100f7ada988e16ed92.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\1d63c0c1cf17059996d3837055866129.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\4465175431c2520b45be66041d3194fd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\eadeeb8c6c98e042f7d3d7063bccb2ed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\stock-vector-detailed-vector-illustration-world-political-map-centered-by-america-571104994.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

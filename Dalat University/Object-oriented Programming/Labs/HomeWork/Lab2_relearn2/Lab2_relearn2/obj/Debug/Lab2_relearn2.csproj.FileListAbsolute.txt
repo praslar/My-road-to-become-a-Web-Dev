@@ -1,0 +1,10 @@
+c:\users\admin\Desktop\W-on\Project C#\Lab2_relearn2\Lab2_relearn2\bin\Debug\Lab2_relearn2.exe.config
+c:\users\admin\Desktop\W-on\Project C#\Lab2_relearn2\Lab2_relearn2\bin\Debug\Lab2_relearn2.exe
+c:\users\admin\Desktop\W-on\Project C#\Lab2_relearn2\Lab2_relearn2\bin\Debug\Lab2_relearn2.pdb
+c:\users\admin\Desktop\W-on\Project C#\Lab2_relearn2\Lab2_relearn2\obj\Debug\Lab2_relearn2.csprojResolveAssemblyReference.cache
+c:\users\admin\Desktop\W-on\Project C#\Lab2_relearn2\Lab2_relearn2\obj\Debug\Lab2_relearn2.Form1.resources
+c:\users\admin\Desktop\W-on\Project C#\Lab2_relearn2\Lab2_relearn2\obj\Debug\Lab2_relearn2.Properties.Resources.resources
+c:\users\admin\Desktop\W-on\Project C#\Lab2_relearn2\Lab2_relearn2\obj\Debug\Lab2_relearn2.csproj.GenerateResource.Cache
+c:\users\admin\Desktop\W-on\Project C#\Lab2_relearn2\Lab2_relearn2\obj\Debug\Lab2_relearn2.exe
+c:\users\admin\Desktop\W-on\Project C#\Lab2_relearn2\Lab2_relearn2\obj\Debug\Lab2_relearn2.pdb
+C:\Users\Admin\Desktop\W-on\Project C#\Lab2_relearn2\Lab2_relearn2\obj\Debug\Lab2_relearn2.FormTimKiem.resources

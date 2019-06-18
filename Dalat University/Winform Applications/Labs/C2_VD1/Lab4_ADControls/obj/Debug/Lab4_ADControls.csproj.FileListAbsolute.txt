@@ -1,0 +1,20 @@
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab4_ADControls\bin\Debug\Lab4_ADControls.exe.config
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab4_ADControls\bin\Debug\Lab4_ADControls.exe
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab4_ADControls\bin\Debug\Lab4_ADControls.pdb
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab4_ADControls\obj\Debug\Lab4_ADControls.csprojResolveAssemblyReference.cache
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab4_ADControls\obj\Debug\Lab4_ADControls.frmAdControls.resources
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab4_ADControls\obj\Debug\Lab4_ADControls.Properties.Resources.resources
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab4_ADControls\obj\Debug\Lab4_ADControls.csproj.GenerateResource.Cache
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab4_ADControls\obj\Debug\Lab4_ADControls.exe
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab4_ADControls\obj\Debug\Lab4_ADControls.pdb
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab4_ADControls\obj\Debug\Lab4_ADControls.frmKeyEvents.resources
+C:\Users\Admin\Desktop\W-on\MT_CCLT1\C2_VD1\C2_VD1\Lab4_ADControls\bin\Debug\Lab4_ADControls.exe.config
+C:\Users\Admin\Desktop\W-on\MT_CCLT1\C2_VD1\C2_VD1\Lab4_ADControls\bin\Debug\Lab4_ADControls.exe
+C:\Users\Admin\Desktop\W-on\MT_CCLT1\C2_VD1\C2_VD1\Lab4_ADControls\bin\Debug\Lab4_ADControls.pdb
+C:\Users\Admin\Desktop\W-on\MT_CCLT1\C2_VD1\C2_VD1\Lab4_ADControls\obj\Debug\Lab4_ADControls.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\W-on\MT_CCLT1\C2_VD1\C2_VD1\Lab4_ADControls\obj\Debug\Lab4_ADControls.frmAdControls.resources
+C:\Users\Admin\Desktop\W-on\MT_CCLT1\C2_VD1\C2_VD1\Lab4_ADControls\obj\Debug\Lab4_ADControls.frmKeyEvents.resources
+C:\Users\Admin\Desktop\W-on\MT_CCLT1\C2_VD1\C2_VD1\Lab4_ADControls\obj\Debug\Lab4_ADControls.Properties.Resources.resources
+C:\Users\Admin\Desktop\W-on\MT_CCLT1\C2_VD1\C2_VD1\Lab4_ADControls\obj\Debug\Lab4_ADControls.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\W-on\MT_CCLT1\C2_VD1\C2_VD1\Lab4_ADControls\obj\Debug\Lab4_ADControls.exe
+C:\Users\Admin\Desktop\W-on\MT_CCLT1\C2_VD1\C2_VD1\Lab4_ADControls\obj\Debug\Lab4_ADControls.pdb

@@ -1,0 +1,11 @@
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab5_GDI\bin\Debug\Lab5_GDI.exe.config
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab5_GDI\bin\Debug\Lab5_GDI.exe
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab5_GDI\bin\Debug\Lab5_GDI.pdb
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab5_GDI\obj\Debug\Lab5_GDI.csprojResolveAssemblyReference.cache
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab5_GDI\obj\Debug\Lab5_GDI.frmGDI.resources
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab5_GDI\obj\Debug\Lab5_GDI.frmListView.resources
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab5_GDI\obj\Debug\Lab5_GDI.Properties.Resources.resources
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab5_GDI\obj\Debug\Lab5_GDI.UCColor.resources
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab5_GDI\obj\Debug\Lab5_GDI.csproj.GenerateResource.Cache
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab5_GDI\obj\Debug\Lab5_GDI.exe
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\Lab5_GDI\obj\Debug\Lab5_GDI.pdb

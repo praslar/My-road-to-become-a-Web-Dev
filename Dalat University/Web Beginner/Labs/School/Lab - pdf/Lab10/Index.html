@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+	<form action="" name="myForm">
+		ĐĂNG KÝ KHÓA HỌC <br/><br/>
+		Tên: <input type="text" name="name"><span style="color:red">*</span> <span style="color:red" id="validateName"></span></br>
+		Ngày sinh: <input type="text" name="birthday"><span style="color:red">dd/mm/yyyy</span><span style="color:red" id="validateBirthday"></span></br>
+		Email: <input type="text" name="email"><span style="color:red">*</span> <span style="color:red" id="validateEmail"></span></br>
+		Số di động: <input type="text" name="mobile"><span style="color:red">*</span> <span style="color:red" id="validateMobile"></span></br>
+		Khóa học đăng ký: <select name="courses">
+		<option>---</option>
+		<option>Lập trình Web</option>
+		<option>Thiết kế Web</option>
+		<option>C#</option>
+		<option>Java</option>
+		</select><span style="color:red">*</span> <span style="color:red" id="validateCourses"></span>
+		<br/>
+		<input type="button" onclick="validateForm();" value="Đăng ký">
+		<input type="button" value="Xóa" onclick="Delete();">
+	</form>
+	
+	<div id="result"></div>
+	
+	<script type="text/javascript">
+	
+	
+		function Delete()
+		{
+			document.forms["myForm"]["name"].value = "";
+						
+		}
+		function validateForm()
+		{
+		
+			var name = document.forms["myForm"]["name"].value;
+			if (name == "") {
+				document.getElementById("validateName").innerHTML = "Tên không được để trống";
+				return;
+			}
+			else document.getElementById("validateName").innerHTML = "<span style='color:blue;'>OK</span>";
+			
+			var birthday = document.forms["myForm"]["birthday"].value;
+			var date_regex = /^(0[1-9]|1\d|2\d|3[01])\/(0[1-9]|1[0-2])\/(19|20)\d{2}$/ ;
+    		if(!date_regex.test(birthday)){
+    			document.getElementById("validateBirthday").innerHTML = "Ngày sinh không đúng định dạng";
+    			return;
+
+				
+			}
+			else document.getElementById("validateBirthday").innerHTML = "<span style='color:blue;'>OK</span>";
+
+			var email = document.forms["myForm"]["email"].value;
+			var email_regex = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/; 
+			if (!email_regex.test(email)) {
+				document.getElementById("validateEmail").innerHTML = "Email không đúng định dạng";
+				return;
+
+			}
+			else document.getElementById("validateEmail").innerHTML = "<span style='color:blue;'>OK</span>";
+
+		 	var mobile = document.forms["myForm"]["mobile"].value;
+		 	var mobile_regex = /^0\d{9}$/; 
+
+		 	if (!mobile_regex.test(mobile )) {
+				document.getElementById("validateMobile").innerHTML = "Số điện thoại sai định dạng";
+				return;
+			}
+			else document.getElementById("validateMobile").innerHTML = "<span style='color:blue;'>OK</span>";
+			
+			var course = document.forms["myForm"]["courses"].value;
+			if (course == "---")
+			{
+				document.getElementById("validateCourses").innerHTML = "Bạn chưa chọn khóa học nào!";
+				return;
+			}
+			else document.getElementById("validateCourses").innerHTML = "<span style='color:blue;'>OK</span>";
+			
+
+			document.getElementById("result").innerHTML = "<span style='color:blue;'>Cảm ơn bạn đã đăng ký khóa học </span>" + course + ".";
+
+					
+		
+		}
+		
+			
+	</script>
+
+</body>
+
+</html>

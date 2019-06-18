@@ -1,0 +1,9 @@
+C:\Users\Admin\Desktop\W-on\Project C#\lab2.2\lab2.2\bin\Debug\lab2.2.exe.config
+C:\Users\Admin\Desktop\W-on\Project C#\lab2.2\lab2.2\bin\Debug\lab2.2.exe
+C:\Users\Admin\Desktop\W-on\Project C#\lab2.2\lab2.2\bin\Debug\lab2.2.pdb
+C:\Users\Admin\Desktop\W-on\Project C#\lab2.2\lab2.2\obj\Debug\lab2.2.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\W-on\Project C#\lab2.2\lab2.2\obj\Debug\lab2._2.Properties.Resources.resources
+C:\Users\Admin\Desktop\W-on\Project C#\lab2.2\lab2.2\obj\Debug\lab2.2.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\W-on\Project C#\lab2.2\lab2.2\obj\Debug\lab2.2.exe
+C:\Users\Admin\Desktop\W-on\Project C#\lab2.2\lab2.2\obj\Debug\lab2.2.pdb
+C:\Users\Admin\Desktop\W-on\Project C#\lab2.2\lab2.2\obj\Debug\lab2._2.FormTBGiaoVien.resources

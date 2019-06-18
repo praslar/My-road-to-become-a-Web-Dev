@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebLab3", "..\..\WebSites\WebLab3\", "{54E029B7-C463-418D-868C-5AE4B21CC6BB}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_60863"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\WebSites\WebLab3\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60863\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_60863"
+		Release.AspNetCompiler.PhysicalPath = "..\..\WebSites\WebLab3\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60863\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "60863"
+		SlnRelativePath = "..\..\WebSites\WebLab3\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Weblab3_2", "..\..\WebSites\Weblab3_2\", "{1214CFAB-344A-459B-84EA-DC885270CD71}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_61232"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\WebSites\Weblab3_2\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61232\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_61232"
+		Release.AspNetCompiler.PhysicalPath = "..\..\WebSites\Weblab3_2\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61232\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "61232"
+		SlnRelativePath = "..\..\WebSites\Weblab3_2\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Weblab3_3", "..\..\WebSites\Weblab3_3\", "{CFCEBCB1-9756-4050-80C5-E524A785E214}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_61465"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\WebSites\Weblab3_3\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61465\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_61465"
+		Release.AspNetCompiler.PhysicalPath = "..\..\WebSites\Weblab3_3\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61465\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "61465"
+		SlnRelativePath = "..\..\WebSites\Weblab3_3\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54E029B7-C463-418D-868C-5AE4B21CC6BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54E029B7-C463-418D-868C-5AE4B21CC6BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1214CFAB-344A-459B-84EA-DC885270CD71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1214CFAB-344A-459B-84EA-DC885270CD71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFCEBCB1-9756-4050-80C5-E524A785E214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFCEBCB1-9756-4050-80C5-E524A785E214}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

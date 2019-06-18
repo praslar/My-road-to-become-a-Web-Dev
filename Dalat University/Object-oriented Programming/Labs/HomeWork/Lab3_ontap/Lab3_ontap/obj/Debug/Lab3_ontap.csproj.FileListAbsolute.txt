@@ -1,0 +1,10 @@
+c:\users\admin\Desktop\W-on\Project C#\Lab3_ontap\Lab3_ontap\bin\Debug\Lab3_ontap.exe.config
+c:\users\admin\Desktop\W-on\Project C#\Lab3_ontap\Lab3_ontap\bin\Debug\Lab3_ontap.exe
+c:\users\admin\Desktop\W-on\Project C#\Lab3_ontap\Lab3_ontap\bin\Debug\Lab3_ontap.pdb
+c:\users\admin\Desktop\W-on\Project C#\Lab3_ontap\Lab3_ontap\obj\Debug\Lab3_ontap.csprojResolveAssemblyReference.cache
+c:\users\admin\Desktop\W-on\Project C#\Lab3_ontap\Lab3_ontap\obj\Debug\Lab3_ontap.Form1.resources
+c:\users\admin\Desktop\W-on\Project C#\Lab3_ontap\Lab3_ontap\obj\Debug\Lab3_ontap.Properties.Resources.resources
+c:\users\admin\Desktop\W-on\Project C#\Lab3_ontap\Lab3_ontap\obj\Debug\Lab3_ontap.csproj.GenerateResource.Cache
+c:\users\admin\Desktop\W-on\Project C#\Lab3_ontap\Lab3_ontap\obj\Debug\Lab3_ontap.exe
+c:\users\admin\Desktop\W-on\Project C#\Lab3_ontap\Lab3_ontap\obj\Debug\Lab3_ontap.pdb
+C:\Users\Admin\Desktop\W-on\Project C#\Lab3_ontap\Lab3_ontap\obj\Debug\Lab3_ontap.FormTiemKiem_SapXep.resources

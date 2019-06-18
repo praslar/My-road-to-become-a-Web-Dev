@@ -1,0 +1,13 @@
+C:\Users\Admin\Desktop\W-on\Project C#\Lab3_relearn_abc\Lab3_relearn_abc\obj\Debug\Lab3_relearn_abc.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\W-on\Project C#\Lab3_relearn_abc\Lab3_relearn_abc\obj\Debug\Lab3_relearn_abc.FormTTSV.resources
+C:\Users\Admin\Desktop\W-on\Project C#\Lab3_relearn_abc\Lab3_relearn_abc\obj\Debug\Lab3_relearn_abc.Properties.Resources.resources
+C:\Users\Admin\Desktop\W-on\Project C#\Lab3_relearn_abc\Lab3_relearn_abc\obj\Debug\Lab3_relearn_abc.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\W-on\Project C#\Lab3_relearn_abc\Lab3_relearn_abc\bin\Debug\Lab3_relearn_abc.exe.config
+C:\Users\Admin\Desktop\W-on\Project C#\Lab3_relearn_abc\Lab3_relearn_abc\bin\Debug\Lab3_relearn_abc.exe
+C:\Users\Admin\Desktop\W-on\Project C#\Lab3_relearn_abc\Lab3_relearn_abc\bin\Debug\Lab3_relearn_abc.pdb
+C:\Users\Admin\Desktop\W-on\Project C#\Lab3_relearn_abc\Lab3_relearn_abc\obj\Debug\Lab3_relearn_abc.exe
+C:\Users\Admin\Desktop\W-on\Project C#\Lab3_relearn_abc\Lab3_relearn_abc\obj\Debug\Lab3_relearn_abc.pdb
+C:\Users\Admin\Desktop\W-on\Project C#\Lab3_relearn_abc\Lab3_relearn_abc\obj\Debug\Lab3_relearn_abc.FormTuyChon.resources
+C:\Users\Administrator\Desktop\S-On\Project C#\Lab3_relearn_abc\Lab3_relearn_abc\bin\Debug\Lab3_relearn_abc.exe.config
+C:\Users\Administrator\Desktop\S-On\Project C#\Lab3_relearn_abc\Lab3_relearn_abc\obj\Debug\Lab3_relearn_abc.exe
+C:\Users\Administrator\Desktop\S-On\Project C#\Lab3_relearn_abc\Lab3_relearn_abc\obj\Debug\Lab3_relearn_abc.pdb

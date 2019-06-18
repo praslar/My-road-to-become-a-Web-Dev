@@ -1,4 +1,4 @@
-	/* tag selector */
+/* tag selector */
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
@@ -8,17 +8,17 @@ h1, h2, h3
 {
 	max-width: 500px;
 	background-color: #84b2e4;
-
 }
-
 h1
 {
 	font-size: 2em;
 	text-transform: capitalize;
+
 }
 h2
 {
 	text-align: center;
+
 }
 h3
 {
@@ -53,7 +53,6 @@ ol li{
 }
 #navigation
 {
-
 	position: absolute;
 	z-index: 10;		
 	width: 210px;
@@ -64,14 +63,14 @@ ol li{
 }
 #centerDoc {
 	position: absolute;
-	z-index: 15;
+	z-index: 1;
 	padding: 0 0 20px 20px;
 	margin-top: 50px;
 	margin-left: 235px;
 	width: 80%;
 	max-width: 1200px;
 	min-width: 500px;
-
+	background-color: green;
 }
 
 a:link, a:visited {

@@ -1,0 +1,4 @@
+﻿  Program.cpp
+c:\users\admin\desktop\w-on\project c#\lab_timing1\lab_timing1\library.h(58): warning C4101: 'ngaythangnamsinh': unreferenced local variable
+  Lab_Timing1.vcxproj -> c:\users\admin\Desktop\W-on\Project C#\Lab_Timing1\Debug\Lab_Timing1.exe
+  Lab_Timing1.vcxproj -> c:\users\admin\Desktop\W-on\Project C#\Lab_Timing1\Debug\Lab_Timing1.pdb (Partial PDB)

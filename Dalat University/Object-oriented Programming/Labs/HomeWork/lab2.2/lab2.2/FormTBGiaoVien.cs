@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace lab2._2
+{
+    public partial class FormTBGiaoVien : Form
+    {
+        public FormTBGiaoVien()
+        {
+            InitializeComponent();
+        }
+        public void SetText(string s)
+        {
+            this.labelTTGV.Text = s;
+        }
+
+    }
+}

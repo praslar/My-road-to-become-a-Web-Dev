@@ -1,0 +1,18 @@
+C:\Users\Admin\Desktop\C2_VD1\C2_VD1\bin\Debug\C2_VD1.exe.config
+C:\Users\Admin\Desktop\C2_VD1\C2_VD1\bin\Debug\C2_VD1.exe
+C:\Users\Admin\Desktop\C2_VD1\C2_VD1\bin\Debug\C2_VD1.pdb
+C:\Users\Admin\Desktop\C2_VD1\C2_VD1\obj\Debug\C2_VD1.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\C2_VD1\C2_VD1\obj\Debug\C2_VD1.Properties.Resources.resources
+C:\Users\Admin\Desktop\C2_VD1\C2_VD1\obj\Debug\C2_VD1.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\C2_VD1\C2_VD1\obj\Debug\C2_VD1.exe
+C:\Users\Admin\Desktop\C2_VD1\C2_VD1\obj\Debug\C2_VD1.pdb
+C:\Users\Admin\Desktop\C2_VD1\C2_VD1\obj\Debug\C2_VD1.formMain.resources
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\C2_VD1\bin\Debug\C2_VD1.exe.config
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\C2_VD1\obj\Debug\C2_VD1.exe
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\C2_VD1\obj\Debug\C2_VD1.pdb
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\C2_VD1\bin\Debug\C2_VD1.exe
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\C2_VD1\bin\Debug\C2_VD1.pdb
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\C2_VD1\obj\Debug\C2_VD1.csprojResolveAssemblyReference.cache
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\C2_VD1\obj\Debug\C2_VD1.formMain.resources
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\C2_VD1\obj\Debug\C2_VD1.Properties.Resources.resources
+D:\_Subject\_Moi truong cong cu lap trinh 1\CTK39\C2_VD1\C2_VD1\obj\Debug\C2_VD1.csproj.GenerateResource.Cache
