@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mini Project</title>
+	<style type="text/css">
+		body
+		{
+			margin: 0px;
+			font-family: 'Montserrat', sans-serif;
+			color: white;
+		}
+		nav, main {
+			display: block;
+		}
+
+		main {
+			width: 80%;
+			margin: 15px auto;
+			background-color: #a98bff69;
+			padding: 40px;
+			margin-top: 60px;
+			border-radius: 30px;
+			background-image: url('girl.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		nav
+		{
+			width: 100%;
+			background-color: #0c1d29;
+			position: fixed;
+			top: 0;
+			min-width: 412px;
+
+
+		}
+		nav ul
+		{
+			list-style: none;
+			text-transform: uppercase;
+			font-weight: bold;
+			margin: 0px;
+			padding: 0px;
+			overflow: hidden;
+
+		}
+		nav li
+		{
+			float: left;
+			margin-left: 0;
+		}
+		nav a
+		{	
+			display: block;
+			color: white;
+			width: 80px;
+			text-align: center;
+			padding: 5px;
+			border-radius: 5px;
+		}
+		a:hover
+		{
+			background-color: green;
+			color: white;
+		}		
+
+		table, td, th
+		{
+			border: 1px solid black;	
+		}
+		table { width: 50%; margin: 15px auto;}
+		th,td { padding: 10px; text-align: center; }
+		caption
+		{
+			font-size: 2em;
+			text-align: center;
+			background-color: green;
+			color: white;
+		}
+
+		td:nth-child(1)
+		{
+			width: 70%;
+		}
+		tr:nth-child(even)
+		{
+			background-color: green;
+		}
+		p:first-letter
+		{
+			font-size: 3em;
+			font-family: serif;
+			color: green;
+		}
+		main h1
+		{
+			font-size: 4em;
+			text-align: center;
+			font-family: 'Aguafina Script', cursive;
+
+		}
+
+		@media screen  and (max-width: 350px) {
+			main {
+				background-image: none;
+			}
+		}
+		@media screen  and (min-width: 800px) {
+			main {
+				background-image: url('old.jpg');
+			}
+		}
+
+
+
+
+
+
+	</style>
+
+	<link href="https://fonts.googleapis.com/css?family=Aguafina+Script|Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#">about</a></li>
+			<li><a href="#">contact</a></li>
+			<li><a href="#">news</a></li>
+			<li><a href="#">home</a></li>
+		</ul>		
+	</nav>
+	<main>
+		<h1>Heathly Foods</h1>
+		<p>This is the main document of the page This is the main document of the page This is the main document of the page</p>
+		<table>
+			<caption>My Fruit Price List</caption>
+
+			<tr>
+				<th>Fruit</th>
+				<th>Price</th>
+				<th>Quantity</th>
+			</tr>
+			<tr>
+				<td>Apples</td>
+				<td>$1.99</td>
+				<td>25</td>
+			</tr>
+			<tr>
+				<td>Coconut</td>
+				<td>$9.5</td>
+				<td>10</td>
+			</tr>
+			<tr>
+				<td>Straw Berry</td>
+				<td>$0.99</td>
+				<td>100</td>
+			</tr>
+			<tr>
+				<td>Pineapple</td>
+				<td>$2.00</td>
+				<td>30</td>
+			</tr>
+			<tr>
+				<td>Mango</td>
+				<td>$4.99</td>
+				<td>10</td>
+			</tr>
+			<tr>
+				<td>Bananas</td>
+				<td>$1.85</td>
+				<td>50</td>
+			</tr>
+
+		</table>
+		
+	</main>
+</body>
+</html>

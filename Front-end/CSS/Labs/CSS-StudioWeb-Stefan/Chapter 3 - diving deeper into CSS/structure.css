@@ -4,21 +4,18 @@ body {
 	font-size: 16px;
 	color: #000;
 } 
-h1, h2, h3
-{
-	max-width: 500px;
-	background-color: #84b2e4;
-}
-h1
+#centerDoc h1, h2, h3
 {
 	font-size: 2em;
 	text-transform: capitalize;
-
+	width: 60%;
+	background-color: #84b2e4;
 }
-h2
+#navigation h2
 {
-	text-align: center;
-
+	width: 70%;
+	padding-top: 70px; 
+	background-color: #fff; 
 }
 h3
 {
@@ -43,7 +40,7 @@ ol li{
 	width: 50%;
 	line-height: 180%;
 }
-	/*ID*/
+/*ID*/
 #miamiBuilding {
 	float: right;
 	margin: 0px;
@@ -52,38 +49,30 @@ ol li{
 
 }
 #navigation
-{
-	position: absolute;
-	z-index: 10;		
-	width: 210px;
+{		
+	width: 18%;
 	height: 700px;
 	margin: 0;
 	border-right: 1px solid #000000;
-	font-weight: normal;
 }
 #centerDoc {
-	position: absolute;
-	z-index: 1;
 	padding: 0 0 20px 20px;
 	margin-top: 50px;
-	margin-left: 235px;
-	width: 80%;
-	max-width: 1200px;
-	min-width: 500px;
-	background-color: green;
+	width: 78%;
+	float: right;
 }
 
 a:link, a:visited {
-	 background-color: #84b2e4; 
-	 text-decoration: none;
-	 padding: 5px; 
-	 border-radius: 20px; 
-	 color: #000; 
-	 display: block;
-	 width: 130px;
-	 transition: margin-bottom .35s ease-out;
+	background-color: #84b2e4; 
+	text-decoration: none;
+	padding: 5px; 
+	border-radius: 20px; 
+	color: #000; 
+	display: block;
+	width: 80%;
+	transition: margin-bottom .35s ease-out;
 
-	}     
+}     
 
 a:hover {
 	color: #fff; 
@@ -96,3 +85,43 @@ a:active { color: green; font-weight: bold;}
 #centerDoc a:link {color: green; text-decoration: underline;}   
 #centerDoc a:hover { color: blue; margin-bottom: 0px;} 
 #centerDoc a {background-color: transparent;}
+
+@media screen and (max-width: 850px)
+{
+	#miamiBuilding {
+		display: none;
+	}
+	#navigation{
+		clear: both;
+		border-right: 0px;
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+	#centerDoc {
+		width: 100%;
+		padding: 20px;
+		margin: 10px;
+		float: none;
+	}
+	#centerDoc h1, h3, p, ol li
+	{
+		width: 80%;
+		padding: 5px 10px;
+		margin: 5px;
+	}
+	#navigation h2
+	{
+		padding: 10px;
+		margin:10px;
+		width: 80%;
+		text-align: left;
+	}
+	#navigation ul li a
+	{
+		width: 80%;
+		padding: 0px 35px;
+		border-radius: 0px;
+		margin-left: -15px;
+	}
+}
