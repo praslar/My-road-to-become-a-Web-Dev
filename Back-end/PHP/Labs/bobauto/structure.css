@@ -1,0 +1,16 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+.freight {
+	border: solid 1px;
+	border-radius: 5px;
+	padding: 3px;
+}
+.freight tr th {
+	background-color: silver;
+	border: solid 1px;
+}
+.freight td {
+	text-align: right;
+		border: solid 1px;
+}
